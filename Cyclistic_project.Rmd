@@ -13,25 +13,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Project Description
 ## Scenario
-You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
+You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The marketing director believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
 
 ## About the company
-In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime. Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.\newline
+In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are tracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system at a time. Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.\newline
 
-Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a very good chance to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs.\newline
+Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign targeting all-new customers, Moreno believes there is a good chance to convert casual riders into members. She notes that casual riders already know the Cyclistic program and have chosen Cyclistic for their mobility needs.\newline
 
-Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
+Moreno has set a clear goal: Design marketing strategies to convert casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ and why casual riders would buy a that convert digital media could affect their narcotics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
 
 # Business Task.
-In this project, we aim to answer the following question to the marketing manager (Moreno): How do annual members and casual riders use Cyclistic bikes differently? We use a raw data set provided by the campany.
+In this project, we aim to answer the following question for the marketing manager (Moreno): How do annual members and casual riders use Cyclistic bikes differently? We use a raw data set provided by the company.
 
 
 Let's start!
 
 # STEP 1: COLLECT DATA
 
-To complete this project, we are going to use "R programming language" to consolidate downloaded Divvy data into a single dataframe and then conduct simple analysis to help answer the key question: "In what ways do members and casual riders use Divvy bikes differently?" \newline
-The data are downloaded from [here](https://divvy-tripdata.s3.amazonaws.com/index.html) and stored to a local storage under the name "syclist.csv". The data has been made available by Motivate International Inc. under this [licence](https://divvybikes.com/data-license-agreement). There are several data set, but for this project, we choose to use the first quarter of the year 2020. Since we already have the data,now we can prepare a cleaned dataset to be used for our analysis using Rstudio.\newline
+To complete this project, we are going to use "R programming language" to consolidate downloaded Divvy data into a single data frame and then conduct a simple analysis to help answer the key question: "In what ways do members and casual riders use Divvy bikes differently?" \newline
+The data are downloaded from [here](https://divvy-tripdata.s3.amazonaws.com/index.html) and stored to local storage under the name "syclist.csv". Motivate International Inc. has made the data available under this [licence](https://divvybikes.com/data-license-agreement). There are several data set, but for this project, we choose to use the first quarter of the year 2020. Since we already have the data, we can now prepare a cleaned dataset to be used for our analysis using Rstudio.\newline
 
 In R, it is a good practice to start by loading required libraries to complete the aimed tasks. In this project, we only need three libraries: 
 \begin{enumerate}
@@ -60,7 +60,7 @@ q1_2020 <- read_csv("Dvvy_Trips_2020_Q1.csv",show_col_types = FALSE)
 
 # STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
 
-First, let's Compare column names each of the files. While the names don't have to be in the same order, they do need to match perfectly before we can use a command to join them into one file.
+First, let's Compare the column names of each file. While the names don't have to be in the same order, they do need to match perfectly before we can use a command to combine them into one file.
 
 ```{r, results = 'hide'}
 colnames(q3_2019)
@@ -68,7 +68,7 @@ colnames(q4_2019)
 colnames(q2_2019)
 colnames(q1_2020)
 ```
-If you run the above code, you can find out that the four datasets do not have the same column names. We need to rename some and make them consistent with the "q1-2020" dataset as this may probably be the going-forward table design for Divvy.
+If you run the above code, you will see that the four datasets do not have the same column names. We need to rename some and make them consistent with the "q1-2020" dataset, as this may probably be the going-forward table design for Divvy.
 
 ```{r}
 # Rename columns  to make them consistent with q1_2020
@@ -113,7 +113,7 @@ We have now renamed the columns. Let's check for possible remaining inconsistenc
 
 ```{r}
 
-# Inspect the dataframes and look for inconsistencies
+# Inspect the data frames and look for inconsistencies
 str(q1_2020)
 str(q4_2019)
 str(q3_2019)
@@ -121,11 +121,11 @@ str(q2_2019)
 
 
 ```
-It turns out that the "ride-id" and "rideable-type" do not stack correctly. Their types need to be converted into character which is used for the "q1-2020" dataset.
+It turns out that the "ride-id" and "rideable-type" do not stack correctly. Their types need to be converted into characters, which is used for the "q1-2020" dataset.
 
 ```{r}
 
-# Convert ride_id and rideable_type to character so that they can stack correctly
+# Convert ride_id and rideable_type to characters so that they can stack correctly
 q4_2019 <-  mutate(q4_2019, ride_id = as.character(ride_id)
                    ,rideable_type = as.character(rideable_type)) 
 q3_2019 <-  mutate(q3_2019, ride_id = as.character(ride_id)
@@ -150,38 +150,38 @@ all_trips <- all_trips %>%
 
 # STEP 3: CLEAN UP AND ADD DATA TO PREPARE FOR ANALYSIS
 
-Now, it is time to clean up the dataset that we have saved in "all_trips", and prepare for analysis. We can first inspect it and check for possible problems that needs to be fixed before conducting the analysis.
+Now, it is time to clean up the dataset that we have saved in "all_trips" and prepare for analysis. We can first inspect it and check for possible problems that need to be fixed before conducting the analysis.
 
 ```{r}
 # Inspect the new table that has been created
 
 colnames(all_trips)  #List of column names
 
-nrow(all_trips)  #How many rows are in data frame?
+nrow(all_trips)  #How many rows are in the data frame?
 
 dim(all_trips)  #Dimensions of the data frame?
 
-head(all_trips)  #See the first 6 rows of data frame. Also tail(qs_raw) can show that last rows.
+head(all_trips)  #See the first 6 rows of the data frame. Also, the tail(qs_raw) can show the last rows.
 
-str(all_trips)  #See list of columns and data types (numeric, character, etc)
+str(all_trips)  #See the list of columns and data types (numeric, character, etc.)
 
 summary(all_trips)  #Statistical summary of data. Mainly for numerics
 
 ```
 
-After the inspection, it turns out that there are a few problems that need to fixed:
+After the inspection, it turns out that there are a few problems that need to be fixed:
 \begin{enumerate}
 \item In the "$member-casual$" column, there are two names for members ("member" and "Subscriber") and two names for casual riders ("Customer" and "casual"). We will need to consolidate that from four to two labels.
-\item The data can only be aggregated at the ride-level, which is too granular. We will want to add some additional columns of data such as day, month, year...,that provide additional opportunities to aggregate the data.
-\item We will want to add a calculated field for length of ride since the "q1-2020" data did not have the "tripduration" column. We will add "ride-length" to the entire dataframe for consistency.
-\item There are some rides where tripduration shows up as negative, including several hundred rides where Divvy took bikes out of circulation for Quality Control reasons. We will want to delete these rides.
+\item The data can only be aggregated at the ride level, which is too granular. We will want to add some additional columns of data such as day, month, year..., that provide additional opportunities to aggregate the data.
+\item We will want to add a calculated field for the length of a ride since the "q1-2020" data did not have the "trip duration" column. We will add "ride length" to the entire data frame for consistency.
+\item There are some rides where trip duration shows up as negative, including several hundred rides where Divvy took bikes out of circulation for Quality Control reasons. We will want to delete these rides.
 \end{enumerate}
 
-In the "$member-casual$" column, we replace "Subscriber" with "member" and "Customer" with "casual". Before 2020, Divvy used different labels for these two types of riders ... we will want to make our dataframe consistent with their 2020 nomenclature.
+In the "$member-casual$" column, we replace "Subscriber" with "member" and "Customer" with "casual". Before 2020, Divvy used different labels for these two types of riders ... we will want to make our data frame consistent with their 2020 nomenclature.
 (N.B.: "Level" is a special property of a column that is retained even if a subset does not contain any values from a specific level.)
 
 ```{r}
-# Begin by seeing how many observations fall under each usertype
+# Begin by seeing how many observations fall under each user
 table(all_trips$member_casual)
 
 ```
@@ -198,7 +198,7 @@ all_trips <-  all_trips %>%
 table(all_trips$member_casual)
 
 ```
-It turns out that the total number of Cyclistic's members is more that a triple of the total number of casual customers.
+It turns out that the total number of Cyclistic's members is more than triple the total number of casual customers.
 
 Next, let's add columns that list the date, month, day, and year of each ride. This will allow us to aggregate ride data for each month, day, or year... before completing these operations we could only aggregate at the ride level. We also need to add the ride length column that shows the duration of the rides.
 
@@ -215,14 +215,13 @@ all_trips$ride_length <- difftime(all_trips$ended_at,all_trips$started_at)
 
 ```
 
-To make sure that the new created columns match our intended use, we need to inspect the new obtained data (functions such as str() or glipmse() can do that).
+To make sure that the newly created columns match our intended use, we need to inspect the newly obtained data (functions such as str() or glimpse () can do that).
 ```{r}
 # Inspect the structure of the columns
 glimpse(all_trips)
 
 ```
-After the inspection, one can find that it is necessary to Convert "ride-length" from Factor to numeric so we can run calculations on the data.
-
+After the inspection, one can find that it is necessary to Convert "ride-length" from Factor to numeric so we can run calculations on the data
 
 ```{r}
 
@@ -234,7 +233,7 @@ sum(all_trips$ride_length<0) # checking if there are some negative values
 ```
 ## Remove "bad" data
 
-The dataframe includes a few hundred entries when bikes were taken out of docks and checked for quality by Divvy or ride-length was negative. We will create a new version of the dataframe (v2) since data is being removed.
+The data frame includes a few hundred entries when bikes were taken out of docks and checked for quality by Divvy or when ride length was negative. Since the data is being removed, we will create a new version of the data frame (v2).
 
 ```{r}
 
@@ -243,7 +242,7 @@ all_trips_v2 <- all_trips[!(all_trips$start_station_name == "HQ QR" | all_trips$
 
 ```
 
-Now, we can proceed with the analysis using the ready clean and processed dataset "all_trips_v2" for the analysis.
+Now, we can proceed with the analysis using the ready, clean, and processed dataset "all_trips_v2" for the analysis.
 
 
 # STEP 4: CONDUCT DESCRIPTIVE ANALYSIS
@@ -256,7 +255,7 @@ We can begin by conducting a descriptive analysis of the "ride-length" variable 
 summary(all_trips_v2$ride_length)
 
 ```
-Next, we can compare members and casual users using the descriptive measures (mean, median, max, and min).
+Next, we can compare members and casual users using descriptive measures (mean, median, max, and min).
 
 
 ```{r}
@@ -268,7 +267,7 @@ aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual, FUN = min)
 
 ```
 
-This gives the general difference in ride-length for members and casual. But is there any difference based on days of the week?. See the average ride time by each day for members vs casual users.
+This gives the general difference in ride length for members and casual. But is there any difference based on days of the week?. See the average ride time by each day for members vs casual users.
 
 
 ```{r}
@@ -284,21 +283,21 @@ all_trips_v2$day_of_week <- ordered(all_trips_v2$day_of_week, levels=c("Sunday",
 
 ```
 
-Now, let's run the average ride time by each day for members vs casual users.
+Now, let's run the average ride time for members vs casual users each day.
 
 ```{r}
 aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
 
 ```
 
-Now, let's analyse ridership data by type and weekday, and make a clear visualization for the number of rides by rider type (member or casual).
+Now, let's analyze ridership data by type and weekday and make a clear visualization for the number of rides by rider type (member or casual).
 
 ```{r}
 
 # analyze ridership data by type and weekday
 all_trips_v2 %>% 
   mutate(weekday = wday(started_at, label = TRUE)) %>%  #creates weekday field using wday()
-  group_by(member_casual, weekday) %>%  #groups by usertype and weekday
+  group_by(member_casual, weekday) %>%  #groups by user-type and weekday
   summarise(number_of_rides = n()							#calculates the number of rides and average duration 
   ,average_duration = mean(ride_length)) %>% 		# calculates the average duration
   arrange(member_casual, weekday)								# sorts
@@ -313,12 +312,12 @@ all_trips_v2 %>%
   ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
   geom_col(position = "dodge")
 ```
-The graph above shows that members use the  bicycles less in weekends compared to other days of the week. The trend is opposite for casual riders who use bicycles much in weekends. Along the week, members are always many compared to casual riders.
+The graph above shows that members use  bicycles less on weekends compared to other days of the week. The trend is the opposite for casual riders who use bicycles much on weekends. During the week, there are always more members than casual riders.
 
-We can also visualize the average ride duration by rider type and by weekday. 
+We can also visualize the average ride duration by rider type and weekday. 
 
 ```{r}
-# Let's create a visualization for average ride duration
+# Let's create a visualization for the average ride duration
 all_trips_v2 %>% 
   mutate(weekday = wday(started_at, label = TRUE)) %>% 
   group_by(member_casual, weekday) %>% 
@@ -332,7 +331,7 @@ The graph shows that the average ride duration for casual riders is greater than
 
 # STEP 5: EXPORT SUMMARY FILE FOR FURTHER ANALYSIS
 
-Now, that we have completed our analysis, it is necessary to save the summary file for further analysis and visualization (probably with a different software).
+Now that we have completed our analysis, it is necessary to save the summary file for further analysis and visualization (probably with a different software).
 
 ```{r}
 
@@ -340,5 +339,49 @@ counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_
 write.csv(counts, file = 'C:/Users/Omistaja/Desktop/my_projects/counts.csv')
 
 ```
-# STEP 6: RECOMMENDATIONS
-Based on the results, one can recommend the manager to focus on the importance of using bicycles in weekdays, which may attract the casual users to convert to annual so that they can use bicycles also in weekdays.
+# STEP 6: INSIGHTS AND RECOMMENDATIONS
+
+## **Insights**
+
+1. **Riding Behavior by Day of the Week**:
+   - Casual riders prefer weekend rides, while members have consistent usage throughout the week, primarily on weekdays.
+   - Casual riders' average ride duration is significantly higher, suggesting their trips are more recreational than functional.
+
+2. **Peak Usage Times**:
+   - Casual riders likely ride during leisure hours (e.g., late mornings or afternoons), while members are more likely to use bikes during peak commute times (e.g., early mornings and evenings on weekdays).
+
+3. **Membership Value Perception**:
+   - Casual riders might not perceive annual memberships as cost-effective due to infrequent weekday usage. Highlighting long-term cost savings could address this.
+
+4. **Bicycle Availability**:
+   - Higher ride durations for casual riders could indicate potential availability issues at popular locations during weekends, potentially leading to dissatisfaction.
+
+---
+
+## **Recommendations**
+
+1. **Weekend-Focused Membership Campaigns**:
+   - Develop memberships tailored to weekend riders, emphasizing discounted weekend rides as a perk for annual members.
+   - Partner with recreational destinations or events to offer ride-and-save packages for members.
+
+2. **Targeted Digital Marketing**:
+   - Use digital campaigns targeting casual riders with messages like "Save more on your weekend adventures" or "Unlimited weekend rides with our annual membership."
+
+3. **Dynamic Pricing Models**:
+   - Introduce flexible memberships, such as weekend-only passes, to ease casual riders into membership options.
+
+4. **Enhance Accessibility During Peak Times**:
+   - Ensure sufficient bike availability at high-demand locations, especially on weekends, to maintain a positive customer experience.
+   - Use demand forecasting models to optimize bike reallocation.
+
+5. **Incentives for Weekday Usage**:
+   - Provide weekday ride discounts for casual riders to encourage trial usage during these days.
+   - Highlight the convenience and cost benefits of weekday commuting through memberships.
+
+6. **User Behavior Surveys**:
+   - Conduct surveys targeting casual riders to better understand barriers to membership conversion and preferences for new membership structures.
+
+---
+
+These strategies aim to convert casual riders into members while improving customer satisfaction and loyalty, directly supporting Cyclistic's growth objectives.
+
