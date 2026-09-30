@@ -1,0 +1,2 @@
+generated_at,n_tables,table_names
+2026-09-30 18:42:01.126668,12,"programme_month,quality_month,timing,duration_month,bike_type,duration_bins,member_share,volume_stl,chisq_weekend,sql_member_share,sql_duration,sql_quality"
