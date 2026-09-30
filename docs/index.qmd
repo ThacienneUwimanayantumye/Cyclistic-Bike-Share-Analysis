@@ -1,0 +1,171 @@
+---
+title: "Cyclistic Programme Monitor"
+subtitle: "Annual members vs casual riders · Chicago Divvy · 2021–2025"
+format:
+  dashboard:
+    theme: flatly
+    orientation: rows
+    embed-resources: true
+    nav-buttons: []
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(readr)
+  library(ggplot2)
+  library(tidyr)
+  library(scales)
+})
+
+derived <- file.path("..", "data", "derived")
+if (!file.exists(file.path(derived, "member_share.csv"))) {
+  derived <- file.path("data", "derived")
+}
+
+member_share <- read_csv(file.path(derived, "member_share.csv"), show_col_types = FALSE)
+programme_month <- read_csv(file.path(derived, "programme_month.csv"), show_col_types = FALSE)
+quality_month <- read_csv(file.path(derived, "quality_month.csv"), show_col_types = FALSE)
+timing <- read_csv(file.path(derived, "timing.csv"), show_col_types = FALSE)
+duration_month <- read_csv(file.path(derived, "duration_month.csv"), show_col_types = FALSE)
+
+pal <- c(member = "#215C8C", casual = "#C05621")
+theme_set(
+  theme_minimal(base_size = 13) +
+    theme(legend.position = "top", panel.grid.minor = element_blank())
+)
+
+n_trips <- sum(member_share$n_trips)
+n_in <- sum(quality_month$n_in)
+member_share_all <- sum(member_share$n_member) / n_trips
+drop_rate <- 1 - n_trips / n_in
+
+to_date <- function(ym) as.Date(paste0(ym, "-01"))
+member_share$date <- to_date(member_share$year_month)
+programme_month$date <- to_date(programme_month$year_month)
+duration_month$date <- to_date(duration_month$year_month)
+quality_month$date <- to_date(quality_month$year_month)
+```
+
+## Headline {height="18%"}
+
+```{r}
+#| content: valuebox
+#| title: "Kept trips"
+list(
+  icon = "bicycle",
+  color = "primary",
+  value = comma(n_trips)
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Member trip share"
+list(
+  icon = "person-badge",
+  color = "secondary",
+  value = percent(member_share_all, accuracy = 0.1)
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Records dropped"
+list(
+  icon = "shield-exclamation",
+  color = "warning",
+  value = percent(drop_rate, accuracy = 0.1)
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Months"
+list(
+  icon = "calendar3",
+  color = "light",
+  value = nrow(member_share)
+)
+```
+
+## Mix and volume {height="42%"}
+
+### Member share of trips (Wilson 95% interval)
+
+Share of **trips**, not unique people. Divvy files have no rider id.
+
+```{r}
+ggplot(member_share, aes(date, member_share)) +
+  geom_ribbon(aes(ymin = ci_low, ymax = ci_high), fill = "#215C8C", alpha = 0.2) +
+  geom_line(colour = "#215C8C", linewidth = 0.8) +
+  scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 1)) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  labs(x = NULL, y = NULL)
+```
+
+### Monthly volume by programme
+
+```{r}
+ggplot(programme_month, aes(date, n_trips, colour = member_casual)) +
+  geom_line(linewidth = 0.8) +
+  scale_colour_manual(values = pal, name = NULL) +
+  scale_y_continuous(labels = comma) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  labs(x = NULL, y = NULL)
+```
+
+## When and how long {height="40%"}
+
+### Weekday × hour (members)
+
+```{r}
+heat <- timing |>
+  group_by(member_casual, weekday, hour) |>
+  summarise(n_trips = sum(n_trips), .groups = "drop") |>
+  mutate(
+    weekday = factor(
+      weekday,
+      levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+    )
+  )
+
+ggplot(
+  dplyr::filter(heat, member_casual == "member"),
+  aes(hour, weekday, fill = n_trips)
+) +
+  geom_tile() +
+  scale_fill_gradient(low = "#F4F7FA", high = "#215C8C", name = "Trips") +
+  scale_x_continuous(breaks = seq(0, 23, 3)) +
+  labs(x = "Hour", y = NULL)
+```
+
+### Weekday × hour (casual)
+
+```{r}
+ggplot(
+  dplyr::filter(heat, member_casual == "casual"),
+  aes(hour, weekday, fill = n_trips)
+) +
+  geom_tile() +
+  scale_fill_gradient(low = "#F4F7FA", high = "#C05621", name = "Trips") +
+  scale_x_continuous(breaks = seq(0, 23, 3)) +
+  labs(x = "Hour", y = NULL)
+```
+
+### Median duration (minutes)
+
+```{r}
+ggplot(duration_month, aes(date, duration_median_min, colour = member_casual)) +
+  geom_line(linewidth = 0.8) +
+  scale_colour_manual(values = pal, name = NULL) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  labs(x = NULL, y = NULL)
+```
+
+Footer: [Methods](METHODS.md) · [Source on GitHub](https://github.com/ThacienneUwimanayantumye/Cyclistic-Bike-Share-Analysis) · Trip-level extract; not person-level coverage.
