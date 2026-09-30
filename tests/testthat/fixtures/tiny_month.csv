@@ -1,0 +1,9 @@
+ride_id,rideable_type,started_at,ended_at,start_station_name,start_station_id,end_station_name,end_station_id,start_lat,start_lng,end_lat,end_lng,member_casual
+KEEP001,classic_bike,2021-01-02 08:00:00,2021-01-02 08:12:00,A,1,B,2,41.9,-87.6,41.91,-87.61,member
+KEEP002,electric_bike,2021-01-02 09:00:00,2021-01-02 09:40:00,,,C,3,41.9,-87.6,41.92,-87.62,casual
+SHORT01,classic_bike,2021-01-02 10:00:00,2021-01-02 10:00:30,A,1,B,2,41.9,-87.6,41.91,-87.61,member
+NEG001,classic_bike,2021-01-02 11:00:00,2021-01-02 10:00:00,A,1,B,2,41.9,-87.6,41.91,-87.61,member
+LONG001,classic_bike,2021-01-02 12:00:00,2021-01-04 12:00:00,A,1,B,2,41.9,-87.6,41.91,-87.61,casual
+BADPROG,classic_bike,2021-01-02 13:00:00,2021-01-02 13:10:00,A,1,B,2,41.9,-87.6,41.91,-87.61,unknown
+,classic_bike,2021-01-02 14:00:00,2021-01-02 14:10:00,A,1,B,2,41.9,-87.6,41.91,-87.61,member
+KEEP003,classic_bike,2021-01-03 18:00:00,2021-01-03 18:20:00,A,1,B,2,41.9,-87.6,41.91,-87.61,Subscriber

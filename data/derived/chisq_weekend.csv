@@ -1,0 +1,2 @@
+statistic,df,p_value,note,n_member_weekday,n_member_weekend,n_casual_weekday,n_casual_weekend
+577170.4272999213,1,0,Trips are clustered within riders; p-values are descriptive only.,12819541,4155527,6668202,4089106

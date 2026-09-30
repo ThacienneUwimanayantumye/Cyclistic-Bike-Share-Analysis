@@ -1,82 +1,119 @@
-# Cyclistic Bike-Share Analysis
+# Cyclistic Programme Monitor
 
-## Project Overview
+Reproducible **R pipeline**, **SQL-backed indicators**, and **Shiny dashboard** for monitoring how annual members and casual riders use Chicago’s Cyclistic / Divvy system (2021–2025).
 
-This project analyzes how Cyclistic's bike-share system in Chicago is utilized by both **annual members** and **casual riders**. The insights aim to support the marketing team's initiative to convert casual riders into annual members by understanding their usage patterns and preferences.
+This repository is a **portfolio data product**: the domain is bike-share, the *engineering and statistical habits* are those of programme monitoring (quality rules, indicator dictionary, partitioned processing, dashboard on aggregates). It is **not** a cancer-screening analysis.
 
----
+The original class capstone (R Markdown, 2019–2020, two bar charts) is preserved in [`legacy/`](legacy/).
 
-## Data
+## Why this exists
 
-The analysis uses publicly available historical ride data from Cyclistic, covering the **second quarter of 2019 to the first quarter of 2020**. The dataset, provided by Motivate International Inc. under a public data license, includes details about ride IDs, start and end times, stations, ride durations, and user types (member or casual).
+Finnish Cancer Registry / EUCanScreen-style work needs people who can:
 
----
+- turn messy longitudinal files into a **maintainable pipeline**
+- publish **documented indicators** (numerator, denominator, exclusions)
+- put **data quality** next to the headline numbers
+- ship a **dashboard** that never loads microdata
+- keep the work **reproducible** (lockfile, tests, Docker, Git)
 
-## Methods
+That is what this repo is built to demonstrate, using public Divvy trip files.
 
-### Tools and Libraries
-- **Programming Language**: R
-- **Libraries**:
-  - `tidyverse` for data manipulation
-  - `lubridate` for date attribute handling
-  - `ggplot2` for visualizations
+## Architecture
 
-### Workflow
-1. **Data Collection**:
-   - Consolidated multiple quarterly datasets into a single cohesive dataset.
-2. **Data Cleaning**:
-   - Standardized column names.
-   - Removed irrelevant columns (e.g., latitude, longitude).
-   - Addressed data inconsistencies (e.g., standardized ride IDs and user types).
-   - Filtered out negative ride durations and quality control records.
-3. **Feature Engineering**:
-   - Created new columns: ride duration (`ride_length`) and date attributes (day, month, year, weekday).
-4. **Descriptive Analysis**:
-   - Computed metrics (mean, median, min, max ride durations) for members vs. casual riders.
-   - Explored ride patterns by weekday for both user types.
-5. **Visualization**:
-   - Created bar charts to visualize:
-     - Number of rides by user type and weekday.
-     - Average ride duration by user type and weekday.
+```
+data/raw/*.zip          (gitignored monthly extracts)
+        │
+        ▼
+  {targets} pipeline    ingest → validate → clean → indicators
+        │
+        ├─ DuckDB        data/processed/cyclistic_indicators.duckdb
+        ├─ SQL           inst/sql/*.sql
+        ├─ derived CSV   data/derived/*.csv          ← dashboard + report
+        └─ quality table drop reasons by month
+```
 
-### Output
-A summary CSV file containing aggregated ride data for further analysis.
+Each month is processed with the same function; only summaries are stacked. Raw trips never enter Shiny.
 
----
+## Indicators (short)
 
-## Key Findings
+| Indicator | Grain | Note |
+|---|---|---|
+| Trip volume | month × programme | Event counts, not unique people |
+| Member trip share | month | Wilson 95% interval |
+| Timing | weekday × hour | Commute vs weekend leisure |
+| Duration | month × programme | **Median** and IQR, not mean-only |
+| Bike type | month × programme × type | Classic / electric / docked |
+| Quality | month | Drop rate and missing stations |
 
-1. **Ride Duration**:
-   - The average ride duration for casual riders is significantly longer than that of members.
-   - Members display consistent usage patterns with shorter, functional trips.
-2. **Weekly Trends**:
-   - Members primarily ride on weekdays, while casual riders favor weekends.
-   - Members show stable daily usage patterns, whereas casual rider usage peaks on weekends.
-3. **Opportunities**:
-   - Casual riders present a growth opportunity for weekday commuting.
+Full specification: [`docs/METHODS.md`](docs/METHODS.md).
 
----
+**Hard limitation:** there is no rider id. Member share is a share of *trips*. Interpreting it as coverage of persons would be a statistical error; the methods page says so explicitly.
 
-## Recommendations
+## How to run
 
-1. **Target Casual Riders**:
-   - Develop marketing campaigns promoting the benefits of annual memberships for weekday commutes.
-   - Highlight cost savings and convenience for frequent riders.
-2. **Weekday Campaigns**:
-   - Encourage weekday usage through promotional offers for casual riders.
-   - Partner with local businesses for joint promotions targeting commuters.
+### 1. Data
 
----
+Place `YYYYMM-divvy-tripdata.zip` files (2021-01 through 2025-12) in `data/raw/`. Source: [divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
-## Usage
+### 2. Pipeline
 
-To replicate or extend this analysis:
-1. Download Cyclistic ride data from [Cyclistic Data Portal](https://divvy-tripdata.s3.amazonaws.com/index.html).
-2. Install R and the required libraries (`tidyverse`, `lubridate`, `ggplot2`).
-3. Follow the analysis steps provided in the `Cyclistic_project.R` script.
+```r
+install.packages(c("targets", "tarchetypes", "tidyverse", "duckdb", "DBI",
+                   "shiny", "bslib", "bsicons", "plotly", "here", "testthat"))
+targets::tar_make()
+```
 
----
+Or: `Rscript scripts/run_pipeline.R`
 
-## License
+### 3. Dashboard
 
-Motivate International Inc. provided the dataset used for this project under its [Data License Agreement](https://divvybikes.com/data-license-agreement).
+```r
+shiny::runApp("dashboard")
+```
+
+Or: `Rscript scripts/run_dashboard.R`
+
+### 4. Tests
+
+```r
+testthat::test_dir("tests/testthat")
+```
+
+### 5. Methods report
+
+```bash
+quarto render analysis/report.qmd
+```
+
+### Docker (dashboard on derived tables)
+
+```bash
+docker build -t cyclistic-monitor .
+docker run --rm -p 3838:3838 cyclistic-monitor
+```
+
+## Repository map
+
+| Path | Role |
+|---|---|
+| `R/` | Pipeline functions (ingest, validate, clean, indicators, SQL, stats) |
+| `_targets.R` | Orchestration graph |
+| `inst/sql/` | DuckDB queries on indicator tables |
+| `data/derived/` | Published aggregates for the app and report |
+| `dashboard/` | Shiny monitoring app |
+| `docs/METHODS.md` | Indicator dictionary |
+| `analysis/report.qmd` | Quarto methods + findings |
+| `tests/` | Unit tests on cleaning rules and Wilson intervals |
+| `legacy/` | Original capstone |
+| `AI.md` | How agentic AI was used on this repo |
+
+## Statistical stance
+
+- Wilson intervals on trip shares  
+- STL seasonal-trend split of monthly volume  
+- Chi-square on programme × weekend **labelled as descriptive** (trips are clustered)  
+- No fake epidemiology (no incidence, no person-years, no “screening coverage”)
+
+## License and data
+
+Code: MIT. Trip data remain subject to Motivate’s license and are not redistributed in git as raw zips.

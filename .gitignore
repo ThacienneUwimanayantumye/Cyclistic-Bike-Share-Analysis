@@ -1,0 +1,26 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.duckdb
+*.duckdb.wal
+
+# Large local data — monthly zips and DuckDB scratch
+data/raw/
+data/processed/
+data/scratch/
+
+# targets cache
+_targets/
+_targets.yaml
+
+# renv library (lockfile is committed)
+renv/library/
+renv/staging/
+renv/sandbox/
+
+# Quarto / knitr
+analysis/*.pdf
+analysis/*_files/
+.quarto/
