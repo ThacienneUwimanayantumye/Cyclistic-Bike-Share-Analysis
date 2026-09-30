@@ -2,9 +2,7 @@
 
 Reproducible **R pipeline**, **SQL-backed indicators**, and **Shiny dashboard** for monitoring how annual members and casual riders use Chicago’s Cyclistic / Divvy system (2021–2025).
 
-This repository is a **portfolio data product**: the domain is bike-share, the *engineering and statistical habits* are those of programme monitoring (quality rules, indicator dictionary, partitioned processing, dashboard on aggregates). It is **not** a cancer-screening analysis.
-
-The original class capstone (R Markdown, 2019–2020, two bar charts) is preserved in [`legacy/`](legacy/).
+This repository is a **portfolio data product**: the domain is bike-share; the engineering matches programme-monitoring work (quality rules, indicator dictionary, partitioned processing, dashboard on aggregates). It is not a cancer-screening analysis.
 
 ## Why this exists
 
@@ -59,7 +57,7 @@ Place `YYYYMM-divvy-tripdata.zip` files (2021-01 through 2025-12) in `data/raw/`
 
 ```r
 install.packages(c("targets", "tarchetypes", "tidyverse", "duckdb", "DBI",
-                   "shiny", "bslib", "bsicons", "plotly", "here", "testthat"))
+                   "shiny", "bslib", "bsicons", "here", "testthat", "markdown"))
 targets::tar_make()
 ```
 
@@ -104,7 +102,6 @@ docker run --rm -p 3838:3838 cyclistic-monitor
 | `docs/METHODS.md` | Indicator dictionary |
 | `analysis/report.qmd` | Quarto methods + findings |
 | `tests/` | Unit tests on cleaning rules and Wilson intervals |
-| `legacy/` | Original capstone |
 | `AI.md` | How agentic AI was used on this repo |
 
 ## Statistical stance

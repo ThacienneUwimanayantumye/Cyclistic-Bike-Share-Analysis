@@ -20,7 +20,8 @@ renv/library/
 renv/staging/
 renv/sandbox/
 
-# Quarto / knitr
+# Quarto / knitr (render locally; do not commit generated HTML)
 analysis/*.pdf
+analysis/*.html
 analysis/*_files/
 .quarto/

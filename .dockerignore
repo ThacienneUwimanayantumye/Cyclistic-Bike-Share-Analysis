@@ -4,5 +4,4 @@ data/scratch
 _targets
 .git
 renv/library
-legacy
 *.zip
