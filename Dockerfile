@@ -14,9 +14,9 @@ COPY dashboard /app/dashboard
 COPY docs/METHODS.md /app/dashboard/METHODS.md
 COPY data/derived /app/data/derived
 COPY scripts/start-shiny.sh /app/start-shiny.sh
-RUN chmod +x /app/start-shiny.sh
+RUN chmod +x /app/start-shiny.sh && sed -i 's/\r$//' /app/start-shiny.sh
 
 ENV CYCLISTIC_DERIVED=/app/data/derived
 ENV PORT=3838
 EXPOSE 3838
-CMD ["/app/start-shiny.sh"]
+CMD ["/bin/sh", "/app/start-shiny.sh"]
