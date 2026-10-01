@@ -168,4 +168,4 @@ ggplot(duration_month, aes(date, duration_median_min, colour = member_casual)) +
   labs(x = NULL, y = NULL)
 ```
 
-Footer: [Methods](METHODS.md) · [Source on GitHub](https://github.com/ThacienneUwimanayantumye/Cyclistic-Bike-Share-Analysis) · Trip-level extract; not person-level coverage.
+Footer: [Methods](https://github.com/ThacienneUwimanayantumye/Cyclistic-Bike-Share-Analysis/blob/main/docs/METHODS.md) · [Source on GitHub](https://github.com/ThacienneUwimanayantumye/Cyclistic-Bike-Share-Analysis) · Trip-level extract; not person-level coverage.
