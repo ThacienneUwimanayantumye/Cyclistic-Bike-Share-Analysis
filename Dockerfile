@@ -13,7 +13,10 @@ WORKDIR /app
 COPY dashboard /app/dashboard
 COPY docs/METHODS.md /app/dashboard/METHODS.md
 COPY data/derived /app/data/derived
+COPY scripts/start-shiny.sh /app/start-shiny.sh
+RUN chmod +x /app/start-shiny.sh
 
 ENV CYCLISTIC_DERIVED=/app/data/derived
+ENV PORT=3838
 EXPOSE 3838
-CMD ["R", "-e", "shiny::runApp('/app/dashboard', host='0.0.0.0', port=3838)"]
+CMD ["/app/start-shiny.sh"]

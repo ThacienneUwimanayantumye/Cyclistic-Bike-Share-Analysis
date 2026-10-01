@@ -1,0 +1,14 @@
+# Second Render service: the interactive Shiny app.
+# Create it from this repo (New Web Service → Docker) or apply this Blueprint.
+# Expected public URL if the service is named cyclistic-monitor:
+#   https://cyclistic-monitor.onrender.com
+services:
+  - type: web
+    name: cyclistic-monitor
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: CYCLISTIC_DERIVED
+        value: /app/data/derived

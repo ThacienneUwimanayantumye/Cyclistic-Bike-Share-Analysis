@@ -12,7 +12,7 @@ Indicators are **trip-level**. Divvy files carry no rider id, so none of this is
 
 | | |
 |---|---|
-| **Dashboard** | [GitHub Pages](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/) (static) · Shiny app in `dashboard/` (same story, year and season filters) |
+| **Dashboard** | [GitHub Pages](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/) (static) · Shiny app in `dashboard/` (year and season filters; deploy with `render.yaml`) |
 | **Methods** | [`docs/METHODS.md`](docs/METHODS.md) |
 | **Data product** | `data/derived/` (aggregates only; raw zips are not in git) |
 
@@ -44,8 +44,10 @@ shiny::runApp("dashboard")
 ```bash
 quarto render docs/index.qmd
 quarto render analysis/report.qmd
-docker build -t cyclistic-monitor . && docker run --rm -p 3838:3838 cyclistic-monitor
+docker build -t cyclistic-monitor . && docker run --rm -p 3838:3838 -e PORT=3838 cyclistic-monitor
 ```
+
+Public Shiny host: create a Render **Web Service** from this repository, Docker runtime. The service must listen on `$PORT` (see `scripts/start-shiny.sh`). If the service is named `cyclistic-monitor`, the URL is `https://cyclistic-monitor.onrender.com`.
 
 </details>
 
