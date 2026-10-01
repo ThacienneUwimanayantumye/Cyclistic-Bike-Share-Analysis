@@ -30,6 +30,7 @@ list(
   tar_target(duration_month, bind_month_outputs(month_result, "duration")),
   tar_target(bike_type, bind_month_outputs(month_result, "bike_type")),
   tar_target(duration_bins, bind_month_outputs(month_result, "duration_bins")),
+  tar_target(rider_profile, bind_month_outputs(month_result, "rider_profile")),
   tar_target(member_share, add_member_share_ci(programme_month)),
   tar_target(
     volume_stl,
@@ -94,6 +95,7 @@ list(
       duration_month = duration_month,
       bike_type = bike_type,
       duration_bins = duration_bins,
+      rider_profile = rider_profile,
       member_share = member_share,
       volume_stl = volume_stl,
       chisq_weekend = chisq_weekend,

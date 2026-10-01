@@ -1,0 +1,2881 @@
+year_month,member_casual,day_type,time_block,duration_band,n_trips
+2021-01,casual,Weekday,AM peak,Under 15 min,967
+2021-01,casual,Weekday,AM peak,15-30 min,327
+2021-01,casual,Weekday,AM peak,Over 30 min,136
+2021-01,casual,Weekday,Midday,Under 15 min,2480
+2021-01,casual,Weekday,Midday,15-30 min,1104
+2021-01,casual,Weekday,Midday,Over 30 min,820
+2021-01,casual,Weekday,PM peak,Under 15 min,2297
+2021-01,casual,Weekday,PM peak,15-30 min,881
+2021-01,casual,Weekday,PM peak,Over 30 min,372
+2021-01,casual,Weekday,Off-peak,Under 15 min,1093
+2021-01,casual,Weekday,Off-peak,15-30 min,379
+2021-01,casual,Weekday,Off-peak,Over 30 min,199
+2021-01,casual,Weekend,AM peak,Under 15 min,263
+2021-01,casual,Weekend,AM peak,15-30 min,98
+2021-01,casual,Weekend,AM peak,Over 30 min,65
+2021-01,casual,Weekend,Midday,Under 15 min,1808
+2021-01,casual,Weekend,Midday,15-30 min,1071
+2021-01,casual,Weekend,Midday,Over 30 min,841
+2021-01,casual,Weekend,PM peak,Under 15 min,841
+2021-01,casual,Weekend,PM peak,15-30 min,426
+2021-01,casual,Weekend,PM peak,Over 30 min,273
+2021-01,casual,Weekend,Off-peak,Under 15 min,671
+2021-01,casual,Weekend,Off-peak,15-30 min,248
+2021-01,casual,Weekend,Off-peak,Over 30 min,155
+2021-01,member,Weekday,AM peak,Under 15 min,9507
+2021-01,member,Weekday,AM peak,15-30 min,2340
+2021-01,member,Weekday,AM peak,Over 30 min,523
+2021-01,member,Weekday,Midday,Under 15 min,14876
+2021-01,member,Weekday,Midday,15-30 min,3716
+2021-01,member,Weekday,Midday,Over 30 min,1344
+2021-01,member,Weekday,PM peak,Under 15 min,14115
+2021-01,member,Weekday,PM peak,15-30 min,3705
+2021-01,member,Weekday,PM peak,Over 30 min,1181
+2021-01,member,Weekday,Off-peak,Under 15 min,4229
+2021-01,member,Weekday,Off-peak,15-30 min,892
+2021-01,member,Weekday,Off-peak,Over 30 min,256
+2021-01,member,Weekend,AM peak,Under 15 min,1585
+2021-01,member,Weekend,AM peak,15-30 min,461
+2021-01,member,Weekend,AM peak,Over 30 min,164
+2021-01,member,Weekend,Midday,Under 15 min,7873
+2021-01,member,Weekend,Midday,15-30 min,2468
+2021-01,member,Weekend,Midday,Over 30 min,956
+2021-01,member,Weekend,PM peak,Under 15 min,3627
+2021-01,member,Weekend,PM peak,15-30 min,1001
+2021-01,member,Weekend,PM peak,Over 30 min,383
+2021-01,member,Weekend,Off-peak,Under 15 min,1810
+2021-01,member,Weekend,Off-peak,15-30 min,403
+2021-01,member,Weekend,Off-peak,Over 30 min,148
+2021-02,casual,Weekday,AM peak,Under 15 min,325
+2021-02,casual,Weekday,AM peak,15-30 min,161
+2021-02,casual,Weekday,AM peak,Over 30 min,57
+2021-02,casual,Weekday,Midday,Under 15 min,933
+2021-02,casual,Weekday,Midday,15-30 min,565
+2021-02,casual,Weekday,Midday,Over 30 min,409
+2021-02,casual,Weekday,PM peak,Under 15 min,1019
+2021-02,casual,Weekday,PM peak,15-30 min,525
+2021-02,casual,Weekday,PM peak,Over 30 min,337
+2021-02,casual,Weekday,Off-peak,Under 15 min,477
+2021-02,casual,Weekday,Off-peak,15-30 min,205
+2021-02,casual,Weekday,Off-peak,Over 30 min,114
+2021-02,casual,Weekend,AM peak,Under 15 min,90
+2021-02,casual,Weekend,AM peak,15-30 min,58
+2021-02,casual,Weekend,AM peak,Over 30 min,40
+2021-02,casual,Weekend,Midday,Under 15 min,902
+2021-02,casual,Weekend,Midday,15-30 min,816
+2021-02,casual,Weekend,Midday,Over 30 min,1024
+2021-02,casual,Weekend,PM peak,Under 15 min,527
+2021-02,casual,Weekend,PM peak,15-30 min,388
+2021-02,casual,Weekend,PM peak,Over 30 min,361
+2021-02,casual,Weekend,Off-peak,Under 15 min,309
+2021-02,casual,Weekend,Off-peak,15-30 min,139
+2021-02,casual,Weekend,Off-peak,Over 30 min,125
+2021-02,member,Weekday,AM peak,Under 15 min,4189
+2021-02,member,Weekday,AM peak,15-30 min,1246
+2021-02,member,Weekday,AM peak,Over 30 min,394
+2021-02,member,Weekday,Midday,Under 15 min,6883
+2021-02,member,Weekday,Midday,15-30 min,1959
+2021-02,member,Weekday,Midday,Over 30 min,921
+2021-02,member,Weekday,PM peak,Under 15 min,6847
+2021-02,member,Weekday,PM peak,15-30 min,2193
+2021-02,member,Weekday,PM peak,Over 30 min,812
+2021-02,member,Weekday,Off-peak,Under 15 min,2199
+2021-02,member,Weekday,Off-peak,15-30 min,509
+2021-02,member,Weekday,Off-peak,Over 30 min,195
+2021-02,member,Weekend,AM peak,Under 15 min,695
+2021-02,member,Weekend,AM peak,15-30 min,214
+2021-02,member,Weekend,AM peak,Over 30 min,98
+2021-02,member,Weekend,Midday,Under 15 min,3351
+2021-02,member,Weekend,Midday,15-30 min,1476
+2021-02,member,Weekend,Midday,Over 30 min,784
+2021-02,member,Weekend,PM peak,Under 15 min,1625
+2021-02,member,Weekend,PM peak,15-30 min,697
+2021-02,member,Weekend,PM peak,Over 30 min,309
+2021-02,member,Weekend,Off-peak,Under 15 min,752
+2021-02,member,Weekend,Off-peak,15-30 min,213
+2021-02,member,Weekend,Off-peak,Over 30 min,65
+2021-03,casual,Weekday,AM peak,Under 15 min,2406
+2021-03,casual,Weekday,AM peak,15-30 min,911
+2021-03,casual,Weekday,AM peak,Over 30 min,532
+2021-03,casual,Weekday,Midday,Under 15 min,6943
+2021-03,casual,Weekday,Midday,15-30 min,4784
+2021-03,casual,Weekday,Midday,Over 30 min,5686
+2021-03,casual,Weekday,PM peak,Under 15 min,7750
+2021-03,casual,Weekday,PM peak,15-30 min,4832
+2021-03,casual,Weekday,PM peak,Over 30 min,4486
+2021-03,casual,Weekday,Off-peak,Under 15 min,3076
+2021-03,casual,Weekday,Off-peak,15-30 min,1367
+2021-03,casual,Weekday,Off-peak,Over 30 min,1257
+2021-03,casual,Weekend,AM peak,Under 15 min,708
+2021-03,casual,Weekend,AM peak,15-30 min,466
+2021-03,casual,Weekend,AM peak,Over 30 min,412
+2021-03,casual,Weekend,Midday,Under 15 min,6498
+2021-03,casual,Weekend,Midday,15-30 min,6409
+2021-03,casual,Weekend,Midday,Over 30 min,8023
+2021-03,casual,Weekend,PM peak,Under 15 min,3603
+2021-03,casual,Weekend,PM peak,15-30 min,3400
+2021-03,casual,Weekend,PM peak,Over 30 min,4029
+2021-03,casual,Weekend,Off-peak,Under 15 min,2541
+2021-03,casual,Weekend,Off-peak,15-30 min,1471
+2021-03,casual,Weekend,Off-peak,Over 30 min,1406
+2021-03,member,Weekday,AM peak,Under 15 min,15196
+2021-03,member,Weekday,AM peak,15-30 min,4484
+2021-03,member,Weekday,AM peak,Over 30 min,1051
+2021-03,member,Weekday,Midday,Under 15 min,23551
+2021-03,member,Weekday,Midday,15-30 min,7162
+2021-03,member,Weekday,Midday,Over 30 min,2759
+2021-03,member,Weekday,PM peak,Under 15 min,25760
+2021-03,member,Weekday,PM peak,15-30 min,8599
+2021-03,member,Weekday,PM peak,Over 30 min,3012
+2021-03,member,Weekday,Off-peak,Under 15 min,7775
+2021-03,member,Weekday,Off-peak,15-30 min,1774
+2021-03,member,Weekday,Off-peak,Over 30 min,489
+2021-03,member,Weekend,AM peak,Under 15 min,2611
+2021-03,member,Weekend,AM peak,15-30 min,895
+2021-03,member,Weekend,AM peak,Over 30 min,371
+2021-03,member,Weekend,Midday,Under 15 min,12600
+2021-03,member,Weekend,Midday,15-30 min,5970
+2021-03,member,Weekend,Midday,Over 30 min,2873
+2021-03,member,Weekend,PM peak,Under 15 min,6768
+2021-03,member,Weekend,PM peak,15-30 min,3043
+2021-03,member,Weekend,PM peak,Over 30 min,1310
+2021-03,member,Weekend,Off-peak,Under 15 min,3144
+2021-03,member,Weekend,Off-peak,15-30 min,868
+2021-03,member,Weekend,Off-peak,Over 30 min,300
+2021-04,casual,Weekday,AM peak,Under 15 min,3941
+2021-04,casual,Weekday,AM peak,15-30 min,1539
+2021-04,casual,Weekday,AM peak,Over 30 min,881
+2021-04,casual,Weekday,Midday,Under 15 min,11087
+2021-04,casual,Weekday,Midday,15-30 min,7159
+2021-04,casual,Weekday,Midday,Over 30 min,7844
+2021-04,casual,Weekday,PM peak,Under 15 min,15274
+2021-04,casual,Weekday,PM peak,15-30 min,10216
+2021-04,casual,Weekday,PM peak,Over 30 min,9161
+2021-04,casual,Weekday,Off-peak,Under 15 min,7484
+2021-04,casual,Weekday,Off-peak,15-30 min,3611
+2021-04,casual,Weekday,Off-peak,Over 30 min,4240
+2021-04,casual,Weekend,AM peak,Under 15 min,1147
+2021-04,casual,Weekend,AM peak,15-30 min,635
+2021-04,casual,Weekend,AM peak,Over 30 min,653
+2021-04,casual,Weekend,Midday,Under 15 min,8047
+2021-04,casual,Weekend,Midday,15-30 min,7723
+2021-04,casual,Weekend,Midday,Over 30 min,9951
+2021-04,casual,Weekend,PM peak,Under 15 min,5189
+2021-04,casual,Weekend,PM peak,15-30 min,4472
+2021-04,casual,Weekend,PM peak,Over 30 min,5679
+2021-04,casual,Weekend,Off-peak,Under 15 min,4123
+2021-04,casual,Weekend,Off-peak,15-30 min,2291
+2021-04,casual,Weekend,Off-peak,Over 30 min,2367
+2021-04,member,Weekday,AM peak,Under 15 min,19474
+2021-04,member,Weekday,AM peak,15-30 min,6004
+2021-04,member,Weekday,AM peak,Over 30 min,1459
+2021-04,member,Weekday,Midday,Under 15 min,29826
+2021-04,member,Weekday,Midday,15-30 min,9342
+2021-04,member,Weekday,Midday,Over 30 min,3660
+2021-04,member,Weekday,PM peak,Under 15 min,38052
+2021-04,member,Weekday,PM peak,15-30 min,14465
+2021-04,member,Weekday,PM peak,Over 30 min,5396
+2021-04,member,Weekday,Off-peak,Under 15 min,13575
+2021-04,member,Weekday,Off-peak,15-30 min,3981
+2021-04,member,Weekday,Off-peak,Over 30 min,1317
+2021-04,member,Weekend,AM peak,Under 15 min,3324
+2021-04,member,Weekend,AM peak,15-30 min,1145
+2021-04,member,Weekend,AM peak,Over 30 min,487
+2021-04,member,Weekend,Midday,Under 15 min,14459
+2021-04,member,Weekend,Midday,15-30 min,7198
+2021-04,member,Weekend,Midday,Over 30 min,3321
+2021-04,member,Weekend,PM peak,Under 15 min,8344
+2021-04,member,Weekend,PM peak,15-30 min,3915
+2021-04,member,Weekend,PM peak,Over 30 min,1877
+2021-04,member,Weekend,Off-peak,Under 15 min,4739
+2021-04,member,Weekend,Off-peak,15-30 min,1582
+2021-04,member,Weekend,Off-peak,Over 30 min,511
+2021-05,casual,Weekday,AM peak,Under 15 min,6139
+2021-05,casual,Weekday,AM peak,15-30 min,2396
+2021-05,casual,Weekday,AM peak,Over 30 min,1699
+2021-05,casual,Weekday,Midday,Under 15 min,17321
+2021-05,casual,Weekday,Midday,15-30 min,12505
+2021-05,casual,Weekday,Midday,Over 30 min,13669
+2021-05,casual,Weekday,PM peak,Under 15 min,21230
+2021-05,casual,Weekday,PM peak,15-30 min,14791
+2021-05,casual,Weekday,PM peak,Over 30 min,11606
+2021-05,casual,Weekday,Off-peak,Under 15 min,12635
+2021-05,casual,Weekday,Off-peak,15-30 min,6792
+2021-05,casual,Weekday,Off-peak,Over 30 min,6712
+2021-05,casual,Weekend,AM peak,Under 15 min,2657
+2021-05,casual,Weekend,AM peak,15-30 min,1889
+2021-05,casual,Weekend,AM peak,Over 30 min,2115
+2021-05,casual,Weekend,Midday,Under 15 min,17073
+2021-05,casual,Weekend,Midday,15-30 min,17705
+2021-05,casual,Weekend,Midday,Over 30 min,21999
+2021-05,casual,Weekend,PM peak,Under 15 min,12155
+2021-05,casual,Weekend,PM peak,15-30 min,11722
+2021-05,casual,Weekend,PM peak,Over 30 min,12502
+2021-05,casual,Weekend,Off-peak,Under 15 min,10800
+2021-05,casual,Weekend,Off-peak,15-30 min,7209
+2021-05,casual,Weekend,Off-peak,Over 30 min,7617
+2021-05,member,Weekday,AM peak,Under 15 min,24148
+2021-05,member,Weekday,AM peak,15-30 min,7304
+2021-05,member,Weekday,AM peak,Over 30 min,1803
+2021-05,member,Weekday,Midday,Under 15 min,38029
+2021-05,member,Weekday,Midday,15-30 min,11540
+2021-05,member,Weekday,Midday,Over 30 min,4619
+2021-05,member,Weekday,PM peak,Under 15 min,46102
+2021-05,member,Weekday,PM peak,15-30 min,17470
+2021-05,member,Weekday,PM peak,Over 30 min,6134
+2021-05,member,Weekday,Off-peak,Under 15 min,18345
+2021-05,member,Weekday,Off-peak,15-30 min,5549
+2021-05,member,Weekday,Off-peak,Over 30 min,1803
+2021-05,member,Weekend,AM peak,Under 15 min,5760
+2021-05,member,Weekend,AM peak,15-30 min,2207
+2021-05,member,Weekend,AM peak,Over 30 min,949
+2021-05,member,Weekend,Midday,Under 15 min,22964
+2021-05,member,Weekend,Midday,15-30 min,11295
+2021-05,member,Weekend,Midday,Over 30 min,5525
+2021-05,member,Weekend,PM peak,Under 15 min,14194
+2021-05,member,Weekend,PM peak,15-30 min,6768
+2021-05,member,Weekend,PM peak,Over 30 min,3031
+2021-05,member,Weekend,Off-peak,Under 15 min,9794
+2021-05,member,Weekend,Off-peak,15-30 min,3359
+2021-05,member,Weekend,Off-peak,Over 30 min,1171
+2021-06,casual,Weekday,AM peak,Under 15 min,10988
+2021-06,casual,Weekday,AM peak,15-30 min,4369
+2021-06,casual,Weekday,AM peak,Over 30 min,2738
+2021-06,casual,Weekday,Midday,Under 15 min,25938
+2021-06,casual,Weekday,Midday,15-30 min,18215
+2021-06,casual,Weekday,Midday,Over 30 min,19379
+2021-06,casual,Weekday,PM peak,Under 15 min,37661
+2021-06,casual,Weekday,PM peak,15-30 min,27306
+2021-06,casual,Weekday,PM peak,Over 30 min,19982
+2021-06,casual,Weekday,Off-peak,Under 15 min,26196
+2021-06,casual,Weekday,Off-peak,15-30 min,16235
+2021-06,casual,Weekday,Off-peak,Over 30 min,13270
+2021-06,casual,Weekend,AM peak,Under 15 min,3687
+2021-06,casual,Weekend,AM peak,15-30 min,2345
+2021-06,casual,Weekend,AM peak,Over 30 min,2478
+2021-06,casual,Weekend,Midday,Under 15 min,19701
+2021-06,casual,Weekend,Midday,15-30 min,18981
+2021-06,casual,Weekend,Midday,Over 30 min,19180
+2021-06,casual,Weekend,PM peak,Under 15 min,13595
+2021-06,casual,Weekend,PM peak,15-30 min,12474
+2021-06,casual,Weekend,PM peak,Over 30 min,11280
+2021-06,casual,Weekend,Off-peak,Under 15 min,16380
+2021-06,casual,Weekend,Off-peak,15-30 min,11668
+2021-06,casual,Weekend,Off-peak,Over 30 min,10376
+2021-06,member,Weekday,AM peak,Under 15 min,35470
+2021-06,member,Weekday,AM peak,15-30 min,10528
+2021-06,member,Weekday,AM peak,Over 30 min,2581
+2021-06,member,Weekday,Midday,Under 15 min,46791
+2021-06,member,Weekday,Midday,15-30 min,14421
+2021-06,member,Weekday,Midday,Over 30 min,5312
+2021-06,member,Weekday,PM peak,Under 15 min,66690
+2021-06,member,Weekday,PM peak,15-30 min,27041
+2021-06,member,Weekday,PM peak,Over 30 min,9151
+2021-06,member,Weekday,Off-peak,Under 15 min,30198
+2021-06,member,Weekday,Off-peak,15-30 min,11392
+2021-06,member,Weekday,Off-peak,Over 30 min,3503
+2021-06,member,Weekend,AM peak,Under 15 min,6186
+2021-06,member,Weekend,AM peak,15-30 min,2497
+2021-06,member,Weekend,AM peak,Over 30 min,1034
+2021-06,member,Weekend,Midday,Under 15 min,22370
+2021-06,member,Weekend,Midday,15-30 min,10534
+2021-06,member,Weekend,Midday,Over 30 min,4571
+2021-06,member,Weekend,PM peak,Under 15 min,14087
+2021-06,member,Weekend,PM peak,15-30 min,6817
+2021-06,member,Weekend,PM peak,Over 30 min,2844
+2021-06,member,Weekend,Off-peak,Under 15 min,11944
+2021-06,member,Weekend,Off-peak,15-30 min,4928
+2021-06,member,Weekend,Off-peak,Over 30 min,1722
+2021-07,casual,Weekday,AM peak,Under 15 min,14312
+2021-07,casual,Weekday,AM peak,15-30 min,5455
+2021-07,casual,Weekday,AM peak,Over 30 min,3467
+2021-07,casual,Weekday,Midday,Under 15 min,33893
+2021-07,casual,Weekday,Midday,15-30 min,24522
+2021-07,casual,Weekday,Midday,Over 30 min,24612
+2021-07,casual,Weekday,PM peak,Under 15 min,44902
+2021-07,casual,Weekday,PM peak,15-30 min,29996
+2021-07,casual,Weekday,PM peak,Over 30 min,20035
+2021-07,casual,Weekday,Off-peak,Under 15 min,32517
+2021-07,casual,Weekday,Off-peak,15-30 min,18744
+2021-07,casual,Weekday,Off-peak,Over 30 min,12571
+2021-07,casual,Weekend,AM peak,Under 15 min,4572
+2021-07,casual,Weekend,AM peak,15-30 min,2739
+2021-07,casual,Weekend,AM peak,Over 30 min,2901
+2021-07,casual,Weekend,Midday,Under 15 min,24561
+2021-07,casual,Weekend,Midday,15-30 min,23037
+2021-07,casual,Weekend,Midday,Over 30 min,23532
+2021-07,casual,Weekend,PM peak,Under 15 min,16793
+2021-07,casual,Weekend,PM peak,15-30 min,14815
+2021-07,casual,Weekend,PM peak,Over 30 min,12896
+2021-07,casual,Weekend,Off-peak,Under 15 min,20601
+2021-07,casual,Weekend,Off-peak,15-30 min,13801
+2021-07,casual,Weekend,Off-peak,Over 30 min,10088
+2021-07,member,Weekday,AM peak,Under 15 min,37945
+2021-07,member,Weekday,AM peak,15-30 min,10990
+2021-07,member,Weekday,AM peak,Over 30 min,2653
+2021-07,member,Weekday,Midday,Under 15 min,52547
+2021-07,member,Weekday,Midday,15-30 min,15716
+2021-07,member,Weekday,Midday,Over 30 min,5844
+2021-07,member,Weekday,PM peak,Under 15 min,68952
+2021-07,member,Weekday,PM peak,15-30 min,26209
+2021-07,member,Weekday,PM peak,Over 30 min,8378
+2021-07,member,Weekday,Off-peak,Under 15 min,32213
+2021-07,member,Weekday,Off-peak,15-30 min,11561
+2021-07,member,Weekday,Off-peak,Over 30 min,3409
+2021-07,member,Weekend,AM peak,Under 15 min,7054
+2021-07,member,Weekend,AM peak,15-30 min,2582
+2021-07,member,Weekend,AM peak,Over 30 min,1032
+2021-07,member,Weekend,Midday,Under 15 min,24588
+2021-07,member,Weekend,Midday,15-30 min,11350
+2021-07,member,Weekend,Midday,Over 30 min,4940
+2021-07,member,Weekend,PM peak,Under 15 min,14996
+2021-07,member,Weekend,PM peak,15-30 min,7101
+2021-07,member,Weekend,PM peak,Over 30 min,2851
+2021-07,member,Weekend,Off-peak,Under 15 min,13456
+2021-07,member,Weekend,Off-peak,15-30 min,5604
+2021-07,member,Weekend,Off-peak,Over 30 min,1816
+2021-08,casual,Weekday,AM peak,Under 15 min,14897
+2021-08,casual,Weekday,AM peak,15-30 min,5624
+2021-08,casual,Weekday,AM peak,Over 30 min,3419
+2021-08,casual,Weekday,Midday,Under 15 min,33076
+2021-08,casual,Weekday,Midday,15-30 min,21476
+2021-08,casual,Weekday,Midday,Over 30 min,20591
+2021-08,casual,Weekday,PM peak,Under 15 min,43950
+2021-08,casual,Weekday,PM peak,15-30 min,27494
+2021-08,casual,Weekday,PM peak,Over 30 min,17940
+2021-08,casual,Weekday,Off-peak,Under 15 min,27230
+2021-08,casual,Weekday,Off-peak,15-30 min,14520
+2021-08,casual,Weekday,Off-peak,Over 30 min,9095
+2021-08,casual,Weekend,AM peak,Under 15 min,4931
+2021-08,casual,Weekend,AM peak,15-30 min,2941
+2021-08,casual,Weekend,AM peak,Over 30 min,2934
+2021-08,casual,Weekend,Midday,Under 15 min,26247
+2021-08,casual,Weekend,Midday,15-30 min,23879
+2021-08,casual,Weekend,Midday,Over 30 min,22993
+2021-08,casual,Weekend,PM peak,Under 15 min,17480
+2021-08,casual,Weekend,PM peak,15-30 min,14993
+2021-08,casual,Weekend,PM peak,Over 30 min,12234
+2021-08,casual,Weekend,Off-peak,Under 15 min,19283
+2021-08,casual,Weekend,Off-peak,15-30 min,12002
+2021-08,casual,Weekend,Off-peak,Over 30 min,7834
+2021-08,member,Weekday,AM peak,Under 15 min,41839
+2021-08,member,Weekday,AM peak,15-30 min,11784
+2021-08,member,Weekday,AM peak,Over 30 min,3064
+2021-08,member,Weekday,Midday,Under 15 min,54576
+2021-08,member,Weekday,Midday,15-30 min,14977
+2021-08,member,Weekday,Midday,Over 30 min,5552
+2021-08,member,Weekday,PM peak,Under 15 min,71653
+2021-08,member,Weekday,PM peak,15-30 min,25807
+2021-08,member,Weekday,PM peak,Over 30 min,8332
+2021-08,member,Weekday,Off-peak,Under 15 min,29326
+2021-08,member,Weekday,Off-peak,15-30 min,9691
+2021-08,member,Weekday,Off-peak,Over 30 min,2856
+2021-08,member,Weekend,AM peak,Under 15 min,7517
+2021-08,member,Weekend,AM peak,15-30 min,2818
+2021-08,member,Weekend,AM peak,Over 30 min,1223
+2021-08,member,Weekend,Midday,Under 15 min,27348
+2021-08,member,Weekend,Midday,15-30 min,12578
+2021-08,member,Weekend,Midday,Over 30 min,5707
+2021-08,member,Weekend,PM peak,Under 15 min,17114
+2021-08,member,Weekend,PM peak,15-30 min,7699
+2021-08,member,Weekend,PM peak,Over 30 min,3259
+2021-08,member,Weekend,Off-peak,Under 15 min,13576
+2021-08,member,Weekend,Off-peak,15-30 min,5338
+2021-08,member,Weekend,Off-peak,Over 30 min,1731
+2021-09,casual,Weekday,AM peak,Under 15 min,15028
+2021-09,casual,Weekday,AM peak,15-30 min,5639
+2021-09,casual,Weekday,AM peak,Over 30 min,3128
+2021-09,casual,Weekday,Midday,Under 15 min,32813
+2021-09,casual,Weekday,Midday,15-30 min,19285
+2021-09,casual,Weekday,Midday,Over 30 min,17610
+2021-09,casual,Weekday,PM peak,Under 15 min,41391
+2021-09,casual,Weekday,PM peak,15-30 min,23755
+2021-09,casual,Weekday,PM peak,Over 30 min,14357
+2021-09,casual,Weekday,Off-peak,Under 15 min,26062
+2021-09,casual,Weekday,Off-peak,15-30 min,12405
+2021-09,casual,Weekday,Off-peak,Over 30 min,6480
+2021-09,casual,Weekend,AM peak,Under 15 min,4562
+2021-09,casual,Weekend,AM peak,15-30 min,2761
+2021-09,casual,Weekend,AM peak,Over 30 min,2976
+2021-09,casual,Weekend,Midday,Under 15 min,22371
+2021-09,casual,Weekend,Midday,15-30 min,19420
+2021-09,casual,Weekend,Midday,Over 30 min,19682
+2021-09,casual,Weekend,PM peak,Under 15 min,15436
+2021-09,casual,Weekend,PM peak,15-30 min,12614
+2021-09,casual,Weekend,PM peak,Over 30 min,10463
+2021-09,casual,Weekend,Off-peak,Under 15 min,15534
+2021-09,casual,Weekend,Off-peak,15-30 min,9184
+2021-09,casual,Weekend,Off-peak,Over 30 min,5912
+2021-09,member,Weekday,AM peak,Under 15 min,43667
+2021-09,member,Weekday,AM peak,15-30 min,11853
+2021-09,member,Weekday,AM peak,Over 30 min,3074
+2021-09,member,Weekday,Midday,Under 15 min,60487
+2021-09,member,Weekday,Midday,15-30 min,16034
+2021-09,member,Weekday,Midday,Over 30 min,5919
+2021-09,member,Weekday,PM peak,Under 15 min,74217
+2021-09,member,Weekday,PM peak,15-30 min,25596
+2021-09,member,Weekday,PM peak,Over 30 min,8231
+2021-09,member,Weekday,Off-peak,Under 15 min,30576
+2021-09,member,Weekday,Off-peak,15-30 min,8802
+2021-09,member,Weekday,Off-peak,Over 30 min,2698
+2021-09,member,Weekend,AM peak,Under 15 min,7001
+2021-09,member,Weekend,AM peak,15-30 min,2517
+2021-09,member,Weekend,AM peak,Over 30 min,1150
+2021-09,member,Weekend,Midday,Under 15 min,25192
+2021-09,member,Weekend,Midday,15-30 min,10716
+2021-09,member,Weekend,Midday,Over 30 min,4635
+2021-09,member,Weekend,PM peak,Under 15 min,16158
+2021-09,member,Weekend,PM peak,15-30 min,6929
+2021-09,member,Weekend,PM peak,Over 30 min,2839
+2021-09,member,Weekend,Off-peak,Under 15 min,11954
+2021-09,member,Weekend,Off-peak,15-30 min,4258
+2021-09,member,Weekend,Off-peak,Over 30 min,1399
+2021-10,casual,Weekday,AM peak,Under 15 min,11701
+2021-10,casual,Weekday,AM peak,15-30 min,3576
+2021-10,casual,Weekday,AM peak,Over 30 min,1658
+2021-10,casual,Weekday,Midday,Under 15 min,23756
+2021-10,casual,Weekday,Midday,15-30 min,11332
+2021-10,casual,Weekday,Midday,Over 30 min,9447
+2021-10,casual,Weekday,PM peak,Under 15 min,28018
+2021-10,casual,Weekday,PM peak,15-30 min,12919
+2021-10,casual,Weekday,PM peak,Over 30 min,6464
+2021-10,casual,Weekday,Off-peak,Under 15 min,17503
+2021-10,casual,Weekday,Off-peak,15-30 min,6565
+2021-10,casual,Weekday,Off-peak,Over 30 min,2966
+2021-10,casual,Weekend,AM peak,Under 15 min,4936
+2021-10,casual,Weekend,AM peak,15-30 min,2791
+2021-10,casual,Weekend,AM peak,Over 30 min,2415
+2021-10,casual,Weekend,Midday,Under 15 min,22808
+2021-10,casual,Weekend,Midday,15-30 min,17140
+2021-10,casual,Weekend,Midday,Over 30 min,16201
+2021-10,casual,Weekend,PM peak,Under 15 min,13283
+2021-10,casual,Weekend,PM peak,15-30 min,8511
+2021-10,casual,Weekend,PM peak,Over 30 min,5788
+2021-10,casual,Weekend,Off-peak,Under 15 min,13827
+2021-10,casual,Weekend,Off-peak,15-30 min,6447
+2021-10,casual,Weekend,Off-peak,Over 30 min,3388
+2021-10,member,Weekday,AM peak,Under 15 min,42187
+2021-10,member,Weekday,AM peak,15-30 min,9399
+2021-10,member,Weekday,AM peak,Over 30 min,2296
+2021-10,member,Weekday,Midday,Under 15 min,59401
+2021-10,member,Weekday,Midday,15-30 min,12017
+2021-10,member,Weekday,Midday,Over 30 min,4111
+2021-10,member,Weekday,PM peak,Under 15 min,69157
+2021-10,member,Weekday,PM peak,15-30 min,18579
+2021-10,member,Weekday,PM peak,Over 30 min,5344
+2021-10,member,Weekday,Off-peak,Under 15 min,28700
+2021-10,member,Weekday,Off-peak,15-30 min,6373
+2021-10,member,Weekday,Off-peak,Over 30 min,1798
+2021-10,member,Weekend,AM peak,Under 15 min,8698
+2021-10,member,Weekend,AM peak,15-30 min,2550
+2021-10,member,Weekend,AM peak,Over 30 min,1030
+2021-10,member,Weekend,Midday,Under 15 min,32681
+2021-10,member,Weekend,Midday,15-30 min,11006
+2021-10,member,Weekend,Midday,Over 30 min,4684
+2021-10,member,Weekend,PM peak,Under 15 min,19207
+2021-10,member,Weekend,PM peak,15-30 min,6218
+2021-10,member,Weekend,PM peak,Over 30 min,2434
+2021-10,member,Weekend,Off-peak,Under 15 min,14313
+2021-10,member,Weekend,Off-peak,15-30 min,3958
+2021-10,member,Weekend,Off-peak,Over 30 min,1253
+2021-11,casual,Weekday,AM peak,Under 15 min,7109
+2021-11,casual,Weekday,AM peak,15-30 min,1658
+2021-11,casual,Weekday,AM peak,Over 30 min,637
+2021-11,casual,Weekday,Midday,Under 15 min,14177
+2021-11,casual,Weekday,Midday,15-30 min,5641
+2021-11,casual,Weekday,Midday,Over 30 min,3673
+2021-11,casual,Weekday,PM peak,Under 15 min,15330
+2021-11,casual,Weekday,PM peak,15-30 min,5065
+2021-11,casual,Weekday,PM peak,Over 30 min,1999
+2021-11,casual,Weekday,Off-peak,Under 15 min,8940
+2021-11,casual,Weekday,Off-peak,15-30 min,2612
+2021-11,casual,Weekday,Off-peak,Over 30 min,1039
+2021-11,casual,Weekend,AM peak,Under 15 min,1645
+2021-11,casual,Weekend,AM peak,15-30 min,623
+2021-11,casual,Weekend,AM peak,Over 30 min,333
+2021-11,casual,Weekend,Midday,Under 15 min,9053
+2021-11,casual,Weekend,Midday,15-30 min,5320
+2021-11,casual,Weekend,Midday,Over 30 min,4313
+2021-11,casual,Weekend,PM peak,Under 15 min,5181
+2021-11,casual,Weekend,PM peak,15-30 min,2579
+2021-11,casual,Weekend,PM peak,Over 30 min,1547
+2021-11,casual,Weekend,Off-peak,Under 15 min,4551
+2021-11,casual,Weekend,Off-peak,15-30 min,1564
+2021-11,casual,Weekend,Off-peak,Over 30 min,635
+2021-11,member,Weekday,AM peak,Under 15 min,35000
+2021-11,member,Weekday,AM peak,15-30 min,6624
+2021-11,member,Weekday,AM peak,Over 30 min,1544
+2021-11,member,Weekday,Midday,Under 15 min,48975
+2021-11,member,Weekday,Midday,15-30 min,8381
+2021-11,member,Weekday,Midday,Over 30 min,2852
+2021-11,member,Weekday,PM peak,Under 15 min,51529
+2021-11,member,Weekday,PM peak,15-30 min,10627
+2021-11,member,Weekday,PM peak,Over 30 min,2942
+2021-11,member,Weekday,Off-peak,Under 15 min,20583
+2021-11,member,Weekday,Off-peak,15-30 min,3676
+2021-11,member,Weekday,Off-peak,Over 30 min,980
+2021-11,member,Weekend,AM peak,Under 15 min,4463
+2021-11,member,Weekend,AM peak,15-30 min,968
+2021-11,member,Weekend,AM peak,Over 30 min,317
+2021-11,member,Weekend,Midday,Under 15 min,19121
+2021-11,member,Weekend,Midday,15-30 min,5187
+2021-11,member,Weekend,Midday,Over 30 min,2120
+2021-11,member,Weekend,PM peak,Under 15 min,10637
+2021-11,member,Weekend,PM peak,15-30 min,2570
+2021-11,member,Weekend,PM peak,Over 30 min,980
+2021-11,member,Weekend,Off-peak,Under 15 min,6854
+2021-11,member,Weekend,Off-peak,15-30 min,1362
+2021-11,member,Weekend,Off-peak,Over 30 min,371
+2021-12,casual,Weekday,AM peak,Under 15 min,4691
+2021-12,casual,Weekday,AM peak,15-30 min,1115
+2021-12,casual,Weekday,AM peak,Over 30 min,427
+2021-12,casual,Weekday,Midday,Under 15 min,11484
+2021-12,casual,Weekday,Midday,15-30 min,4760
+2021-12,casual,Weekday,Midday,Over 30 min,2947
+2021-12,casual,Weekday,PM peak,Under 15 min,10073
+2021-12,casual,Weekday,PM peak,15-30 min,3460
+2021-12,casual,Weekday,PM peak,Over 30 min,1522
+2021-12,casual,Weekday,Off-peak,Under 15 min,6177
+2021-12,casual,Weekday,Off-peak,15-30 min,1916
+2021-12,casual,Weekday,Off-peak,Over 30 min,875
+2021-12,casual,Weekend,AM peak,Under 15 min,968
+2021-12,casual,Weekend,AM peak,15-30 min,305
+2021-12,casual,Weekend,AM peak,Over 30 min,163
+2021-12,casual,Weekend,Midday,Under 15 min,4802
+2021-12,casual,Weekend,Midday,15-30 min,2464
+2021-12,casual,Weekend,Midday,Over 30 min,1834
+2021-12,casual,Weekend,PM peak,Under 15 min,2560
+2021-12,casual,Weekend,PM peak,15-30 min,1118
+2021-12,casual,Weekend,PM peak,Over 30 min,569
+2021-12,casual,Weekend,Off-peak,Under 15 min,3024
+2021-12,casual,Weekend,Off-peak,15-30 min,984
+2021-12,casual,Weekend,Off-peak,Over 30 min,379
+2021-12,member,Weekday,AM peak,Under 15 min,24959
+2021-12,member,Weekday,AM peak,15-30 min,4593
+2021-12,member,Weekday,AM peak,Over 30 min,1083
+2021-12,member,Weekday,Midday,Under 15 min,39236
+2021-12,member,Weekday,Midday,15-30 min,7206
+2021-12,member,Weekday,Midday,Over 30 min,2290
+2021-12,member,Weekday,PM peak,Under 15 min,34933
+2021-12,member,Weekday,PM peak,15-30 min,7246
+2021-12,member,Weekday,PM peak,Over 30 min,2024
+2021-12,member,Weekday,Off-peak,Under 15 min,14080
+2021-12,member,Weekday,Off-peak,15-30 min,2687
+2021-12,member,Weekday,Off-peak,Over 30 min,676
+2021-12,member,Weekend,AM peak,Under 15 min,3065
+2021-12,member,Weekend,AM peak,15-30 min,535
+2021-12,member,Weekend,AM peak,Over 30 min,200
+2021-12,member,Weekend,Midday,Under 15 min,12270
+2021-12,member,Weekend,Midday,15-30 min,2867
+2021-12,member,Weekend,Midday,Over 30 min,932
+2021-12,member,Weekend,PM peak,Under 15 min,6444
+2021-12,member,Weekend,PM peak,15-30 min,1290
+2021-12,member,Weekend,PM peak,Over 30 min,448
+2021-12,member,Weekend,Off-peak,Under 15 min,4555
+2021-12,member,Weekend,Off-peak,15-30 min,964
+2021-12,member,Weekend,Off-peak,Over 30 min,273
+2022-01,casual,Weekday,AM peak,Under 15 min,1165
+2022-01,casual,Weekday,AM peak,15-30 min,255
+2022-01,casual,Weekday,AM peak,Over 30 min,79
+2022-01,casual,Weekday,Midday,Under 15 min,2872
+2022-01,casual,Weekday,Midday,15-30 min,940
+2022-01,casual,Weekday,Midday,Over 30 min,493
+2022-01,casual,Weekday,PM peak,Under 15 min,2875
+2022-01,casual,Weekday,PM peak,15-30 min,825
+2022-01,casual,Weekday,PM peak,Over 30 min,314
+2022-01,casual,Weekday,Off-peak,Under 15 min,1520
+2022-01,casual,Weekday,Off-peak,15-30 min,427
+2022-01,casual,Weekday,Off-peak,Over 30 min,152
+2022-01,casual,Weekend,AM peak,Under 15 min,323
+2022-01,casual,Weekend,AM peak,15-30 min,82
+2022-01,casual,Weekend,AM peak,Over 30 min,53
+2022-01,casual,Weekend,Midday,Under 15 min,1726
+2022-01,casual,Weekend,Midday,15-30 min,731
+2022-01,casual,Weekend,Midday,Over 30 min,377
+2022-01,casual,Weekend,PM peak,Under 15 min,792
+2022-01,casual,Weekend,PM peak,15-30 min,272
+2022-01,casual,Weekend,PM peak,Over 30 min,161
+2022-01,casual,Weekend,Off-peak,Under 15 min,1076
+2022-01,casual,Weekend,Off-peak,15-30 min,419
+2022-01,casual,Weekend,Off-peak,Over 30 min,158
+2022-01,member,Weekday,AM peak,Under 15 min,11357
+2022-01,member,Weekday,AM peak,15-30 min,2125
+2022-01,member,Weekday,AM peak,Over 30 min,549
+2022-01,member,Weekday,Midday,Under 15 min,16460
+2022-01,member,Weekday,Midday,15-30 min,2656
+2022-01,member,Weekday,Midday,Over 30 min,930
+2022-01,member,Weekday,PM peak,Under 15 min,18146
+2022-01,member,Weekday,PM peak,15-30 min,3466
+2022-01,member,Weekday,PM peak,Over 30 min,943
+2022-01,member,Weekday,Off-peak,Under 15 min,6184
+2022-01,member,Weekday,Off-peak,15-30 min,1056
+2022-01,member,Weekday,Off-peak,Over 30 min,276
+2022-01,member,Weekend,AM peak,Under 15 min,1916
+2022-01,member,Weekend,AM peak,15-30 min,321
+2022-01,member,Weekend,AM peak,Over 30 min,119
+2022-01,member,Weekend,Midday,Under 15 min,7449
+2022-01,member,Weekend,Midday,15-30 min,1562
+2022-01,member,Weekend,Midday,Over 30 min,510
+2022-01,member,Weekend,PM peak,Under 15 min,3749
+2022-01,member,Weekend,PM peak,15-30 min,771
+2022-01,member,Weekend,PM peak,Over 30 min,267
+2022-01,member,Weekend,Off-peak,Under 15 min,2309
+2022-01,member,Weekend,Off-peak,15-30 min,495
+2022-01,member,Weekend,Off-peak,Over 30 min,128
+2022-02,casual,Weekday,AM peak,Under 15 min,1454
+2022-02,casual,Weekday,AM peak,15-30 min,364
+2022-02,casual,Weekday,AM peak,Over 30 min,135
+2022-02,casual,Weekday,Midday,Under 15 min,3176
+2022-02,casual,Weekday,Midday,15-30 min,1123
+2022-02,casual,Weekday,Midday,Over 30 min,764
+2022-02,casual,Weekday,PM peak,Under 15 min,3097
+2022-02,casual,Weekday,PM peak,15-30 min,1016
+2022-02,casual,Weekday,PM peak,Over 30 min,519
+2022-02,casual,Weekday,Off-peak,Under 15 min,1624
+2022-02,casual,Weekday,Off-peak,15-30 min,547
+2022-02,casual,Weekday,Off-peak,Over 30 min,248
+2022-02,casual,Weekend,AM peak,Under 15 min,271
+2022-02,casual,Weekend,AM peak,15-30 min,71
+2022-02,casual,Weekend,AM peak,Over 30 min,39
+2022-02,casual,Weekend,Midday,Under 15 min,1884
+2022-02,casual,Weekend,Midday,15-30 min,826
+2022-02,casual,Weekend,Midday,Over 30 min,594
+2022-02,casual,Weekend,PM peak,Under 15 min,1038
+2022-02,casual,Weekend,PM peak,15-30 min,470
+2022-02,casual,Weekend,PM peak,Over 30 min,331
+2022-02,casual,Weekend,Off-peak,Under 15 min,880
+2022-02,casual,Weekend,Off-peak,15-30 min,301
+2022-02,casual,Weekend,Off-peak,Over 30 min,145
+2022-02,member,Weekday,AM peak,Under 15 min,13867
+2022-02,member,Weekday,AM peak,15-30 min,2599
+2022-02,member,Weekday,AM peak,Over 30 min,618
+2022-02,member,Weekday,Midday,Under 15 min,17839
+2022-02,member,Weekday,Midday,15-30 min,3077
+2022-02,member,Weekday,Midday,Over 30 min,1067
+2022-02,member,Weekday,PM peak,Under 15 min,18859
+2022-02,member,Weekday,PM peak,15-30 min,3808
+2022-02,member,Weekday,PM peak,Over 30 min,1178
+2022-02,member,Weekday,Off-peak,Under 15 min,6798
+2022-02,member,Weekday,Off-peak,15-30 min,1176
+2022-02,member,Weekday,Off-peak,Over 30 min,314
+2022-02,member,Weekend,AM peak,Under 15 min,1781
+2022-02,member,Weekend,AM peak,15-30 min,259
+2022-02,member,Weekend,AM peak,Over 30 min,113
+2022-02,member,Weekend,Midday,Under 15 min,7603
+2022-02,member,Weekend,Midday,15-30 min,1633
+2022-02,member,Weekend,Midday,Over 30 min,610
+2022-02,member,Weekend,PM peak,Under 15 min,4469
+2022-02,member,Weekend,PM peak,15-30 min,927
+2022-02,member,Weekend,PM peak,Over 30 min,334
+2022-02,member,Weekend,Off-peak,Under 15 min,2504
+2022-02,member,Weekend,Off-peak,15-30 min,480
+2022-02,member,Weekend,Off-peak,Over 30 min,133
+2022-03,casual,Weekday,AM peak,Under 15 min,4791
+2022-03,casual,Weekday,AM peak,15-30 min,1442
+2022-03,casual,Weekday,AM peak,Over 30 min,544
+2022-03,casual,Weekday,Midday,Under 15 min,10103
+2022-03,casual,Weekday,Midday,15-30 min,5271
+2022-03,casual,Weekday,Midday,Over 30 min,4579
+2022-03,casual,Weekday,PM peak,Under 15 min,11352
+2022-03,casual,Weekday,PM peak,15-30 min,5927
+2022-03,casual,Weekday,PM peak,Over 30 min,4312
+2022-03,casual,Weekday,Off-peak,Under 15 min,5590
+2022-03,casual,Weekday,Off-peak,15-30 min,2087
+2022-03,casual,Weekday,Off-peak,Over 30 min,1167
+2022-03,casual,Weekend,AM peak,Under 15 min,932
+2022-03,casual,Weekend,AM peak,15-30 min,352
+2022-03,casual,Weekend,AM peak,Over 30 min,283
+2022-03,casual,Weekend,Midday,Under 15 min,6370
+2022-03,casual,Weekend,Midday,15-30 min,4907
+2022-03,casual,Weekend,Midday,Over 30 min,5178
+2022-03,casual,Weekend,PM peak,Under 15 min,3821
+2022-03,casual,Weekend,PM peak,15-30 min,2672
+2022-03,casual,Weekend,PM peak,Over 30 min,2537
+2022-03,casual,Weekend,Off-peak,Under 15 min,2419
+2022-03,casual,Weekend,Off-peak,15-30 min,904
+2022-03,casual,Weekend,Off-peak,Over 30 min,576
+2022-03,member,Weekday,AM peak,Under 15 min,27928
+2022-03,member,Weekday,AM peak,15-30 min,5582
+2022-03,member,Weekday,AM peak,Over 30 min,1281
+2022-03,member,Weekday,Midday,Under 15 min,34409
+2022-03,member,Weekday,Midday,15-30 min,6605
+2022-03,member,Weekday,Midday,Over 30 min,2454
+2022-03,member,Weekday,PM peak,Under 15 min,40553
+2022-03,member,Weekday,PM peak,15-30 min,9820
+2022-03,member,Weekday,PM peak,Over 30 min,3129
+2022-03,member,Weekday,Off-peak,Under 15 min,14592
+2022-03,member,Weekday,Off-peak,15-30 min,2710
+2022-03,member,Weekday,Off-peak,Over 30 min,677
+2022-03,member,Weekend,AM peak,Under 15 min,3022
+2022-03,member,Weekend,AM peak,15-30 min,639
+2022-03,member,Weekend,AM peak,Over 30 min,222
+2022-03,member,Weekend,Midday,Under 15 min,13492
+2022-03,member,Weekend,Midday,15-30 min,4252
+2022-03,member,Weekend,Midday,Over 30 min,2006
+2022-03,member,Weekend,PM peak,Under 15 min,8164
+2022-03,member,Weekend,PM peak,15-30 min,2445
+2022-03,member,Weekend,PM peak,Over 30 min,1024
+2022-03,member,Weekend,Off-peak,Under 15 min,4415
+2022-03,member,Weekend,Off-peak,15-30 min,894
+2022-03,member,Weekend,Off-peak,Over 30 min,251
+2022-04,casual,Weekday,AM peak,Under 15 min,5971
+2022-04,casual,Weekday,AM peak,15-30 min,1743
+2022-04,casual,Weekday,AM peak,Over 30 min,638
+2022-04,casual,Weekday,Midday,Under 15 min,12812
+2022-04,casual,Weekday,Midday,15-30 min,6205
+2022-04,casual,Weekday,Midday,Over 30 min,5098
+2022-04,casual,Weekday,PM peak,Under 15 min,14443
+2022-04,casual,Weekday,PM peak,15-30 min,6427
+2022-04,casual,Weekday,PM peak,Over 30 min,3653
+2022-04,casual,Weekday,Off-peak,Under 15 min,7960
+2022-04,casual,Weekday,Off-peak,15-30 min,2868
+2022-04,casual,Weekday,Off-peak,Over 30 min,1436
+2022-04,casual,Weekend,AM peak,Under 15 min,1848
+2022-04,casual,Weekend,AM peak,15-30 min,855
+2022-04,casual,Weekend,AM peak,Over 30 min,664
+2022-04,casual,Weekend,Midday,Under 15 min,9759
+2022-04,casual,Weekend,Midday,15-30 min,7348
+2022-04,casual,Weekend,Midday,Over 30 min,7658
+2022-04,casual,Weekend,PM peak,Under 15 min,7028
+2022-04,casual,Weekend,PM peak,15-30 min,4727
+2022-04,casual,Weekend,PM peak,Over 30 min,4366
+2022-04,casual,Weekend,Off-peak,Under 15 min,5545
+2022-04,casual,Weekend,Off-peak,15-30 min,2771
+2022-04,casual,Weekend,Off-peak,Over 30 min,1980
+2022-04,member,Weekday,AM peak,Under 15 min,32254
+2022-04,member,Weekday,AM peak,15-30 min,6174
+2022-04,member,Weekday,AM peak,Over 30 min,1456
+2022-04,member,Weekday,Midday,Under 15 min,43168
+2022-04,member,Weekday,Midday,15-30 min,7525
+2022-04,member,Weekday,Midday,Over 30 min,2600
+2022-04,member,Weekday,PM peak,Under 15 min,47275
+2022-04,member,Weekday,PM peak,15-30 min,10944
+2022-04,member,Weekday,PM peak,Over 30 min,3206
+2022-04,member,Weekday,Off-peak,Under 15 min,18626
+2022-04,member,Weekday,Off-peak,15-30 min,3558
+2022-04,member,Weekday,Off-peak,Over 30 min,939
+2022-04,member,Weekend,AM peak,Under 15 min,5394
+2022-04,member,Weekend,AM peak,15-30 min,1185
+2022-04,member,Weekend,AM peak,Over 30 min,469
+2022-04,member,Weekend,Midday,Under 15 min,19285
+2022-04,member,Weekend,Midday,15-30 min,5762
+2022-04,member,Weekend,Midday,Over 30 min,2556
+2022-04,member,Weekend,PM peak,Under 15 min,12090
+2022-04,member,Weekend,PM peak,15-30 min,3722
+2022-04,member,Weekend,PM peak,Over 30 min,1486
+2022-04,member,Weekend,Off-peak,Under 15 min,7705
+2022-04,member,Weekend,Off-peak,15-30 min,1911
+2022-04,member,Weekend,Off-peak,Over 30 min,537
+2022-05,casual,Weekday,AM peak,Under 15 min,10477
+2022-05,casual,Weekday,AM peak,15-30 min,3471
+2022-05,casual,Weekday,AM peak,Over 30 min,2038
+2022-05,casual,Weekday,Midday,Under 15 min,25204
+2022-05,casual,Weekday,Midday,15-30 min,14755
+2022-05,casual,Weekday,Midday,Over 30 min,14640
+2022-05,casual,Weekday,PM peak,Under 15 min,31864
+2022-05,casual,Weekday,PM peak,15-30 min,18683
+2022-05,casual,Weekday,PM peak,Over 30 min,13319
+2022-05,casual,Weekday,Off-peak,Under 15 min,19356
+2022-05,casual,Weekday,Off-peak,15-30 min,8886
+2022-05,casual,Weekday,Off-peak,Over 30 min,5978
+2022-05,casual,Weekend,AM peak,Under 15 min,3427
+2022-05,casual,Weekend,AM peak,15-30 min,1803
+2022-05,casual,Weekend,AM peak,Over 30 min,1728
+2022-05,casual,Weekend,Midday,Under 15 min,18116
+2022-05,casual,Weekend,Midday,15-30 min,14465
+2022-05,casual,Weekend,Midday,Over 30 min,15169
+2022-05,casual,Weekend,PM peak,Under 15 min,12968
+2022-05,casual,Weekend,PM peak,15-30 min,9070
+2022-05,casual,Weekend,PM peak,Over 30 min,7827
+2022-05,casual,Weekend,Off-peak,Under 15 min,11037
+2022-05,casual,Weekend,Off-peak,15-30 min,5970
+2022-05,casual,Weekend,Off-peak,Over 30 min,4288
+2022-05,member,Weekday,AM peak,Under 15 min,37607
+2022-05,member,Weekday,AM peak,15-30 min,9308
+2022-05,member,Weekday,AM peak,Over 30 min,2366
+2022-05,member,Weekday,Midday,Under 15 min,53295
+2022-05,member,Weekday,Midday,15-30 min,13700
+2022-05,member,Weekday,Midday,Over 30 min,5510
+2022-05,member,Weekday,PM peak,Under 15 min,65306
+2022-05,member,Weekday,PM peak,15-30 min,21948
+2022-05,member,Weekday,PM peak,Over 30 min,7727
+2022-05,member,Weekday,Off-peak,Under 15 min,28434
+2022-05,member,Weekday,Off-peak,15-30 min,7921
+2022-05,member,Weekday,Off-peak,Over 30 min,2437
+2022-05,member,Weekend,AM peak,Under 15 min,6950
+2022-05,member,Weekend,AM peak,15-30 min,2093
+2022-05,member,Weekend,AM peak,Over 30 min,891
+2022-05,member,Weekend,Midday,Under 15 min,25928
+2022-05,member,Weekend,Midday,15-30 min,9842
+2022-05,member,Weekend,Midday,Over 30 min,4559
+2022-05,member,Weekend,PM peak,Under 15 min,16512
+2022-05,member,Weekend,PM peak,15-30 min,6120
+2022-05,member,Weekend,PM peak,Over 30 min,2618
+2022-05,member,Weekend,Off-peak,Under 15 min,11485
+2022-05,member,Weekend,Off-peak,15-30 min,3538
+2022-05,member,Weekend,Off-peak,Over 30 min,1148
+2022-06,casual,Weekday,AM peak,Under 15 min,15655
+2022-06,casual,Weekday,AM peak,15-30 min,4656
+2022-06,casual,Weekday,AM peak,Over 30 min,2714
+2022-06,casual,Weekday,Midday,Under 15 min,34370
+2022-06,casual,Weekday,Midday,15-30 min,18677
+2022-06,casual,Weekday,Midday,Over 30 min,16473
+2022-06,casual,Weekday,PM peak,Under 15 min,46025
+2022-06,casual,Weekday,PM peak,15-30 min,25709
+2022-06,casual,Weekday,PM peak,Over 30 min,15455
+2022-06,casual,Weekday,Off-peak,Under 15 min,30865
+2022-06,casual,Weekday,Off-peak,15-30 min,14109
+2022-06,casual,Weekday,Off-peak,Over 30 min,8164
+2022-06,casual,Weekend,AM peak,Under 15 min,4529
+2022-06,casual,Weekend,AM peak,15-30 min,2043
+2022-06,casual,Weekend,AM peak,Over 30 min,1694
+2022-06,casual,Weekend,Midday,Under 15 min,21027
+2022-06,casual,Weekend,Midday,15-30 min,16815
+2022-06,casual,Weekend,Midday,Over 30 min,15060
+2022-06,casual,Weekend,PM peak,Under 15 min,16571
+2022-06,casual,Weekend,PM peak,15-30 min,12194
+2022-06,casual,Weekend,PM peak,Over 30 min,9029
+2022-06,casual,Weekend,Off-peak,Under 15 min,16047
+2022-06,casual,Weekend,Off-peak,15-30 min,8178
+2022-06,casual,Weekend,Off-peak,Over 30 min,4989
+2022-06,member,Weekday,AM peak,Under 15 min,42927
+2022-06,member,Weekday,AM peak,15-30 min,12138
+2022-06,member,Weekday,AM peak,Over 30 min,2952
+2022-06,member,Weekday,Midday,Under 15 min,56028
+2022-06,member,Weekday,Midday,15-30 min,15181
+2022-06,member,Weekday,Midday,Over 30 min,5544
+2022-06,member,Weekday,PM peak,Under 15 min,73970
+2022-06,member,Weekday,PM peak,15-30 min,27409
+2022-06,member,Weekday,PM peak,Over 30 min,8820
+2022-06,member,Weekday,Off-peak,Under 15 min,34707
+2022-06,member,Weekday,Off-peak,15-30 min,12036
+2022-06,member,Weekday,Off-peak,Over 30 min,3522
+2022-06,member,Weekend,AM peak,Under 15 min,7066
+2022-06,member,Weekend,AM peak,15-30 min,2399
+2022-06,member,Weekend,AM peak,Over 30 min,908
+2022-06,member,Weekend,Midday,Under 15 min,24717
+2022-06,member,Weekend,Midday,15-30 min,10833
+2022-06,member,Weekend,Midday,Over 30 min,4713
+2022-06,member,Weekend,PM peak,Under 15 min,16347
+2022-06,member,Weekend,PM peak,15-30 min,7553
+2022-06,member,Weekend,PM peak,Over 30 min,2977
+2022-06,member,Weekend,Off-peak,Under 15 min,13024
+2022-06,member,Weekend,Off-peak,15-30 min,4593
+2022-06,member,Weekend,Off-peak,Over 30 min,1431
+2022-07,casual,Weekday,AM peak,Under 15 min,15988
+2022-07,casual,Weekday,AM peak,15-30 min,4321
+2022-07,casual,Weekday,AM peak,Over 30 min,2679
+2022-07,casual,Weekday,Midday,Under 15 min,35858
+2022-07,casual,Weekday,Midday,15-30 min,18422
+2022-07,casual,Weekday,Midday,Over 30 min,16804
+2022-07,casual,Weekday,PM peak,Under 15 min,44813
+2022-07,casual,Weekday,PM peak,15-30 min,22240
+2022-07,casual,Weekday,PM peak,Over 30 min,13151
+2022-07,casual,Weekday,Off-peak,Under 15 min,32097
+2022-07,casual,Weekday,Off-peak,15-30 min,13373
+2022-07,casual,Weekday,Off-peak,Over 30 min,7633
+2022-07,casual,Weekend,AM peak,Under 15 min,5217
+2022-07,casual,Weekend,AM peak,15-30 min,2320
+2022-07,casual,Weekend,AM peak,Over 30 min,2102
+2022-07,casual,Weekend,Midday,Under 15 min,28976
+2022-07,casual,Weekend,Midday,15-30 min,21341
+2022-07,casual,Weekend,Midday,Over 30 min,21158
+2022-07,casual,Weekend,PM peak,Under 15 min,21769
+2022-07,casual,Weekend,PM peak,15-30 min,14951
+2022-07,casual,Weekend,PM peak,Over 30 min,11609
+2022-07,casual,Weekend,Off-peak,Under 15 min,22004
+2022-07,casual,Weekend,Off-peak,15-30 min,11317
+2022-07,casual,Weekend,Off-peak,Over 30 min,6729
+2022-07,member,Weekday,AM peak,Under 15 min,41715
+2022-07,member,Weekday,AM peak,15-30 min,10845
+2022-07,member,Weekday,AM peak,Over 30 min,2699
+2022-07,member,Weekday,Midday,Under 15 min,55592
+2022-07,member,Weekday,Midday,15-30 min,14665
+2022-07,member,Weekday,Midday,Over 30 min,5328
+2022-07,member,Weekday,PM peak,Under 15 min,70601
+2022-07,member,Weekday,PM peak,15-30 min,24717
+2022-07,member,Weekday,PM peak,Over 30 min,7998
+2022-07,member,Weekday,Off-peak,Under 15 min,34322
+2022-07,member,Weekday,Off-peak,15-30 min,11428
+2022-07,member,Weekday,Off-peak,Over 30 min,3475
+2022-07,member,Weekend,AM peak,Under 15 min,8168
+2022-07,member,Weekend,AM peak,15-30 min,2804
+2022-07,member,Weekend,AM peak,Over 30 min,1040
+2022-07,member,Weekend,Midday,Under 15 min,32645
+2022-07,member,Weekend,Midday,15-30 min,13761
+2022-07,member,Weekend,Midday,Over 30 min,5985
+2022-07,member,Weekend,PM peak,Under 15 min,21574
+2022-07,member,Weekend,PM peak,15-30 min,9232
+2022-07,member,Weekend,PM peak,Over 30 min,3883
+2022-07,member,Weekend,Off-peak,Under 15 min,17099
+2022-07,member,Weekend,Off-peak,15-30 min,6336
+2022-07,member,Weekend,Off-peak,Over 30 min,2031
+2022-08,casual,Weekday,AM peak,Under 15 min,18505
+2022-08,casual,Weekday,AM peak,15-30 min,4937
+2022-08,casual,Weekday,AM peak,Over 30 min,2786
+2022-08,casual,Weekday,Midday,Under 15 min,37933
+2022-08,casual,Weekday,Midday,15-30 min,18369
+2022-08,casual,Weekday,Midday,Over 30 min,16574
+2022-08,casual,Weekday,PM peak,Under 15 min,50359
+2022-08,casual,Weekday,PM peak,15-30 min,24457
+2022-08,casual,Weekday,PM peak,Over 30 min,13936
+2022-08,casual,Weekday,Off-peak,Under 15 min,32344
+2022-08,casual,Weekday,Off-peak,15-30 min,12308
+2022-08,casual,Weekday,Off-peak,Over 30 min,6372
+2022-08,casual,Weekend,AM peak,Under 15 min,4623
+2022-08,casual,Weekend,AM peak,15-30 min,2018
+2022-08,casual,Weekend,AM peak,Over 30 min,1758
+2022-08,casual,Weekend,Midday,Under 15 min,20867
+2022-08,casual,Weekend,Midday,15-30 min,13671
+2022-08,casual,Weekend,Midday,Over 30 min,12132
+2022-08,casual,Weekend,PM peak,Under 15 min,15100
+2022-08,casual,Weekend,PM peak,15-30 min,8947
+2022-08,casual,Weekend,PM peak,Over 30 min,6117
+2022-08,casual,Weekend,Off-peak,Under 15 min,15915
+2022-08,casual,Weekend,Off-peak,15-30 min,6642
+2022-08,casual,Weekend,Off-peak,Over 30 min,3849
+2022-08,member,Weekday,AM peak,Under 15 min,48950
+2022-08,member,Weekday,AM peak,15-30 min,12960
+2022-08,member,Weekday,AM peak,Over 30 min,2923
+2022-08,member,Weekday,Midday,Under 15 min,64235
+2022-08,member,Weekday,Midday,15-30 min,16345
+2022-08,member,Weekday,Midday,Over 30 min,5835
+2022-08,member,Weekday,PM peak,Under 15 min,82807
+2022-08,member,Weekday,PM peak,15-30 min,29599
+2022-08,member,Weekday,PM peak,Over 30 min,9198
+2022-08,member,Weekday,Off-peak,Under 15 min,36605
+2022-08,member,Weekday,Off-peak,15-30 min,11523
+2022-08,member,Weekday,Off-peak,Over 30 min,3550
+2022-08,member,Weekend,AM peak,Under 15 min,7254
+2022-08,member,Weekend,AM peak,15-30 min,2316
+2022-08,member,Weekend,AM peak,Over 30 min,846
+2022-08,member,Weekend,Midday,Under 15 min,25120
+2022-08,member,Weekend,Midday,15-30 min,9416
+2022-08,member,Weekend,Midday,Over 30 min,3784
+2022-08,member,Weekend,PM peak,Under 15 min,16922
+2022-08,member,Weekend,PM peak,15-30 min,6259
+2022-08,member,Weekend,PM peak,Over 30 min,2380
+2022-08,member,Weekend,Off-peak,Under 15 min,12852
+2022-08,member,Weekend,Off-peak,15-30 min,4240
+2022-08,member,Weekend,Off-peak,Over 30 min,1198
+2022-09,casual,Weekday,AM peak,Under 15 min,17330
+2022-09,casual,Weekday,AM peak,15-30 min,4200
+2022-09,casual,Weekday,AM peak,Over 30 min,2073
+2022-09,casual,Weekday,Midday,Under 15 min,34963
+2022-09,casual,Weekday,Midday,15-30 min,14617
+2022-09,casual,Weekday,Midday,Over 30 min,12292
+2022-09,casual,Weekday,PM peak,Under 15 min,42899
+2022-09,casual,Weekday,PM peak,15-30 min,17698
+2022-09,casual,Weekday,PM peak,Over 30 min,8621
+2022-09,casual,Weekday,Off-peak,Under 15 min,25810
+2022-09,casual,Weekday,Off-peak,15-30 min,7901
+2022-09,casual,Weekday,Off-peak,Over 30 min,3538
+2022-09,casual,Weekend,AM peak,Under 15 min,4025
+2022-09,casual,Weekend,AM peak,15-30 min,1585
+2022-09,casual,Weekend,AM peak,Over 30 min,1544
+2022-09,casual,Weekend,Midday,Under 15 min,19190
+2022-09,casual,Weekend,Midday,15-30 min,11555
+2022-09,casual,Weekend,Midday,Over 30 min,10425
+2022-09,casual,Weekend,PM peak,Under 15 min,13643
+2022-09,casual,Weekend,PM peak,15-30 min,7716
+2022-09,casual,Weekend,PM peak,Over 30 min,5067
+2022-09,casual,Weekend,Off-peak,Under 15 min,14477
+2022-09,casual,Weekend,Off-peak,15-30 min,5689
+2022-09,casual,Weekend,Off-peak,Over 30 min,2995
+2022-09,member,Weekday,AM peak,Under 15 min,47615
+2022-09,member,Weekday,AM peak,15-30 min,11572
+2022-09,member,Weekday,AM peak,Over 30 min,2715
+2022-09,member,Weekday,Midday,Under 15 min,68278
+2022-09,member,Weekday,Midday,15-30 min,15557
+2022-09,member,Weekday,Midday,Over 30 min,5406
+2022-09,member,Weekday,PM peak,Under 15 min,79407
+2022-09,member,Weekday,PM peak,15-30 min,24799
+2022-09,member,Weekday,PM peak,Over 30 min,7383
+2022-09,member,Weekday,Off-peak,Under 15 min,33655
+2022-09,member,Weekday,Off-peak,15-30 min,8890
+2022-09,member,Weekday,Off-peak,Over 30 min,2478
+2022-09,member,Weekend,AM peak,Under 15 min,6673
+2022-09,member,Weekend,AM peak,15-30 min,2080
+2022-09,member,Weekend,AM peak,Over 30 min,899
+2022-09,member,Weekend,Midday,Under 15 min,23781
+2022-09,member,Weekend,Midday,15-30 min,8544
+2022-09,member,Weekend,Midday,Over 30 min,3377
+2022-09,member,Weekend,PM peak,Under 15 min,16180
+2022-09,member,Weekend,PM peak,15-30 min,5852
+2022-09,member,Weekend,PM peak,Over 30 min,2152
+2022-09,member,Weekend,Off-peak,Under 15 min,12805
+2022-09,member,Weekend,Off-peak,15-30 min,3993
+2022-09,member,Weekend,Off-peak,Over 30 min,1238
+2022-10,casual,Weekday,AM peak,Under 15 min,11908
+2022-10,casual,Weekday,AM peak,15-30 min,1998
+2022-10,casual,Weekday,AM peak,Over 30 min,843
+2022-10,casual,Weekday,Midday,Under 15 min,23411
+2022-10,casual,Weekday,Midday,15-30 min,7836
+2022-10,casual,Weekday,Midday,Over 30 min,6058
+2022-10,casual,Weekday,PM peak,Under 15 min,26776
+2022-10,casual,Weekday,PM peak,15-30 min,8182
+2022-10,casual,Weekday,PM peak,Over 30 min,3518
+2022-10,casual,Weekday,Off-peak,Under 15 min,14691
+2022-10,casual,Weekday,Off-peak,15-30 min,3152
+2022-10,casual,Weekday,Off-peak,Over 30 min,1011
+2022-10,casual,Weekend,AM peak,Under 15 min,4666
+2022-10,casual,Weekend,AM peak,15-30 min,1735
+2022-10,casual,Weekend,AM peak,Over 30 min,1394
+2022-10,casual,Weekend,Midday,Under 15 min,22899
+2022-10,casual,Weekend,Midday,15-30 min,12561
+2022-10,casual,Weekend,Midday,Over 30 min,11078
+2022-10,casual,Weekend,PM peak,Under 15 min,13573
+2022-10,casual,Weekend,PM peak,15-30 min,6020
+2022-10,casual,Weekend,PM peak,Over 30 min,3871
+2022-10,casual,Weekend,Off-peak,Under 15 min,12001
+2022-10,casual,Weekend,Off-peak,15-30 min,3264
+2022-10,casual,Weekend,Off-peak,Over 30 min,1437
+2022-10,member,Weekday,AM peak,Under 15 min,40251
+2022-10,member,Weekday,AM peak,15-30 min,7913
+2022-10,member,Weekday,AM peak,Over 30 min,1541
+2022-10,member,Weekday,Midday,Under 15 min,57018
+2022-10,member,Weekday,Midday,15-30 min,10116
+2022-10,member,Weekday,Midday,Over 30 min,3381
+2022-10,member,Weekday,PM peak,Under 15 min,63727
+2022-10,member,Weekday,PM peak,15-30 min,15052
+2022-10,member,Weekday,PM peak,Over 30 min,4003
+2022-10,member,Weekday,Off-peak,Under 15 min,26204
+2022-10,member,Weekday,Off-peak,15-30 min,5051
+2022-10,member,Weekday,Off-peak,Over 30 min,1188
+2022-10,member,Weekend,AM peak,Under 15 min,8345
+2022-10,member,Weekend,AM peak,15-30 min,2151
+2022-10,member,Weekend,AM peak,Over 30 min,691
+2022-10,member,Weekend,Midday,Under 15 min,33758
+2022-10,member,Weekend,Midday,15-30 min,10339
+2022-10,member,Weekend,Midday,Over 30 min,4206
+2022-10,member,Weekend,PM peak,Under 15 min,20572
+2022-10,member,Weekend,PM peak,15-30 min,5855
+2022-10,member,Weekend,PM peak,Over 30 min,2157
+2022-10,member,Weekend,Off-peak,Under 15 min,13819
+2022-10,member,Weekend,Off-peak,15-30 min,3175
+2022-10,member,Weekend,Off-peak,Over 30 min,757
+2022-11,casual,Weekday,AM peak,Under 15 min,8893
+2022-11,casual,Weekday,AM peak,15-30 min,1346
+2022-11,casual,Weekday,AM peak,Over 30 min,476
+2022-11,casual,Weekday,Midday,Under 15 min,17143
+2022-11,casual,Weekday,Midday,15-30 min,5326
+2022-11,casual,Weekday,Midday,Over 30 min,3859
+2022-11,casual,Weekday,PM peak,Under 15 min,18005
+2022-11,casual,Weekday,PM peak,15-30 min,4856
+2022-11,casual,Weekday,PM peak,Over 30 min,1877
+2022-11,casual,Weekday,Off-peak,Under 15 min,10119
+2022-11,casual,Weekday,Off-peak,15-30 min,1864
+2022-11,casual,Weekday,Off-peak,Over 30 min,780
+2022-11,casual,Weekend,AM peak,Under 15 min,1676
+2022-11,casual,Weekend,AM peak,15-30 min,356
+2022-11,casual,Weekend,AM peak,Over 30 min,218
+2022-11,casual,Weekend,Midday,Under 15 min,6591
+2022-11,casual,Weekend,Midday,15-30 min,2701
+2022-11,casual,Weekend,Midday,Over 30 min,1935
+2022-11,casual,Weekend,PM peak,Under 15 min,3799
+2022-11,casual,Weekend,PM peak,15-30 min,1075
+2022-11,casual,Weekend,PM peak,Over 30 min,563
+2022-11,casual,Weekend,Off-peak,Under 15 min,3721
+2022-11,casual,Weekend,Off-peak,15-30 min,716
+2022-11,casual,Weekend,Off-peak,Over 30 min,316
+2022-11,member,Weekday,AM peak,Under 15 min,34746
+2022-11,member,Weekday,AM peak,15-30 min,6376
+2022-11,member,Weekday,AM peak,Over 30 min,1281
+2022-11,member,Weekday,Midday,Under 15 min,47252
+2022-11,member,Weekday,Midday,15-30 min,8397
+2022-11,member,Weekday,Midday,Over 30 min,2824
+2022-11,member,Weekday,PM peak,Under 15 min,50857
+2022-11,member,Weekday,PM peak,15-30 min,11485
+2022-11,member,Weekday,PM peak,Over 30 min,2997
+2022-11,member,Weekday,Off-peak,Under 15 min,20345
+2022-11,member,Weekday,Off-peak,15-30 min,3576
+2022-11,member,Weekday,Off-peak,Over 30 min,861
+2022-11,member,Weekend,AM peak,Under 15 min,3963
+2022-11,member,Weekend,AM peak,15-30 min,680
+2022-11,member,Weekend,AM peak,Over 30 min,220
+2022-11,member,Weekend,Midday,Under 15 min,14095
+2022-11,member,Weekend,Midday,15-30 min,3121
+2022-11,member,Weekend,Midday,Over 30 min,1077
+2022-11,member,Weekend,PM peak,Under 15 min,8380
+2022-11,member,Weekend,PM peak,15-30 min,1596
+2022-11,member,Weekend,PM peak,Over 30 min,459
+2022-11,member,Weekend,Off-peak,Under 15 min,5833
+2022-11,member,Weekend,Off-peak,15-30 min,985
+2022-11,member,Weekend,Off-peak,Over 30 min,225
+2022-12,casual,Weekday,AM peak,Under 15 min,4389
+2022-12,casual,Weekday,AM peak,15-30 min,528
+2022-12,casual,Weekday,AM peak,Over 30 min,168
+2022-12,casual,Weekday,Midday,Under 15 min,7950
+2022-12,casual,Weekday,Midday,15-30 min,1713
+2022-12,casual,Weekday,Midday,Over 30 min,898
+2022-12,casual,Weekday,PM peak,Under 15 min,7793
+2022-12,casual,Weekday,PM peak,15-30 min,1564
+2022-12,casual,Weekday,PM peak,Over 30 min,536
+2022-12,casual,Weekday,Off-peak,Under 15 min,4467
+2022-12,casual,Weekday,Off-peak,15-30 min,750
+2022-12,casual,Weekday,Off-peak,Over 30 min,292
+2022-12,casual,Weekend,AM peak,Under 15 min,954
+2022-12,casual,Weekend,AM peak,15-30 min,166
+2022-12,casual,Weekend,AM peak,Over 30 min,50
+2022-12,casual,Weekend,Midday,Under 15 min,4020
+2022-12,casual,Weekend,Midday,15-30 min,1206
+2022-12,casual,Weekend,Midday,Over 30 min,519
+2022-12,casual,Weekend,PM peak,Under 15 min,2152
+2022-12,casual,Weekend,PM peak,15-30 min,554
+2022-12,casual,Weekend,PM peak,Over 30 min,180
+2022-12,casual,Weekend,Off-peak,Under 15 min,2136
+2022-12,casual,Weekend,Off-peak,15-30 min,484
+2022-12,casual,Weekend,Off-peak,Over 30 min,181
+2022-12,member,Weekday,AM peak,Under 15 min,21104
+2022-12,member,Weekday,AM peak,15-30 min,3306
+2022-12,member,Weekday,AM peak,Over 30 min,642
+2022-12,member,Weekday,Midday,Under 15 min,26935
+2022-12,member,Weekday,Midday,15-30 min,4066
+2022-12,member,Weekday,Midday,Over 30 min,1270
+2022-12,member,Weekday,PM peak,Under 15 min,27846
+2022-12,member,Weekday,PM peak,15-30 min,5205
+2022-12,member,Weekday,PM peak,Over 30 min,1301
+2022-12,member,Weekday,Off-peak,Under 15 min,11210
+2022-12,member,Weekday,Off-peak,15-30 min,1818
+2022-12,member,Weekday,Off-peak,Over 30 min,460
+2022-12,member,Weekend,AM peak,Under 15 min,2880
+2022-12,member,Weekend,AM peak,15-30 min,433
+2022-12,member,Weekend,AM peak,Over 30 min,115
+2022-12,member,Weekend,Midday,Under 15 min,10430
+2022-12,member,Weekend,Midday,15-30 min,1899
+2022-12,member,Weekend,Midday,Over 30 min,541
+2022-12,member,Weekend,PM peak,Under 15 min,5584
+2022-12,member,Weekend,PM peak,15-30 min,1052
+2022-12,member,Weekend,PM peak,Over 30 min,329
+2022-12,member,Weekend,Off-peak,Under 15 min,3888
+2022-12,member,Weekend,Off-peak,15-30 min,762
+2022-12,member,Weekend,Off-peak,Over 30 min,183
+2023-01,casual,Weekday,AM peak,Under 15 min,4313
+2023-01,casual,Weekday,AM peak,15-30 min,482
+2023-01,casual,Weekday,AM peak,Over 30 min,109
+2023-01,casual,Weekday,Midday,Under 15 min,7065
+2023-01,casual,Weekday,Midday,15-30 min,1347
+2023-01,casual,Weekday,Midday,Over 30 min,723
+2023-01,casual,Weekday,PM peak,Under 15 min,7427
+2023-01,casual,Weekday,PM peak,15-30 min,1303
+2023-01,casual,Weekday,PM peak,Over 30 min,422
+2023-01,casual,Weekday,Off-peak,Under 15 min,3731
+2023-01,casual,Weekday,Off-peak,15-30 min,564
+2023-01,casual,Weekday,Off-peak,Over 30 min,197
+2023-01,casual,Weekend,AM peak,Under 15 min,720
+2023-01,casual,Weekend,AM peak,15-30 min,125
+2023-01,casual,Weekend,AM peak,Over 30 min,40
+2023-01,casual,Weekend,Midday,Under 15 min,3339
+2023-01,casual,Weekend,Midday,15-30 min,995
+2023-01,casual,Weekend,Midday,Over 30 min,616
+2023-01,casual,Weekend,PM peak,Under 15 min,1880
+2023-01,casual,Weekend,PM peak,15-30 min,486
+2023-01,casual,Weekend,PM peak,Over 30 min,239
+2023-01,casual,Weekend,Off-peak,Under 15 min,1990
+2023-01,casual,Weekend,Off-peak,15-30 min,441
+2023-01,casual,Weekend,Off-peak,Over 30 min,195
+2023-01,member,Weekday,AM peak,Under 15 min,23742
+2023-01,member,Weekday,AM peak,15-30 min,3938
+2023-01,member,Weekday,AM peak,Over 30 min,736
+2023-01,member,Weekday,Midday,Under 15 min,29081
+2023-01,member,Weekday,Midday,15-30 min,3975
+2023-01,member,Weekday,Midday,Over 30 min,1218
+2023-01,member,Weekday,PM peak,Under 15 min,32410
+2023-01,member,Weekday,PM peak,15-30 min,5675
+2023-01,member,Weekday,PM peak,Over 30 min,1404
+2023-01,member,Weekday,Off-peak,Under 15 min,11257
+2023-01,member,Weekday,Off-peak,15-30 min,1600
+2023-01,member,Weekday,Off-peak,Over 30 min,417
+2023-01,member,Weekend,AM peak,Under 15 min,2932
+2023-01,member,Weekend,AM peak,15-30 min,448
+2023-01,member,Weekend,AM peak,Over 30 min,129
+2023-01,member,Weekend,Midday,Under 15 min,10888
+2023-01,member,Weekend,Midday,15-30 min,2006
+2023-01,member,Weekend,Midday,Over 30 min,689
+2023-01,member,Weekend,PM peak,Under 15 min,6168
+2023-01,member,Weekend,PM peak,15-30 min,1034
+2023-01,member,Weekend,PM peak,Over 30 min,331
+2023-01,member,Weekend,Off-peak,Under 15 min,4248
+2023-01,member,Weekend,Off-peak,15-30 min,727
+2023-01,member,Weekend,Off-peak,Over 30 min,193
+2023-02,casual,Weekday,AM peak,Under 15 min,3759
+2023-02,casual,Weekday,AM peak,15-30 min,429
+2023-02,casual,Weekday,AM peak,Over 30 min,138
+2023-02,casual,Weekday,Midday,Under 15 min,6616
+2023-02,casual,Weekday,Midday,15-30 min,1329
+2023-02,casual,Weekday,Midday,Over 30 min,858
+2023-02,casual,Weekday,PM peak,Under 15 min,6780
+2023-02,casual,Weekday,PM peak,15-30 min,1273
+2023-02,casual,Weekday,PM peak,Over 30 min,521
+2023-02,casual,Weekday,Off-peak,Under 15 min,3060
+2023-02,casual,Weekday,Off-peak,15-30 min,457
+2023-02,casual,Weekday,Off-peak,Over 30 min,147
+2023-02,casual,Weekend,AM peak,Under 15 min,710
+2023-02,casual,Weekend,AM peak,15-30 min,147
+2023-02,casual,Weekend,AM peak,Over 30 min,84
+2023-02,casual,Weekend,Midday,Under 15 min,4835
+2023-02,casual,Weekend,Midday,15-30 min,2088
+2023-02,casual,Weekend,Midday,Over 30 min,1700
+2023-02,casual,Weekend,PM peak,Under 15 min,2808
+2023-02,casual,Weekend,PM peak,15-30 min,1008
+2023-02,casual,Weekend,PM peak,Over 30 min,681
+2023-02,casual,Weekend,Off-peak,Under 15 min,1774
+2023-02,casual,Weekend,Off-peak,15-30 min,353
+2023-02,casual,Weekend,Off-peak,Over 30 min,179
+2023-02,member,Weekday,AM peak,Under 15 min,21438
+2023-02,member,Weekday,AM peak,15-30 min,3316
+2023-02,member,Weekday,AM peak,Over 30 min,676
+2023-02,member,Weekday,Midday,Under 15 min,26540
+2023-02,member,Weekday,Midday,15-30 min,3829
+2023-02,member,Weekday,Midday,Over 30 min,1188
+2023-02,member,Weekday,PM peak,Under 15 min,30514
+2023-02,member,Weekday,PM peak,15-30 min,5350
+2023-02,member,Weekday,PM peak,Over 30 min,1366
+2023-02,member,Weekday,Off-peak,Under 15 min,9971
+2023-02,member,Weekday,Off-peak,15-30 min,1484
+2023-02,member,Weekday,Off-peak,Over 30 min,363
+2023-02,member,Weekend,AM peak,Under 15 min,2930
+2023-02,member,Weekend,AM peak,15-30 min,515
+2023-02,member,Weekend,AM peak,Over 30 min,197
+2023-02,member,Weekend,Midday,Under 15 min,13372
+2023-02,member,Weekend,Midday,15-30 min,3372
+2023-02,member,Weekend,Midday,Over 30 min,1302
+2023-02,member,Weekend,PM peak,Under 15 min,7478
+2023-02,member,Weekend,PM peak,15-30 min,1672
+2023-02,member,Weekend,PM peak,Over 30 min,606
+2023-02,member,Weekend,Off-peak,Under 15 min,4184
+2023-02,member,Weekend,Off-peak,15-30 min,742
+2023-02,member,Weekend,Off-peak,Over 30 min,196
+2023-03,casual,Weekday,AM peak,Under 15 min,5997
+2023-03,casual,Weekday,AM peak,15-30 min,816
+2023-03,casual,Weekday,AM peak,Over 30 min,253
+2023-03,casual,Weekday,Midday,Under 15 min,10859
+2023-03,casual,Weekday,Midday,15-30 min,2968
+2023-03,casual,Weekday,Midday,Over 30 min,1908
+2023-03,casual,Weekday,PM peak,Under 15 min,11983
+2023-03,casual,Weekday,PM peak,15-30 min,2936
+2023-03,casual,Weekday,PM peak,Over 30 min,1261
+2023-03,casual,Weekday,Off-peak,Under 15 min,5103
+2023-03,casual,Weekday,Off-peak,15-30 min,864
+2023-03,casual,Weekday,Off-peak,Over 30 min,344
+2023-03,casual,Weekend,AM peak,Under 15 min,1027
+2023-03,casual,Weekend,AM peak,15-30 min,234
+2023-03,casual,Weekend,AM peak,Over 30 min,119
+2023-03,casual,Weekend,Midday,Under 15 min,4683
+2023-03,casual,Weekend,Midday,15-30 min,1782
+2023-03,casual,Weekend,Midday,Over 30 min,1065
+2023-03,casual,Weekend,PM peak,Under 15 min,2495
+2023-03,casual,Weekend,PM peak,15-30 min,744
+2023-03,casual,Weekend,PM peak,Over 30 min,354
+2023-03,casual,Weekend,Off-peak,Under 15 min,1870
+2023-03,casual,Weekend,Off-peak,15-30 min,345
+2023-03,casual,Weekend,Off-peak,Over 30 min,142
+2023-03,member,Weekday,AM peak,Under 15 min,31855
+2023-03,member,Weekday,AM peak,15-30 min,5042
+2023-03,member,Weekday,AM peak,Over 30 min,979
+2023-03,member,Weekday,Midday,Under 15 min,37359
+2023-03,member,Weekday,Midday,15-30 min,5802
+2023-03,member,Weekday,Midday,Over 30 min,1807
+2023-03,member,Weekday,PM peak,Under 15 min,45358
+2023-03,member,Weekday,PM peak,15-30 min,8726
+2023-03,member,Weekday,PM peak,Over 30 min,2090
+2023-03,member,Weekday,Off-peak,Under 15 min,14528
+2023-03,member,Weekday,Off-peak,15-30 min,2279
+2023-03,member,Weekday,Off-peak,Over 30 min,552
+2023-03,member,Weekend,AM peak,Under 15 min,3354
+2023-03,member,Weekend,AM peak,15-30 min,620
+2023-03,member,Weekend,AM peak,Over 30 min,147
+2023-03,member,Weekend,Midday,Under 15 min,12174
+2023-03,member,Weekend,Midday,15-30 min,2688
+2023-03,member,Weekend,Midday,Over 30 min,849
+2023-03,member,Weekend,PM peak,Under 15 min,6703
+2023-03,member,Weekend,PM peak,15-30 min,1287
+2023-03,member,Weekend,PM peak,Over 30 min,415
+2023-03,member,Weekend,Off-peak,Under 15 min,3917
+2023-03,member,Weekend,Off-peak,15-30 min,570
+2023-03,member,Weekend,Off-peak,Over 30 min,188
+2023-04,casual,Weekday,AM peak,Under 15 min,8223
+2023-04,casual,Weekday,AM peak,15-30 min,1537
+2023-04,casual,Weekday,AM peak,Over 30 min,637
+2023-04,casual,Weekday,Midday,Under 15 min,17254
+2023-04,casual,Weekday,Midday,15-30 min,6509
+2023-04,casual,Weekday,Midday,Over 30 min,5931
+2023-04,casual,Weekday,PM peak,Under 15 min,22729
+2023-04,casual,Weekday,PM peak,15-30 min,8985
+2023-04,casual,Weekday,PM peak,Over 30 min,5313
+2023-04,casual,Weekday,Off-peak,Under 15 min,10835
+2023-04,casual,Weekday,Off-peak,15-30 min,2812
+2023-04,casual,Weekday,Off-peak,Over 30 min,1742
+2023-04,casual,Weekend,AM peak,Under 15 min,2309
+2023-04,casual,Weekend,AM peak,15-30 min,697
+2023-04,casual,Weekend,AM peak,Over 30 min,586
+2023-04,casual,Weekend,Midday,Under 15 min,11007
+2023-04,casual,Weekend,Midday,15-30 min,6036
+2023-04,casual,Weekend,Midday,Over 30 min,5521
+2023-04,casual,Weekend,PM peak,Under 15 min,7685
+2023-04,casual,Weekend,PM peak,15-30 min,3607
+2023-04,casual,Weekend,PM peak,Over 30 min,2998
+2023-04,casual,Weekend,Off-peak,Under 15 min,6072
+2023-04,casual,Weekend,Off-peak,15-30 min,1927
+2023-04,casual,Weekend,Off-peak,Over 30 min,1274
+2023-04,member,Weekday,AM peak,Under 15 min,33704
+2023-04,member,Weekday,AM peak,15-30 min,6462
+2023-04,member,Weekday,AM peak,Over 30 min,1323
+2023-04,member,Weekday,Midday,Under 15 min,45432
+2023-04,member,Weekday,Midday,15-30 min,8654
+2023-04,member,Weekday,Midday,Over 30 min,3001
+2023-04,member,Weekday,PM peak,Under 15 min,57182
+2023-04,member,Weekday,PM peak,15-30 min,15116
+2023-04,member,Weekday,PM peak,Over 30 min,4571
+2023-04,member,Weekday,Off-peak,Under 15 min,21182
+2023-04,member,Weekday,Off-peak,15-30 min,4042
+2023-04,member,Weekday,Off-peak,Over 30 min,1099
+2023-04,member,Weekend,AM peak,Under 15 min,5950
+2023-04,member,Weekend,AM peak,15-30 min,1327
+2023-04,member,Weekend,AM peak,Over 30 min,463
+2023-04,member,Weekend,Midday,Under 15 min,21074
+2023-04,member,Weekend,Midday,15-30 min,5745
+2023-04,member,Weekend,Midday,Over 30 min,2346
+2023-04,member,Weekend,PM peak,Under 15 min,13681
+2023-04,member,Weekend,PM peak,15-30 min,3696
+2023-04,member,Weekend,PM peak,Over 30 min,1452
+2023-04,member,Weekend,Off-peak,Under 15 min,9238
+2023-04,member,Weekend,Off-peak,15-30 min,1807
+2023-04,member,Weekend,Off-peak,Over 30 min,495
+2023-05,casual,Weekday,AM peak,Under 15 min,12607
+2023-05,casual,Weekday,AM peak,15-30 min,2810
+2023-05,casual,Weekday,AM peak,Over 30 min,1552
+2023-05,casual,Weekday,Midday,Under 15 min,26245
+2023-05,casual,Weekday,Midday,15-30 min,12079
+2023-05,casual,Weekday,Midday,Over 30 min,11069
+2023-05,casual,Weekday,PM peak,Under 15 min,32585
+2023-05,casual,Weekday,PM peak,15-30 min,14909
+2023-05,casual,Weekday,PM peak,Over 30 min,8503
+2023-05,casual,Weekday,Off-peak,Under 15 min,16484
+2023-05,casual,Weekday,Off-peak,15-30 min,5157
+2023-05,casual,Weekday,Off-peak,Over 30 min,2584
+2023-05,casual,Weekend,AM peak,Under 15 min,3085
+2023-05,casual,Weekend,AM peak,15-30 min,1266
+2023-05,casual,Weekend,AM peak,Over 30 min,1196
+2023-05,casual,Weekend,Midday,Under 15 min,15977
+2023-05,casual,Weekend,Midday,15-30 min,10842
+2023-05,casual,Weekend,Midday,Over 30 min,10967
+2023-05,casual,Weekend,PM peak,Under 15 min,10892
+2023-05,casual,Weekend,PM peak,15-30 min,6845
+2023-05,casual,Weekend,PM peak,Over 30 min,5630
+2023-05,casual,Weekend,Off-peak,Under 15 min,8496
+2023-05,casual,Weekend,Off-peak,15-30 min,3117
+2023-05,casual,Weekend,Off-peak,Over 30 min,1995
+2023-05,member,Weekday,AM peak,Under 15 min,46626
+2023-05,member,Weekday,AM peak,15-30 min,10604
+2023-05,member,Weekday,AM peak,Over 30 min,2167
+2023-05,member,Weekday,Midday,Under 15 min,58435
+2023-05,member,Weekday,Midday,15-30 min,13950
+2023-05,member,Weekday,Midday,Over 30 min,5061
+2023-05,member,Weekday,PM peak,Under 15 min,72930
+2023-05,member,Weekday,PM peak,15-30 min,23088
+2023-05,member,Weekday,PM peak,Over 30 min,7055
+2023-05,member,Weekday,Off-peak,Under 15 min,29017
+2023-05,member,Weekday,Off-peak,15-30 min,6808
+2023-05,member,Weekday,Off-peak,Over 30 min,1717
+2023-05,member,Weekend,AM peak,Under 15 min,6604
+2023-05,member,Weekend,AM peak,15-30 min,1879
+2023-05,member,Weekend,AM peak,Over 30 min,684
+2023-05,member,Weekend,Midday,Under 15 min,24478
+2023-05,member,Weekend,Midday,15-30 min,8889
+2023-05,member,Weekend,Midday,Over 30 min,3884
+2023-05,member,Weekend,PM peak,Under 15 min,14960
+2023-05,member,Weekend,PM peak,15-30 min,5298
+2023-05,member,Weekend,PM peak,Over 30 min,2163
+2023-05,member,Weekend,Off-peak,Under 15 min,9849
+2023-05,member,Weekend,Off-peak,15-30 min,2580
+2023-05,member,Weekend,Off-peak,Over 30 min,735
+2023-06,casual,Weekday,AM peak,Under 15 min,16708
+2023-06,casual,Weekday,AM peak,15-30 min,4202
+2023-06,casual,Weekday,AM peak,Over 30 min,2164
+2023-06,casual,Weekday,Midday,Under 15 min,30566
+2023-06,casual,Weekday,Midday,15-30 min,14189
+2023-06,casual,Weekday,Midday,Over 30 min,12152
+2023-06,casual,Weekday,PM peak,Under 15 min,39597
+2023-06,casual,Weekday,PM peak,15-30 min,18618
+2023-06,casual,Weekday,PM peak,Over 30 min,9715
+2023-06,casual,Weekday,Off-peak,Under 15 min,23770
+2023-06,casual,Weekday,Off-peak,15-30 min,8718
+2023-06,casual,Weekday,Off-peak,Over 30 min,4445
+2023-06,casual,Weekend,AM peak,Under 15 min,4269
+2023-06,casual,Weekend,AM peak,15-30 min,1751
+2023-06,casual,Weekend,AM peak,Over 30 min,1458
+2023-06,casual,Weekend,Midday,Under 15 min,20747
+2023-06,casual,Weekend,Midday,15-30 min,14682
+2023-06,casual,Weekend,Midday,Over 30 min,12204
+2023-06,casual,Weekend,PM peak,Under 15 min,14296
+2023-06,casual,Weekend,PM peak,15-30 min,9472
+2023-06,casual,Weekend,PM peak,Over 30 min,6699
+2023-06,casual,Weekend,Off-peak,Under 15 min,12845
+2023-06,casual,Weekend,Off-peak,15-30 min,5644
+2023-06,casual,Weekend,Off-peak,Over 30 min,3454
+2023-06,member,Weekday,AM peak,Under 15 min,52453
+2023-06,member,Weekday,AM peak,15-30 min,12428
+2023-06,member,Weekday,AM peak,Over 30 min,2639
+2023-06,member,Weekday,Midday,Under 15 min,61188
+2023-06,member,Weekday,Midday,15-30 min,14995
+2023-06,member,Weekday,Midday,Over 30 min,4759
+2023-06,member,Weekday,PM peak,Under 15 min,78679
+2023-06,member,Weekday,PM peak,15-30 min,25431
+2023-06,member,Weekday,PM peak,Over 30 min,7311
+2023-06,member,Weekday,Off-peak,Under 15 min,34423
+2023-06,member,Weekday,Off-peak,15-30 min,9763
+2023-06,member,Weekday,Off-peak,Over 30 min,2600
+2023-06,member,Weekend,AM peak,Under 15 min,7906
+2023-06,member,Weekend,AM peak,15-30 min,2425
+2023-06,member,Weekend,AM peak,Over 30 min,915
+2023-06,member,Weekend,Midday,Under 15 min,27729
+2023-06,member,Weekend,Midday,15-30 min,11083
+2023-06,member,Weekend,Midday,Over 30 min,4557
+2023-06,member,Weekend,PM peak,Under 15 min,17745
+2023-06,member,Weekend,PM peak,15-30 min,7121
+2023-06,member,Weekend,PM peak,Over 30 min,2811
+2023-06,member,Weekend,Off-peak,Under 15 min,13045
+2023-06,member,Weekend,Off-peak,15-30 min,4386
+2023-06,member,Weekend,Off-peak,Over 30 min,1299
+2023-07,casual,Weekday,AM peak,Under 15 min,15878
+2023-07,casual,Weekday,AM peak,15-30 min,4090
+2023-07,casual,Weekday,AM peak,Over 30 min,2540
+2023-07,casual,Weekday,Midday,Under 15 min,31647
+2023-07,casual,Weekday,Midday,15-30 min,15962
+2023-07,casual,Weekday,Midday,Over 30 min,15104
+2023-07,casual,Weekday,PM peak,Under 15 min,40369
+2023-07,casual,Weekday,PM peak,15-30 min,19361
+2023-07,casual,Weekday,PM peak,Over 30 min,11378
+2023-07,casual,Weekday,Off-peak,Under 15 min,24243
+2023-07,casual,Weekday,Off-peak,15-30 min,9650
+2023-07,casual,Weekday,Off-peak,Over 30 min,5228
+2023-07,casual,Weekend,AM peak,Under 15 min,4677
+2023-07,casual,Weekend,AM peak,15-30 min,1874
+2023-07,casual,Weekend,AM peak,Over 30 min,1804
+2023-07,casual,Weekend,Midday,Under 15 min,24441
+2023-07,casual,Weekend,Midday,15-30 min,16402
+2023-07,casual,Weekend,Midday,Over 30 min,14634
+2023-07,casual,Weekend,PM peak,Under 15 min,16651
+2023-07,casual,Weekend,PM peak,15-30 min,10611
+2023-07,casual,Weekend,PM peak,Over 30 min,8279
+2023-07,casual,Weekend,Off-peak,Under 15 min,15733
+2023-07,casual,Weekend,Off-peak,15-30 min,6841
+2023-07,casual,Weekend,Off-peak,Over 30 min,4250
+2023-07,member,Weekday,AM peak,Under 15 min,48604
+2023-07,member,Weekday,AM peak,15-30 min,11659
+2023-07,member,Weekday,AM peak,Over 30 min,2728
+2023-07,member,Weekday,Midday,Under 15 min,59943
+2023-07,member,Weekday,Midday,15-30 min,15825
+2023-07,member,Weekday,Midday,Over 30 min,5661
+2023-07,member,Weekday,PM peak,Under 15 min,78502
+2023-07,member,Weekday,PM peak,15-30 min,26449
+2023-07,member,Weekday,PM peak,Over 30 min,7923
+2023-07,member,Weekday,Off-peak,Under 15 min,34324
+2023-07,member,Weekday,Off-peak,15-30 min,10217
+2023-07,member,Weekday,Off-peak,Over 30 min,3015
+2023-07,member,Weekend,AM peak,Under 15 min,8952
+2023-07,member,Weekend,AM peak,15-30 min,2573
+2023-07,member,Weekend,AM peak,Over 30 min,1015
+2023-07,member,Weekend,Midday,Under 15 min,33740
+2023-07,member,Weekend,Midday,15-30 min,12401
+2023-07,member,Weekend,Midday,Over 30 min,5123
+2023-07,member,Weekend,PM peak,Under 15 min,21191
+2023-07,member,Weekend,PM peak,15-30 min,8231
+2023-07,member,Weekend,PM peak,Over 30 min,3486
+2023-07,member,Weekend,Off-peak,Under 15 min,16326
+2023-07,member,Weekend,Off-peak,15-30 min,5118
+2023-07,member,Weekend,Off-peak,Over 30 min,1770
+2023-08,casual,Weekday,AM peak,Under 15 min,17592
+2023-08,casual,Weekday,AM peak,15-30 min,4638
+2023-08,casual,Weekday,AM peak,Over 30 min,2703
+2023-08,casual,Weekday,Midday,Under 15 min,33016
+2023-08,casual,Weekday,Midday,15-30 min,15211
+2023-08,casual,Weekday,Midday,Over 30 min,13095
+2023-08,casual,Weekday,PM peak,Under 15 min,43211
+2023-08,casual,Weekday,PM peak,15-30 min,20238
+2023-08,casual,Weekday,PM peak,Over 30 min,10887
+2023-08,casual,Weekday,Off-peak,Under 15 min,26974
+2023-08,casual,Weekday,Off-peak,15-30 min,10545
+2023-08,casual,Weekday,Off-peak,Over 30 min,5170
+2023-08,casual,Weekend,AM peak,Under 15 min,4286
+2023-08,casual,Weekend,AM peak,15-30 min,1960
+2023-08,casual,Weekend,AM peak,Over 30 min,1671
+2023-08,casual,Weekend,Midday,Under 15 min,19483
+2023-08,casual,Weekend,Midday,15-30 min,13672
+2023-08,casual,Weekend,Midday,Over 30 min,11700
+2023-08,casual,Weekend,PM peak,Under 15 min,13152
+2023-08,casual,Weekend,PM peak,15-30 min,7743
+2023-08,casual,Weekend,PM peak,Over 30 min,5666
+2023-08,casual,Weekend,Off-peak,Under 15 min,12250
+2023-08,casual,Weekend,Off-peak,15-30 min,5014
+2023-08,casual,Weekend,Off-peak,Over 30 min,2892
+2023-08,member,Weekday,AM peak,Under 15 min,57872
+2023-08,member,Weekday,AM peak,15-30 min,14101
+2023-08,member,Weekday,AM peak,Over 30 min,3116
+2023-08,member,Weekday,Midday,Under 15 min,68306
+2023-08,member,Weekday,Midday,15-30 min,16747
+2023-08,member,Weekday,Midday,Over 30 min,5735
+2023-08,member,Weekday,PM peak,Under 15 min,89421
+2023-08,member,Weekday,PM peak,15-30 min,30494
+2023-08,member,Weekday,PM peak,Over 30 min,9169
+2023-08,member,Weekday,Off-peak,Under 15 min,38967
+2023-08,member,Weekday,Off-peak,15-30 min,12072
+2023-08,member,Weekday,Off-peak,Over 30 min,3523
+2023-08,member,Weekend,AM peak,Under 15 min,8517
+2023-08,member,Weekend,AM peak,15-30 min,2540
+2023-08,member,Weekend,AM peak,Over 30 min,993
+2023-08,member,Weekend,Midday,Under 15 min,27562
+2023-08,member,Weekend,Midday,15-30 min,10714
+2023-08,member,Weekend,Midday,Over 30 min,4291
+2023-08,member,Weekend,PM peak,Under 15 min,17605
+2023-08,member,Weekend,PM peak,15-30 min,6679
+2023-08,member,Weekend,PM peak,Over 30 min,2666
+2023-08,member,Weekend,Off-peak,Under 15 min,12878
+2023-08,member,Weekend,Off-peak,15-30 min,4160
+2023-08,member,Weekend,Off-peak,Over 30 min,1269
+2023-09,casual,Weekday,AM peak,Under 15 min,13180
+2023-09,casual,Weekday,AM peak,15-30 min,2783
+2023-09,casual,Weekday,AM peak,Over 30 min,1411
+2023-09,casual,Weekday,Midday,Under 15 min,26330
+2023-09,casual,Weekday,Midday,15-30 min,10827
+2023-09,casual,Weekday,Midday,Over 30 min,9474
+2023-09,casual,Weekday,PM peak,Under 15 min,34028
+2023-09,casual,Weekday,PM peak,15-30 min,13296
+2023-09,casual,Weekday,PM peak,Over 30 min,6379
+2023-09,casual,Weekday,Off-peak,Under 15 min,19145
+2023-09,casual,Weekday,Off-peak,15-30 min,5825
+2023-09,casual,Weekday,Off-peak,Over 30 min,2658
+2023-09,casual,Weekend,AM peak,Under 15 min,4373
+2023-09,casual,Weekend,AM peak,15-30 min,1704
+2023-09,casual,Weekend,AM peak,Over 30 min,2031
+2023-09,casual,Weekend,Midday,Under 15 min,21791
+2023-09,casual,Weekend,Midday,15-30 min,13822
+2023-09,casual,Weekend,Midday,Over 30 min,13221
+2023-09,casual,Weekend,PM peak,Under 15 min,15226
+2023-09,casual,Weekend,PM peak,15-30 min,8480
+2023-09,casual,Weekend,PM peak,Over 30 min,6284
+2023-09,casual,Weekend,Off-peak,Under 15 min,14040
+2023-09,casual,Weekend,Off-peak,15-30 min,5618
+2023-09,casual,Weekend,Off-peak,Over 30 min,3125
+2023-09,member,Weekday,AM peak,Under 15 min,45437
+2023-09,member,Weekday,AM peak,15-30 min,10337
+2023-09,member,Weekday,AM peak,Over 30 min,2146
+2023-09,member,Weekday,Midday,Under 15 min,61750
+2023-09,member,Weekday,Midday,15-30 min,14027
+2023-09,member,Weekday,Midday,Over 30 min,4625
+2023-09,member,Weekday,PM peak,Under 15 min,75983
+2023-09,member,Weekday,PM peak,15-30 min,23052
+2023-09,member,Weekday,PM peak,Over 30 min,6272
+2023-09,member,Weekday,Off-peak,Under 15 min,30703
+2023-09,member,Weekday,Off-peak,15-30 min,7852
+2023-09,member,Weekday,Off-peak,Over 30 min,1951
+2023-09,member,Weekend,AM peak,Under 15 min,8779
+2023-09,member,Weekend,AM peak,15-30 min,2485
+2023-09,member,Weekend,AM peak,Over 30 min,1133
+2023-09,member,Weekend,Midday,Under 15 min,32327
+2023-09,member,Weekend,Midday,15-30 min,11208
+2023-09,member,Weekend,Midday,Over 30 min,4573
+2023-09,member,Weekend,PM peak,Under 15 min,20862
+2023-09,member,Weekend,PM peak,15-30 min,7294
+2023-09,member,Weekend,PM peak,Over 30 min,2785
+2023-09,member,Weekend,Off-peak,Under 15 min,14752
+2023-09,member,Weekend,Off-peak,15-30 min,4510
+2023-09,member,Weekend,Off-peak,Over 30 min,1301
+2023-10,casual,Weekday,AM peak,Under 15 min,12905
+2023-10,casual,Weekday,AM peak,15-30 min,2308
+2023-10,casual,Weekday,AM peak,Over 30 min,1130
+2023-10,casual,Weekday,Midday,Under 15 min,22968
+2023-10,casual,Weekday,Midday,15-30 min,7472
+2023-10,casual,Weekday,Midday,Over 30 min,6950
+2023-10,casual,Weekday,PM peak,Under 15 min,27205
+2023-10,casual,Weekday,PM peak,15-30 min,8869
+2023-10,casual,Weekday,PM peak,Over 30 min,3956
+2023-10,casual,Weekday,Off-peak,Under 15 min,13145
+2023-10,casual,Weekday,Off-peak,15-30 min,3098
+2023-10,casual,Weekday,Off-peak,Over 30 min,1177
+2023-10,casual,Weekend,AM peak,Under 15 min,3668
+2023-10,casual,Weekend,AM peak,15-30 min,1558
+2023-10,casual,Weekend,AM peak,Over 30 min,1356
+2023-10,casual,Weekend,Midday,Under 15 min,15713
+2023-10,casual,Weekend,Midday,15-30 min,8458
+2023-10,casual,Weekend,Midday,Over 30 min,6999
+2023-10,casual,Weekend,PM peak,Under 15 min,8574
+2023-10,casual,Weekend,PM peak,15-30 min,3323
+2023-10,casual,Weekend,PM peak,Over 30 min,2089
+2023-10,casual,Weekend,Off-peak,Under 15 min,7016
+2023-10,casual,Weekend,Off-peak,15-30 min,1743
+2023-10,casual,Weekend,Off-peak,Over 30 min,812
+2023-10,member,Weekday,AM peak,Under 15 min,49142
+2023-10,member,Weekday,AM peak,15-30 min,9918
+2023-10,member,Weekday,AM peak,Over 30 min,1904
+2023-10,member,Weekday,Midday,Under 15 min,61641
+2023-10,member,Weekday,Midday,15-30 min,11457
+2023-10,member,Weekday,Midday,Over 30 min,3700
+2023-10,member,Weekday,PM peak,Under 15 min,75259
+2023-10,member,Weekday,PM peak,15-30 min,19534
+2023-10,member,Weekday,PM peak,Over 30 min,4879
+2023-10,member,Weekday,Off-peak,Under 15 min,27272
+2023-10,member,Weekday,Off-peak,15-30 min,5510
+2023-10,member,Weekday,Off-peak,Over 30 min,1342
+2023-10,member,Weekend,AM peak,Under 15 min,6997
+2023-10,member,Weekend,AM peak,15-30 min,1748
+2023-10,member,Weekend,AM peak,Over 30 min,600
+2023-10,member,Weekend,Midday,Under 15 min,26802
+2023-10,member,Weekend,Midday,15-30 min,7523
+2023-10,member,Weekend,Midday,Over 30 min,2672
+2023-10,member,Weekend,PM peak,Under 15 min,16062
+2023-10,member,Weekend,PM peak,15-30 min,3950
+2023-10,member,Weekend,PM peak,Over 30 min,1331
+2023-10,member,Weekend,Off-peak,Under 15 min,10483
+2023-10,member,Weekend,Off-peak,15-30 min,2091
+2023-10,member,Weekend,Off-peak,Over 30 min,499
+2023-11,casual,Weekday,AM peak,Under 15 min,8541
+2023-11,casual,Weekday,AM peak,15-30 min,1147
+2023-11,casual,Weekday,AM peak,Over 30 min,461
+2023-11,casual,Weekday,Midday,Under 15 min,15765
+2023-11,casual,Weekday,Midday,15-30 min,4044
+2023-11,casual,Weekday,Midday,Over 30 min,2806
+2023-11,casual,Weekday,PM peak,Under 15 min,16256
+2023-11,casual,Weekday,PM peak,15-30 min,3973
+2023-11,casual,Weekday,PM peak,Over 30 min,1267
+2023-11,casual,Weekday,Off-peak,Under 15 min,8206
+2023-11,casual,Weekday,Off-peak,15-30 min,1682
+2023-11,casual,Weekday,Off-peak,Over 30 min,614
+2023-11,casual,Weekend,AM peak,Under 15 min,1802
+2023-11,casual,Weekend,AM peak,15-30 min,497
+2023-11,casual,Weekend,AM peak,Over 30 min,350
+2023-11,casual,Weekend,Midday,Under 15 min,8933
+2023-11,casual,Weekend,Midday,15-30 min,3929
+2023-11,casual,Weekend,Midday,Over 30 min,3086
+2023-11,casual,Weekend,PM peak,Under 15 min,4585
+2023-11,casual,Weekend,PM peak,15-30 min,1713
+2023-11,casual,Weekend,PM peak,Over 30 min,851
+2023-11,casual,Weekend,Off-peak,Under 15 min,4109
+2023-11,casual,Weekend,Off-peak,15-30 min,979
+2023-11,casual,Weekend,Off-peak,Over 30 min,411
+2023-11,member,Weekday,AM peak,Under 15 min,39183
+2023-11,member,Weekday,AM peak,15-30 min,6844
+2023-11,member,Weekday,AM peak,Over 30 min,1378
+2023-11,member,Weekday,Midday,Under 15 min,51044
+2023-11,member,Weekday,Midday,15-30 min,8912
+2023-11,member,Weekday,Midday,Over 30 min,2755
+2023-11,member,Weekday,PM peak,Under 15 min,54636
+2023-11,member,Weekday,PM peak,15-30 min,11771
+2023-11,member,Weekday,PM peak,Over 30 min,2714
+2023-11,member,Weekday,Off-peak,Under 15 min,20332
+2023-11,member,Weekday,Off-peak,15-30 min,3594
+2023-11,member,Weekday,Off-peak,Over 30 min,835
+2023-11,member,Weekend,AM peak,Under 15 min,5191
+2023-11,member,Weekend,AM peak,15-30 min,1052
+2023-11,member,Weekend,AM peak,Over 30 min,349
+2023-11,member,Weekend,Midday,Under 15 min,19345
+2023-11,member,Weekend,Midday,15-30 min,4906
+2023-11,member,Weekend,Midday,Over 30 min,1813
+2023-11,member,Weekend,PM peak,Under 15 min,10494
+2023-11,member,Weekend,PM peak,15-30 min,2485
+2023-11,member,Weekend,PM peak,Over 30 min,776
+2023-11,member,Weekend,Off-peak,Under 15 min,6810
+2023-11,member,Weekend,Off-peak,15-30 min,1209
+2023-11,member,Weekend,Off-peak,Over 30 min,322
+2023-12,casual,Weekday,AM peak,Under 15 min,4595
+2023-12,casual,Weekday,AM peak,15-30 min,524
+2023-12,casual,Weekday,AM peak,Over 30 min,185
+2023-12,casual,Weekday,Midday,Under 15 min,8476
+2023-12,casual,Weekday,Midday,15-30 min,2153
+2023-12,casual,Weekday,Midday,Over 30 min,1365
+2023-12,casual,Weekday,PM peak,Under 15 min,8234
+2023-12,casual,Weekday,PM peak,15-30 min,1620
+2023-12,casual,Weekday,PM peak,Over 30 min,517
+2023-12,casual,Weekday,Off-peak,Under 15 min,4829
+2023-12,casual,Weekday,Off-peak,15-30 min,880
+2023-12,casual,Weekday,Off-peak,Over 30 min,312
+2023-12,casual,Weekend,AM peak,Under 15 min,1175
+2023-12,casual,Weekend,AM peak,15-30 min,200
+2023-12,casual,Weekend,AM peak,Over 30 min,108
+2023-12,casual,Weekend,Midday,Under 15 min,4952
+2023-12,casual,Weekend,Midday,15-30 min,1688
+2023-12,casual,Weekend,Midday,Over 30 min,931
+2023-12,casual,Weekend,PM peak,Under 15 min,2596
+2023-12,casual,Weekend,PM peak,15-30 min,784
+2023-12,casual,Weekend,PM peak,Over 30 min,294
+2023-12,casual,Weekend,Off-peak,Under 15 min,2954
+2023-12,casual,Weekend,Off-peak,15-30 min,691
+2023-12,casual,Weekend,Off-peak,Over 30 min,340
+2023-12,member,Weekday,AM peak,Under 15 min,24930
+2023-12,member,Weekday,AM peak,15-30 min,4133
+2023-12,member,Weekday,AM peak,Over 30 min,760
+2023-12,member,Weekday,Midday,Under 15 min,33480
+2023-12,member,Weekday,Midday,15-30 min,5480
+2023-12,member,Weekday,Midday,Over 30 min,1737
+2023-12,member,Weekday,PM peak,Under 15 min,33668
+2023-12,member,Weekday,PM peak,15-30 min,6625
+2023-12,member,Weekday,PM peak,Over 30 min,1560
+2023-12,member,Weekday,Off-peak,Under 15 min,12883
+2023-12,member,Weekday,Off-peak,15-30 min,2119
+2023-12,member,Weekday,Off-peak,Over 30 min,552
+2023-12,member,Weekend,AM peak,Under 15 min,4030
+2023-12,member,Weekend,AM peak,15-30 min,747
+2023-12,member,Weekend,AM peak,Over 30 min,202
+2023-12,member,Weekend,Midday,Under 15 min,15131
+2023-12,member,Weekend,Midday,15-30 min,3188
+2023-12,member,Weekend,Midday,Over 30 min,1036
+2023-12,member,Weekend,PM peak,Under 15 min,7553
+2023-12,member,Weekend,PM peak,15-30 min,1521
+2023-12,member,Weekend,PM peak,Over 30 min,459
+2023-12,member,Weekend,Off-peak,Under 15 min,5523
+2023-12,member,Weekend,Off-peak,15-30 min,1021
+2023-12,member,Weekend,Off-peak,Over 30 min,306
+2024-01,casual,Weekday,AM peak,Under 15 min,2741
+2024-01,casual,Weekday,AM peak,15-30 min,291
+2024-01,casual,Weekday,AM peak,Over 30 min,72
+2024-01,casual,Weekday,Midday,Under 15 min,5012
+2024-01,casual,Weekday,Midday,15-30 min,900
+2024-01,casual,Weekday,Midday,Over 30 min,556
+2024-01,casual,Weekday,PM peak,Under 15 min,4908
+2024-01,casual,Weekday,PM peak,15-30 min,793
+2024-01,casual,Weekday,PM peak,Over 30 min,318
+2024-01,casual,Weekday,Off-peak,Under 15 min,2683
+2024-01,casual,Weekday,Off-peak,15-30 min,462
+2024-01,casual,Weekday,Off-peak,Over 30 min,182
+2024-01,casual,Weekend,AM peak,Under 15 min,374
+2024-01,casual,Weekend,AM peak,15-30 min,56
+2024-01,casual,Weekend,AM peak,Over 30 min,25
+2024-01,casual,Weekend,Midday,Under 15 min,1666
+2024-01,casual,Weekend,Midday,15-30 min,345
+2024-01,casual,Weekend,Midday,Over 30 min,194
+2024-01,casual,Weekend,PM peak,Under 15 min,873
+2024-01,casual,Weekend,PM peak,15-30 min,144
+2024-01,casual,Weekend,PM peak,Over 30 min,82
+2024-01,casual,Weekend,Off-peak,Under 15 min,783
+2024-01,casual,Weekend,Off-peak,15-30 min,125
+2024-01,casual,Weekend,Off-peak,Over 30 min,62
+2024-01,member,Weekday,AM peak,Under 15 min,20483
+2024-01,member,Weekday,AM peak,15-30 min,3377
+2024-01,member,Weekday,AM peak,Over 30 min,727
+2024-01,member,Weekday,Midday,Under 15 min,23975
+2024-01,member,Weekday,Midday,15-30 min,3340
+2024-01,member,Weekday,Midday,Over 30 min,1224
+2024-01,member,Weekday,PM peak,Under 15 min,27834
+2024-01,member,Weekday,PM peak,15-30 min,4985
+2024-01,member,Weekday,PM peak,Over 30 min,1144
+2024-01,member,Weekday,Off-peak,Under 15 min,9615
+2024-01,member,Weekday,Off-peak,15-30 min,1437
+2024-01,member,Weekday,Off-peak,Over 30 min,375
+2024-01,member,Weekend,AM peak,Under 15 min,1859
+2024-01,member,Weekend,AM peak,15-30 min,289
+2024-01,member,Weekend,AM peak,Over 30 min,93
+2024-01,member,Weekend,Midday,Under 15 min,7051
+2024-01,member,Weekend,Midday,15-30 min,1301
+2024-01,member,Weekend,Midday,Over 30 min,412
+2024-01,member,Weekend,PM peak,Under 15 min,3707
+2024-01,member,Weekend,PM peak,15-30 min,648
+2024-01,member,Weekend,PM peak,Over 30 min,200
+2024-01,member,Weekend,Off-peak,Under 15 min,2098
+2024-01,member,Weekend,Off-peak,15-30 min,306
+2024-01,member,Weekend,Off-peak,Over 30 min,81
+2024-02,casual,Weekday,AM peak,Under 15 min,4164
+2024-02,casual,Weekday,AM peak,15-30 min,681
+2024-02,casual,Weekday,AM peak,Over 30 min,232
+2024-02,casual,Weekday,Midday,Under 15 min,8258
+2024-02,casual,Weekday,Midday,15-30 min,2469
+2024-02,casual,Weekday,Midday,Over 30 min,2022
+2024-02,casual,Weekday,PM peak,Under 15 min,8378
+2024-02,casual,Weekday,PM peak,15-30 min,2240
+2024-02,casual,Weekday,PM peak,Over 30 min,1295
+2024-02,casual,Weekday,Off-peak,Under 15 min,3404
+2024-02,casual,Weekday,Off-peak,15-30 min,681
+2024-02,casual,Weekday,Off-peak,Over 30 min,297
+2024-02,casual,Weekend,AM peak,Under 15 min,647
+2024-02,casual,Weekend,AM peak,15-30 min,127
+2024-02,casual,Weekend,AM peak,Over 30 min,86
+2024-02,casual,Weekend,Midday,Under 15 min,3482
+2024-02,casual,Weekend,Midday,15-30 min,1404
+2024-02,casual,Weekend,Midday,Over 30 min,1177
+2024-02,casual,Weekend,PM peak,Under 15 min,2026
+2024-02,casual,Weekend,PM peak,15-30 min,664
+2024-02,casual,Weekend,PM peak,Over 30 min,516
+2024-02,casual,Weekend,Off-peak,Under 15 min,1358
+2024-02,casual,Weekend,Off-peak,15-30 min,281
+2024-02,casual,Weekend,Off-peak,Over 30 min,130
+2024-02,member,Weekday,AM peak,Under 15 min,27952
+2024-02,member,Weekday,AM peak,15-30 min,5439
+2024-02,member,Weekday,AM peak,Over 30 min,1211
+2024-02,member,Weekday,Midday,Under 15 min,34640
+2024-02,member,Weekday,Midday,15-30 min,6517
+2024-02,member,Weekday,Midday,Over 30 min,2355
+2024-02,member,Weekday,PM peak,Under 15 min,38120
+2024-02,member,Weekday,PM peak,15-30 min,8775
+2024-02,member,Weekday,PM peak,Over 30 min,2478
+2024-02,member,Weekday,Off-peak,Under 15 min,11838
+2024-02,member,Weekday,Off-peak,15-30 min,2164
+2024-02,member,Weekday,Off-peak,Over 30 min,532
+2024-02,member,Weekend,AM peak,Under 15 min,2832
+2024-02,member,Weekend,AM peak,15-30 min,556
+2024-02,member,Weekend,AM peak,Over 30 min,215
+2024-02,member,Weekend,Midday,Under 15 min,11285
+2024-02,member,Weekend,Midday,15-30 min,2682
+2024-02,member,Weekend,Midday,Over 30 min,1079
+2024-02,member,Weekend,PM peak,Under 15 min,6049
+2024-02,member,Weekend,PM peak,15-30 min,1374
+2024-02,member,Weekend,PM peak,Over 30 min,490
+2024-02,member,Weekend,Off-peak,Under 15 min,3434
+2024-02,member,Weekend,Off-peak,15-30 min,605
+2024-02,member,Weekend,Off-peak,Over 30 min,174
+2024-03,casual,Weekday,AM peak,Under 15 min,5003
+2024-03,casual,Weekday,AM peak,15-30 min,727
+2024-03,casual,Weekday,AM peak,Over 30 min,306
+2024-03,casual,Weekday,Midday,Under 15 min,9941
+2024-03,casual,Weekday,Midday,15-30 min,3422
+2024-03,casual,Weekday,Midday,Over 30 min,2968
+2024-03,casual,Weekday,PM peak,Under 15 min,11631
+2024-03,casual,Weekday,PM peak,15-30 min,3659
+2024-03,casual,Weekday,PM peak,Over 30 min,2029
+2024-03,casual,Weekday,Off-peak,Under 15 min,5087
+2024-03,casual,Weekday,Off-peak,15-30 min,1120
+2024-03,casual,Weekday,Off-peak,Over 30 min,539
+2024-03,casual,Weekend,AM peak,Under 15 min,1671
+2024-03,casual,Weekend,AM peak,15-30 min,504
+2024-03,casual,Weekend,AM peak,Over 30 min,375
+2024-03,casual,Weekend,Midday,Under 15 min,8936
+2024-03,casual,Weekend,Midday,15-30 min,5180
+2024-03,casual,Weekend,Midday,Over 30 min,4381
+2024-03,casual,Weekend,PM peak,Under 15 min,4800
+2024-03,casual,Weekend,PM peak,15-30 min,2195
+2024-03,casual,Weekend,PM peak,Over 30 min,1590
+2024-03,casual,Weekend,Off-peak,Under 15 min,3023
+2024-03,casual,Weekend,Off-peak,15-30 min,748
+2024-03,casual,Weekend,Off-peak,Over 30 min,482
+2024-03,member,Weekday,AM peak,Under 15 min,29657
+2024-03,member,Weekday,AM peak,15-30 min,5273
+2024-03,member,Weekday,AM peak,Over 30 min,971
+2024-03,member,Weekday,Midday,Under 15 min,35916
+2024-03,member,Weekday,Midday,15-30 min,6357
+2024-03,member,Weekday,Midday,Over 30 min,2146
+2024-03,member,Weekday,PM peak,Under 15 min,45015
+2024-03,member,Weekday,PM peak,15-30 min,10371
+2024-03,member,Weekday,PM peak,Over 30 min,2792
+2024-03,member,Weekday,Off-peak,Under 15 min,15111
+2024-03,member,Weekday,Off-peak,15-30 min,2561
+2024-03,member,Weekday,Off-peak,Over 30 min,669
+2024-03,member,Weekend,AM peak,Under 15 min,5304
+2024-03,member,Weekend,AM peak,15-30 min,1042
+2024-03,member,Weekend,AM peak,Over 30 min,406
+2024-03,member,Weekend,Midday,Under 15 min,20392
+2024-03,member,Weekend,Midday,15-30 min,5841
+2024-03,member,Weekend,Midday,Over 30 min,2248
+2024-03,member,Weekend,PM peak,Under 15 min,11095
+2024-03,member,Weekend,PM peak,15-30 min,2745
+2024-03,member,Weekend,PM peak,Over 30 min,985
+2024-03,member,Weekend,Off-peak,Under 15 min,6096
+2024-03,member,Weekend,Off-peak,15-30 min,1061
+2024-03,member,Weekend,Off-peak,Over 30 min,313
+2024-04,casual,Weekday,AM peak,Under 15 min,7755
+2024-04,casual,Weekday,AM peak,15-30 min,1392
+2024-04,casual,Weekday,AM peak,Over 30 min,647
+2024-04,casual,Weekday,Midday,Under 15 min,15106
+2024-04,casual,Weekday,Midday,15-30 min,5441
+2024-04,casual,Weekday,Midday,Over 30 min,4825
+2024-04,casual,Weekday,PM peak,Under 15 min,17318
+2024-04,casual,Weekday,PM peak,15-30 min,6198
+2024-04,casual,Weekday,PM peak,Over 30 min,3737
+2024-04,casual,Weekday,Off-peak,Under 15 min,7976
+2024-04,casual,Weekday,Off-peak,15-30 min,1907
+2024-04,casual,Weekday,Off-peak,Over 30 min,979
+2024-04,casual,Weekend,AM peak,Under 15 min,2032
+2024-04,casual,Weekend,AM peak,15-30 min,791
+2024-04,casual,Weekend,AM peak,Over 30 min,686
+2024-04,casual,Weekend,Midday,Under 15 min,11853
+2024-04,casual,Weekend,Midday,15-30 min,7487
+2024-04,casual,Weekend,Midday,Over 30 min,7802
+2024-04,casual,Weekend,PM peak,Under 15 min,7543
+2024-04,casual,Weekend,PM peak,15-30 min,4543
+2024-04,casual,Weekend,PM peak,Over 30 min,4005
+2024-04,casual,Weekend,Off-peak,Under 15 min,4780
+2024-04,casual,Weekend,Off-peak,15-30 min,1606
+2024-04,casual,Weekend,Off-peak,Over 30 min,1190
+2024-04,member,Weekday,AM peak,Under 15 min,39325
+2024-04,member,Weekday,AM peak,15-30 min,7660
+2024-04,member,Weekday,AM peak,Over 30 min,1584
+2024-04,member,Weekday,Midday,Under 15 min,47715
+2024-04,member,Weekday,Midday,15-30 min,9038
+2024-04,member,Weekday,Midday,Over 30 min,3090
+2024-04,member,Weekday,PM peak,Under 15 min,56428
+2024-04,member,Weekday,PM peak,15-30 min,14811
+2024-04,member,Weekday,PM peak,Over 30 min,4310
+2024-04,member,Weekday,Off-peak,Under 15 min,20227
+2024-04,member,Weekday,Off-peak,15-30 min,3876
+2024-04,member,Weekday,Off-peak,Over 30 min,1036
+2024-04,member,Weekend,AM peak,Under 15 min,5343
+2024-04,member,Weekend,AM peak,15-30 min,1269
+2024-04,member,Weekend,AM peak,Over 30 min,500
+2024-04,member,Weekend,Midday,Under 15 min,21586
+2024-04,member,Weekend,Midday,15-30 min,6919
+2024-04,member,Weekend,Midday,Over 30 min,3051
+2024-04,member,Weekend,PM peak,Under 15 min,13005
+2024-04,member,Weekend,PM peak,15-30 min,4308
+2024-04,member,Weekend,PM peak,Over 30 min,1847
+2024-04,member,Weekend,Off-peak,Under 15 min,7579
+2024-04,member,Weekend,Off-peak,15-30 min,1705
+2024-04,member,Weekend,Off-peak,Over 30 min,502
+2024-05,casual,Weekday,AM peak,Under 15 min,11632
+2024-05,casual,Weekday,AM peak,15-30 min,2856
+2024-05,casual,Weekday,AM peak,Over 30 min,1693
+2024-05,casual,Weekday,Midday,Under 15 min,24554
+2024-05,casual,Weekday,Midday,15-30 min,11599
+2024-05,casual,Weekday,Midday,Over 30 min,11605
+2024-05,casual,Weekday,PM peak,Under 15 min,29519
+2024-05,casual,Weekday,PM peak,15-30 min,14472
+2024-05,casual,Weekday,PM peak,Over 30 min,8766
+2024-05,casual,Weekday,Off-peak,Under 15 min,15764
+2024-05,casual,Weekday,Off-peak,15-30 min,5628
+2024-05,casual,Weekday,Off-peak,Over 30 min,3059
+2024-05,casual,Weekend,AM peak,Under 15 min,3290
+2024-05,casual,Weekend,AM peak,15-30 min,1518
+2024-05,casual,Weekend,AM peak,Over 30 min,1562
+2024-05,casual,Weekend,Midday,Under 15 min,15108
+2024-05,casual,Weekend,Midday,15-30 min,10890
+2024-05,casual,Weekend,Midday,Over 30 min,12121
+2024-05,casual,Weekend,PM peak,Under 15 min,10755
+2024-05,casual,Weekend,PM peak,15-30 min,7023
+2024-05,casual,Weekend,PM peak,Over 30 min,6326
+2024-05,casual,Weekend,Off-peak,Under 15 min,7936
+2024-05,casual,Weekend,Off-peak,15-30 min,3286
+2024-05,casual,Weekend,Off-peak,Over 30 min,2160
+2024-05,member,Weekday,AM peak,Under 15 min,46776
+2024-05,member,Weekday,AM peak,15-30 min,11272
+2024-05,member,Weekday,AM peak,Over 30 min,2514
+2024-05,member,Weekday,Midday,Under 15 min,61190
+2024-05,member,Weekday,Midday,15-30 min,14635
+2024-05,member,Weekday,Midday,Over 30 min,5309
+2024-05,member,Weekday,PM peak,Under 15 min,72328
+2024-05,member,Weekday,PM peak,15-30 min,23804
+2024-05,member,Weekday,PM peak,Over 30 min,7198
+2024-05,member,Weekday,Off-peak,Under 15 min,29088
+2024-05,member,Weekday,Off-peak,15-30 min,7695
+2024-05,member,Weekday,Off-peak,Over 30 min,2147
+2024-05,member,Weekend,AM peak,Under 15 min,7051
+2024-05,member,Weekend,AM peak,15-30 min,2063
+2024-05,member,Weekend,AM peak,Over 30 min,886
+2024-05,member,Weekend,Midday,Under 15 min,24169
+2024-05,member,Weekend,Midday,15-30 min,9317
+2024-05,member,Weekend,Midday,Over 30 min,4213
+2024-05,member,Weekend,PM peak,Under 15 min,15856
+2024-05,member,Weekend,PM peak,15-30 min,6035
+2024-05,member,Weekend,PM peak,Over 30 min,2669
+2024-05,member,Weekend,Off-peak,Under 15 min,9976
+2024-05,member,Weekend,Off-peak,15-30 min,2780
+2024-05,member,Weekend,Off-peak,Over 30 min,1001
+2024-06,casual,Weekday,AM peak,Under 15 min,13059
+2024-06,casual,Weekday,AM peak,15-30 min,3180
+2024-06,casual,Weekday,AM peak,Over 30 min,1919
+2024-06,casual,Weekday,Midday,Under 15 min,27406
+2024-06,casual,Weekday,Midday,15-30 min,13161
+2024-06,casual,Weekday,Midday,Over 30 min,11996
+2024-06,casual,Weekday,PM peak,Under 15 min,36384
+2024-06,casual,Weekday,PM peak,15-30 min,18474
+2024-06,casual,Weekday,PM peak,Over 30 min,9862
+2024-06,casual,Weekday,Off-peak,Under 15 min,20746
+2024-06,casual,Weekday,Off-peak,15-30 min,8516
+2024-06,casual,Weekday,Off-peak,Over 30 min,4514
+2024-06,casual,Weekend,AM peak,Under 15 min,5214
+2024-06,casual,Weekend,AM peak,15-30 min,2315
+2024-06,casual,Weekend,AM peak,Over 30 min,2191
+2024-06,casual,Weekend,Midday,Under 15 min,24313
+2024-06,casual,Weekend,Midday,15-30 min,16937
+2024-06,casual,Weekend,Midday,Over 30 min,15533
+2024-06,casual,Weekend,PM peak,Under 15 min,15088
+2024-06,casual,Weekend,PM peak,15-30 min,9667
+2024-06,casual,Weekend,PM peak,Over 30 min,7340
+2024-06,casual,Weekend,Off-peak,Under 15 min,13039
+2024-06,casual,Weekend,Off-peak,15-30 min,5604
+2024-06,casual,Weekend,Off-peak,Over 30 min,3449
+2024-06,member,Weekday,AM peak,Under 15 min,46087
+2024-06,member,Weekday,AM peak,15-30 min,10810
+2024-06,member,Weekday,AM peak,Over 30 min,2489
+2024-06,member,Weekday,Midday,Under 15 min,56425
+2024-06,member,Weekday,Midday,15-30 min,14309
+2024-06,member,Weekday,Midday,Over 30 min,4921
+2024-06,member,Weekday,PM peak,Under 15 min,74135
+2024-06,member,Weekday,PM peak,15-30 min,25788
+2024-06,member,Weekday,PM peak,Over 30 min,7661
+2024-06,member,Weekday,Off-peak,Under 15 min,30772
+2024-06,member,Weekday,Off-peak,15-30 min,9618
+2024-06,member,Weekday,Off-peak,Over 30 min,3023
+2024-06,member,Weekend,AM peak,Under 15 min,10040
+2024-06,member,Weekend,AM peak,15-30 min,2966
+2024-06,member,Weekend,AM peak,Over 30 min,1160
+2024-06,member,Weekend,Midday,Under 15 min,33515
+2024-06,member,Weekend,Midday,15-30 min,12828
+2024-06,member,Weekend,Midday,Over 30 min,5298
+2024-06,member,Weekend,PM peak,Under 15 min,19527
+2024-06,member,Weekend,PM peak,15-30 min,7764
+2024-06,member,Weekend,PM peak,Over 30 min,3141
+2024-06,member,Weekend,Off-peak,Under 15 min,13983
+2024-06,member,Weekend,Off-peak,15-30 min,4409
+2024-06,member,Weekend,Off-peak,Over 30 min,1368
+2024-07,casual,Weekday,AM peak,Under 15 min,15541
+2024-07,casual,Weekday,AM peak,15-30 min,3600
+2024-07,casual,Weekday,AM peak,Over 30 min,2352
+2024-07,casual,Weekday,Midday,Under 15 min,32551
+2024-07,casual,Weekday,Midday,15-30 min,16812
+2024-07,casual,Weekday,Midday,Over 30 min,17048
+2024-07,casual,Weekday,PM peak,Under 15 min,41271
+2024-07,casual,Weekday,PM peak,15-30 min,20718
+2024-07,casual,Weekday,PM peak,Over 30 min,13144
+2024-07,casual,Weekday,Off-peak,Under 15 min,24578
+2024-07,casual,Weekday,Off-peak,15-30 min,10443
+2024-07,casual,Weekday,Off-peak,Over 30 min,5881
+2024-07,casual,Weekend,AM peak,Under 15 min,3963
+2024-07,casual,Weekend,AM peak,15-30 min,1836
+2024-07,casual,Weekend,AM peak,Over 30 min,1797
+2024-07,casual,Weekend,Midday,Under 15 min,20927
+2024-07,casual,Weekend,Midday,15-30 min,14277
+2024-07,casual,Weekend,Midday,Over 30 min,13831
+2024-07,casual,Weekend,PM peak,Under 15 min,12929
+2024-07,casual,Weekend,PM peak,15-30 min,8334
+2024-07,casual,Weekend,PM peak,Over 30 min,6889
+2024-07,casual,Weekend,Off-peak,Under 15 min,11624
+2024-07,casual,Weekend,Off-peak,15-30 min,5577
+2024-07,casual,Weekend,Off-peak,Over 30 min,3576
+2024-07,member,Weekday,AM peak,Under 15 min,51868
+2024-07,member,Weekday,AM peak,15-30 min,12594
+2024-07,member,Weekday,AM peak,Over 30 min,2966
+2024-07,member,Weekday,Midday,Under 15 min,64957
+2024-07,member,Weekday,Midday,15-30 min,16535
+2024-07,member,Weekday,Midday,Over 30 min,5801
+2024-07,member,Weekday,PM peak,Under 15 min,84084
+2024-07,member,Weekday,PM peak,15-30 min,28376
+2024-07,member,Weekday,PM peak,Over 30 min,8588
+2024-07,member,Weekday,Off-peak,Under 15 min,35529
+2024-07,member,Weekday,Off-peak,15-30 min,11162
+2024-07,member,Weekday,Off-peak,Over 30 min,3629
+2024-07,member,Weekend,AM peak,Under 15 min,7421
+2024-07,member,Weekend,AM peak,15-30 min,2310
+2024-07,member,Weekend,AM peak,Over 30 min,852
+2024-07,member,Weekend,Midday,Under 15 min,27969
+2024-07,member,Weekend,Midday,15-30 min,10256
+2024-07,member,Weekend,Midday,Over 30 min,4214
+2024-07,member,Weekend,PM peak,Under 15 min,16422
+2024-07,member,Weekend,PM peak,15-30 min,6286
+2024-07,member,Weekend,PM peak,Over 30 min,2588
+2024-07,member,Weekend,Off-peak,Under 15 min,11975
+2024-07,member,Weekend,Off-peak,15-30 min,4150
+2024-07,member,Weekend,Off-peak,Over 30 min,1349
+2024-08,casual,Weekday,AM peak,Under 15 min,15475
+2024-08,casual,Weekday,AM peak,15-30 min,3257
+2024-08,casual,Weekday,AM peak,Over 30 min,1963
+2024-08,casual,Weekday,Midday,Under 15 min,31758
+2024-08,casual,Weekday,Midday,15-30 min,14669
+2024-08,casual,Weekday,Midday,Over 30 min,13564
+2024-08,casual,Weekday,PM peak,Under 15 min,39399
+2024-08,casual,Weekday,PM peak,15-30 min,17531
+2024-08,casual,Weekday,PM peak,Over 30 min,9621
+2024-08,casual,Weekday,Off-peak,Under 15 min,22755
+2024-08,casual,Weekday,Off-peak,15-30 min,8551
+2024-08,casual,Weekday,Off-peak,Over 30 min,3993
+2024-08,casual,Weekend,AM peak,Under 15 min,5208
+2024-08,casual,Weekend,AM peak,15-30 min,2422
+2024-08,casual,Weekend,AM peak,Over 30 min,2150
+2024-08,casual,Weekend,Midday,Under 15 min,24866
+2024-08,casual,Weekend,Midday,15-30 min,17576
+2024-08,casual,Weekend,Midday,Over 30 min,15146
+2024-08,casual,Weekend,PM peak,Under 15 min,15342
+2024-08,casual,Weekend,PM peak,15-30 min,9996
+2024-08,casual,Weekend,PM peak,Over 30 min,7532
+2024-08,casual,Weekend,Off-peak,Under 15 min,14639
+2024-08,casual,Weekend,Off-peak,15-30 min,6327
+2024-08,casual,Weekend,Off-peak,Over 30 min,3668
+2024-08,member,Weekday,AM peak,Under 15 min,51174
+2024-08,member,Weekday,AM peak,15-30 min,11516
+2024-08,member,Weekday,AM peak,Over 30 min,2539
+2024-08,member,Weekday,Midday,Under 15 min,65598
+2024-08,member,Weekday,Midday,15-30 min,15052
+2024-08,member,Weekday,Midday,Over 30 min,5148
+2024-08,member,Weekday,PM peak,Under 15 min,83699
+2024-08,member,Weekday,PM peak,15-30 min,26261
+2024-08,member,Weekday,PM peak,Over 30 min,7623
+2024-08,member,Weekday,Off-peak,Under 15 min,33667
+2024-08,member,Weekday,Off-peak,15-30 min,9834
+2024-08,member,Weekday,Off-peak,Over 30 min,2827
+2024-08,member,Weekend,AM peak,Under 15 min,9921
+2024-08,member,Weekend,AM peak,15-30 min,2900
+2024-08,member,Weekend,AM peak,Over 30 min,1171
+2024-08,member,Weekend,Midday,Under 15 min,31917
+2024-08,member,Weekend,Midday,15-30 min,12233
+2024-08,member,Weekend,Midday,Over 30 min,4860
+2024-08,member,Weekend,PM peak,Under 15 min,20383
+2024-08,member,Weekend,PM peak,15-30 min,7761
+2024-08,member,Weekend,PM peak,Over 30 min,3184
+2024-08,member,Weekend,Off-peak,Under 15 min,14684
+2024-08,member,Weekend,Off-peak,15-30 min,4867
+2024-08,member,Weekend,Off-peak,Over 30 min,1423
+2024-09,casual,Weekday,AM peak,Under 15 min,23924
+2024-09,casual,Weekday,AM peak,15-30 min,4242
+2024-09,casual,Weekday,AM peak,Over 30 min,2028
+2024-09,casual,Weekday,Midday,Under 15 min,41601
+2024-09,casual,Weekday,Midday,15-30 min,15247
+2024-09,casual,Weekday,Midday,Over 30 min,12383
+2024-09,casual,Weekday,PM peak,Under 15 min,49639
+2024-09,casual,Weekday,PM peak,15-30 min,17927
+2024-09,casual,Weekday,PM peak,Over 30 min,8473
+2024-09,casual,Weekday,Off-peak,Under 15 min,26266
+2024-09,casual,Weekday,Off-peak,15-30 min,7779
+2024-09,casual,Weekday,Off-peak,Over 30 min,3377
+2024-09,casual,Weekend,AM peak,Under 15 min,5991
+2024-09,casual,Weekend,AM peak,15-30 min,2239
+2024-09,casual,Weekend,AM peak,Over 30 min,1990
+2024-09,casual,Weekend,Midday,Under 15 min,26817
+2024-09,casual,Weekend,Midday,15-30 min,14561
+2024-09,casual,Weekend,Midday,Over 30 min,11812
+2024-09,casual,Weekend,PM peak,Under 15 min,18388
+2024-09,casual,Weekend,PM peak,15-30 min,8845
+2024-09,casual,Weekend,PM peak,Over 30 min,6088
+2024-09,casual,Weekend,Off-peak,Under 15 min,15811
+2024-09,casual,Weekend,Off-peak,15-30 min,5867
+2024-09,casual,Weekend,Off-peak,Over 30 min,3189
+2024-09,member,Weekday,AM peak,Under 15 min,63869
+2024-09,member,Weekday,AM peak,15-30 min,13423
+2024-09,member,Weekday,AM peak,Over 30 min,2632
+2024-09,member,Weekday,Midday,Under 15 min,76347
+2024-09,member,Weekday,Midday,15-30 min,15527
+2024-09,member,Weekday,Midday,Over 30 min,5147
+2024-09,member,Weekday,PM peak,Under 15 min,95318
+2024-09,member,Weekday,PM peak,15-30 min,27552
+2024-09,member,Weekday,PM peak,Over 30 min,7202
+2024-09,member,Weekday,Off-peak,Under 15 min,35121
+2024-09,member,Weekday,Off-peak,15-30 min,8815
+2024-09,member,Weekday,Off-peak,Over 30 min,2150
+2024-09,member,Weekend,AM peak,Under 15 min,9755
+2024-09,member,Weekend,AM peak,15-30 min,2503
+2024-09,member,Weekend,AM peak,Over 30 min,1039
+2024-09,member,Weekend,Midday,Under 15 min,33329
+2024-09,member,Weekend,Midday,15-30 min,10352
+2024-09,member,Weekend,Midday,Over 30 min,3533
+2024-09,member,Weekend,PM peak,Under 15 min,22753
+2024-09,member,Weekend,PM peak,15-30 min,6932
+2024-09,member,Weekend,PM peak,Over 30 min,2420
+2024-09,member,Weekend,Off-peak,Under 15 min,14843
+2024-09,member,Weekend,Off-peak,15-30 min,3999
+2024-09,member,Weekend,Off-peak,Over 30 min,1148
+2024-10,casual,Weekday,AM peak,Under 15 min,14950
+2024-10,casual,Weekday,AM peak,15-30 min,2408
+2024-10,casual,Weekday,AM peak,Over 30 min,1248
+2024-10,casual,Weekday,Midday,Under 15 min,26883
+2024-10,casual,Weekday,Midday,15-30 min,10026
+2024-10,casual,Weekday,Midday,Over 30 min,9023
+2024-10,casual,Weekday,PM peak,Under 15 min,30674
+2024-10,casual,Weekday,PM peak,15-30 min,10285
+2024-10,casual,Weekday,PM peak,Over 30 min,4647
+2024-10,casual,Weekday,Off-peak,Under 15 min,15825
+2024-10,casual,Weekday,Off-peak,15-30 min,3549
+2024-10,casual,Weekday,Off-peak,Over 30 min,1384
+2024-10,casual,Weekend,AM peak,Under 15 min,4850
+2024-10,casual,Weekend,AM peak,15-30 min,2317
+2024-10,casual,Weekend,AM peak,Over 30 min,1995
+2024-10,casual,Weekend,Midday,Under 15 min,18534
+2024-10,casual,Weekend,Midday,15-30 min,11285
+2024-10,casual,Weekend,Midday,Over 30 min,10229
+2024-10,casual,Weekend,PM peak,Under 15 min,10068
+2024-10,casual,Weekend,PM peak,15-30 min,4652
+2024-10,casual,Weekend,PM peak,Over 30 min,3200
+2024-10,casual,Weekend,Off-peak,Under 15 min,8588
+2024-10,casual,Weekend,Off-peak,15-30 min,2460
+2024-10,casual,Weekend,Off-peak,Over 30 min,1145
+2024-10,member,Weekday,AM peak,Under 15 min,56201
+2024-10,member,Weekday,AM peak,15-30 min,11365
+2024-10,member,Weekday,AM peak,Over 30 min,2205
+2024-10,member,Weekday,Midday,Under 15 min,70697
+2024-10,member,Weekday,Midday,15-30 min,13262
+2024-10,member,Weekday,Midday,Over 30 min,4442
+2024-10,member,Weekday,PM peak,Under 15 min,84041
+2024-10,member,Weekday,PM peak,15-30 min,22223
+2024-10,member,Weekday,PM peak,Over 30 min,5766
+2024-10,member,Weekday,Off-peak,Under 15 min,29259
+2024-10,member,Weekday,Off-peak,15-30 min,6309
+2024-10,member,Weekday,Off-peak,Over 30 min,1600
+2024-10,member,Weekend,AM peak,Under 15 min,8049
+2024-10,member,Weekend,AM peak,15-30 min,2096
+2024-10,member,Weekend,AM peak,Over 30 min,664
+2024-10,member,Weekend,Midday,Under 15 min,28234
+2024-10,member,Weekend,Midday,15-30 min,8650
+2024-10,member,Weekend,Midday,Over 30 min,3353
+2024-10,member,Weekend,PM peak,Under 15 min,16629
+2024-10,member,Weekend,PM peak,15-30 min,4654
+2024-10,member,Weekend,PM peak,Over 30 min,1656
+2024-10,member,Weekend,Off-peak,Under 15 min,10366
+2024-10,member,Weekend,Off-peak,15-30 min,2302
+2024-10,member,Weekend,Off-peak,Over 30 min,641
+2024-11,casual,Weekday,AM peak,Under 15 min,8310
+2024-11,casual,Weekday,AM peak,15-30 min,1025
+2024-11,casual,Weekday,AM peak,Over 30 min,360
+2024-11,casual,Weekday,Midday,Under 15 min,13939
+2024-11,casual,Weekday,Midday,15-30 min,3713
+2024-11,casual,Weekday,Midday,Over 30 min,2618
+2024-11,casual,Weekday,PM peak,Under 15 min,12907
+2024-11,casual,Weekday,PM peak,15-30 min,2753
+2024-11,casual,Weekday,PM peak,Over 30 min,919
+2024-11,casual,Weekday,Off-peak,Under 15 min,7189
+2024-11,casual,Weekday,Off-peak,15-30 min,1138
+2024-11,casual,Weekday,Off-peak,Over 30 min,403
+2024-11,casual,Weekend,AM peak,Under 15 min,2531
+2024-11,casual,Weekend,AM peak,15-30 min,745
+2024-11,casual,Weekend,AM peak,Over 30 min,491
+2024-11,casual,Weekend,Midday,Under 15 min,10244
+2024-11,casual,Weekend,Midday,15-30 min,4409
+2024-11,casual,Weekend,Midday,Over 30 min,3361
+2024-11,casual,Weekend,PM peak,Under 15 min,4853
+2024-11,casual,Weekend,PM peak,15-30 min,1685
+2024-11,casual,Weekend,PM peak,Over 30 min,836
+2024-11,casual,Weekend,Off-peak,Under 15 min,4771
+2024-11,casual,Weekend,Off-peak,15-30 min,999
+2024-11,casual,Weekend,Off-peak,Over 30 min,400
+2024-11,member,Weekday,AM peak,Under 15 min,36797
+2024-11,member,Weekday,AM peak,15-30 min,6620
+2024-11,member,Weekday,AM peak,Over 30 min,1333
+2024-11,member,Weekday,Midday,Under 15 min,45796
+2024-11,member,Weekday,Midday,15-30 min,7413
+2024-11,member,Weekday,Midday,Over 30 min,2173
+2024-11,member,Weekday,PM peak,Under 15 min,45740
+2024-11,member,Weekday,PM peak,15-30 min,9695
+2024-11,member,Weekday,PM peak,Over 30 min,2073
+2024-11,member,Weekday,Off-peak,Under 15 min,17081
+2024-11,member,Weekday,Off-peak,15-30 min,2867
+2024-11,member,Weekday,Off-peak,Over 30 min,729
+2024-11,member,Weekend,AM peak,Under 15 min,6191
+2024-11,member,Weekend,AM peak,15-30 min,1278
+2024-11,member,Weekend,AM peak,Over 30 min,378
+2024-11,member,Weekend,Midday,Under 15 min,22308
+2024-11,member,Weekend,Midday,15-30 min,5202
+2024-11,member,Weekend,Midday,Over 30 min,1640
+2024-11,member,Weekend,PM peak,Under 15 min,11279
+2024-11,member,Weekend,PM peak,15-30 min,2387
+2024-11,member,Weekend,PM peak,Over 30 min,648
+2024-11,member,Weekend,Off-peak,Under 15 min,7443
+2024-11,member,Weekend,Off-peak,15-30 min,1388
+2024-11,member,Weekend,Off-peak,Over 30 min,329
+2024-12,casual,Weekday,AM peak,Under 15 min,3983
+2024-12,casual,Weekday,AM peak,15-30 min,392
+2024-12,casual,Weekday,AM peak,Over 30 min,119
+2024-12,casual,Weekday,Midday,Under 15 min,6549
+2024-12,casual,Weekday,Midday,15-30 min,1424
+2024-12,casual,Weekday,Midday,Over 30 min,765
+2024-12,casual,Weekday,PM peak,Under 15 min,6180
+2024-12,casual,Weekday,PM peak,15-30 min,1143
+2024-12,casual,Weekday,PM peak,Over 30 min,360
+2024-12,casual,Weekday,Off-peak,Under 15 min,3477
+2024-12,casual,Weekday,Off-peak,15-30 min,617
+2024-12,casual,Weekday,Off-peak,Over 30 min,237
+2024-12,casual,Weekend,AM peak,Under 15 min,744
+2024-12,casual,Weekend,AM peak,15-30 min,148
+2024-12,casual,Weekend,AM peak,Over 30 min,77
+2024-12,casual,Weekend,Midday,Under 15 min,3889
+2024-12,casual,Weekend,Midday,15-30 min,1261
+2024-12,casual,Weekend,Midday,Over 30 min,687
+2024-12,casual,Weekend,PM peak,Under 15 min,1902
+2024-12,casual,Weekend,PM peak,15-30 min,548
+2024-12,casual,Weekend,PM peak,Over 30 min,220
+2024-12,casual,Weekend,Off-peak,Under 15 min,1961
+2024-12,casual,Weekend,Off-peak,15-30 min,426
+2024-12,casual,Weekend,Off-peak,Over 30 min,217
+2024-12,member,Weekday,AM peak,Under 15 min,23304
+2024-12,member,Weekday,AM peak,15-30 min,3315
+2024-12,member,Weekday,AM peak,Over 30 min,663
+2024-12,member,Weekday,Midday,Under 15 min,27640
+2024-12,member,Weekday,Midday,15-30 min,3936
+2024-12,member,Weekday,Midday,Over 30 min,1253
+2024-12,member,Weekday,PM peak,Under 15 min,28455
+2024-12,member,Weekday,PM peak,15-30 min,5042
+2024-12,member,Weekday,PM peak,Over 30 min,1177
+2024-12,member,Weekday,Off-peak,Under 15 min,9808
+2024-12,member,Weekday,Off-peak,15-30 min,1589
+2024-12,member,Weekday,Off-peak,Over 30 min,415
+2024-12,member,Weekend,AM peak,Under 15 min,2981
+2024-12,member,Weekend,AM peak,15-30 min,465
+2024-12,member,Weekend,AM peak,Over 30 min,131
+2024-12,member,Weekend,Midday,Under 15 min,11815
+2024-12,member,Weekend,Midday,15-30 min,2327
+2024-12,member,Weekend,Midday,Over 30 min,774
+2024-12,member,Weekend,PM peak,Under 15 min,6300
+2024-12,member,Weekend,PM peak,15-30 min,1119
+2024-12,member,Weekend,PM peak,Over 30 min,358
+2024-12,member,Weekend,Off-peak,Under 15 min,3882
+2024-12,member,Weekend,Off-peak,15-30 min,623
+2024-12,member,Weekend,Off-peak,Over 30 min,187
+2025-01,casual,Weekday,AM peak,Under 15 min,2860
+2025-01,casual,Weekday,AM peak,15-30 min,233
+2025-01,casual,Weekday,AM peak,Over 30 min,48
+2025-01,casual,Weekday,Midday,Under 15 min,4834
+2025-01,casual,Weekday,Midday,15-30 min,817
+2025-01,casual,Weekday,Midday,Over 30 min,369
+2025-01,casual,Weekday,PM peak,Under 15 min,4469
+2025-01,casual,Weekday,PM peak,15-30 min,632
+2025-01,casual,Weekday,PM peak,Over 30 min,231
+2025-01,casual,Weekday,Off-peak,Under 15 min,2643
+2025-01,casual,Weekday,Off-peak,15-30 min,417
+2025-01,casual,Weekday,Off-peak,Over 30 min,162
+2025-01,casual,Weekend,AM peak,Under 15 min,470
+2025-01,casual,Weekend,AM peak,15-30 min,62
+2025-01,casual,Weekend,AM peak,Over 30 min,15
+2025-01,casual,Weekend,Midday,Under 15 min,1960
+2025-01,casual,Weekend,Midday,15-30 min,359
+2025-01,casual,Weekend,Midday,Over 30 min,219
+2025-01,casual,Weekend,PM peak,Under 15 min,1047
+2025-01,casual,Weekend,PM peak,15-30 min,210
+2025-01,casual,Weekend,PM peak,Over 30 min,76
+2025-01,casual,Weekend,Off-peak,Under 15 min,1083
+2025-01,casual,Weekend,Off-peak,15-30 min,172
+2025-01,casual,Weekend,Off-peak,Over 30 min,46
+2025-01,member,Weekday,AM peak,Under 15 min,19871
+2025-01,member,Weekday,AM peak,15-30 min,2629
+2025-01,member,Weekday,AM peak,Over 30 min,565
+2025-01,member,Weekday,Midday,Under 15 min,23458
+2025-01,member,Weekday,Midday,15-30 min,2744
+2025-01,member,Weekday,Midday,Over 30 min,965
+2025-01,member,Weekday,PM peak,Under 15 min,26027
+2025-01,member,Weekday,PM peak,15-30 min,3961
+2025-01,member,Weekday,PM peak,Over 30 min,965
+2025-01,member,Weekday,Off-peak,Under 15 min,8609
+2025-01,member,Weekday,Off-peak,15-30 min,1193
+2025-01,member,Weekday,Off-peak,Over 30 min,261
+2025-01,member,Weekend,AM peak,Under 15 min,2254
+2025-01,member,Weekend,AM peak,15-30 min,290
+2025-01,member,Weekend,AM peak,Over 30 min,78
+2025-01,member,Weekend,Midday,Under 15 min,8305
+2025-01,member,Weekend,Midday,15-30 min,1312
+2025-01,member,Weekend,Midday,Over 30 min,463
+2025-01,member,Weekend,PM peak,Under 15 min,4411
+2025-01,member,Weekend,PM peak,15-30 min,676
+2025-01,member,Weekend,PM peak,Over 30 min,233
+2025-01,member,Weekend,Off-peak,Under 15 min,2610
+2025-01,member,Weekend,Off-peak,15-30 min,364
+2025-01,member,Weekend,Off-peak,Over 30 min,96
+2025-02,casual,Weekday,AM peak,Under 15 min,3131
+2025-02,casual,Weekday,AM peak,15-30 min,279
+2025-02,casual,Weekday,AM peak,Over 30 min,76
+2025-02,casual,Weekday,Midday,Under 15 min,5286
+2025-02,casual,Weekday,Midday,15-30 min,885
+2025-02,casual,Weekday,Midday,Over 30 min,475
+2025-02,casual,Weekday,PM peak,Under 15 min,5457
+2025-02,casual,Weekday,PM peak,15-30 min,861
+2025-02,casual,Weekday,PM peak,Over 30 min,313
+2025-02,casual,Weekday,Off-peak,Under 15 min,2406
+2025-02,casual,Weekday,Off-peak,15-30 min,322
+2025-02,casual,Weekday,Off-peak,Over 30 min,102
+2025-02,casual,Weekend,AM peak,Under 15 min,573
+2025-02,casual,Weekend,AM peak,15-30 min,77
+2025-02,casual,Weekend,AM peak,Over 30 min,41
+2025-02,casual,Weekend,Midday,Under 15 min,2483
+2025-02,casual,Weekend,Midday,15-30 min,562
+2025-02,casual,Weekend,Midday,Over 30 min,352
+2025-02,casual,Weekend,PM peak,Under 15 min,1315
+2025-02,casual,Weekend,PM peak,15-30 min,283
+2025-02,casual,Weekend,PM peak,Over 30 min,177
+2025-02,casual,Weekend,Off-peak,Under 15 min,1313
+2025-02,casual,Weekend,Off-peak,15-30 min,177
+2025-02,casual,Weekend,Off-peak,Over 30 min,58
+2025-02,member,Weekday,AM peak,Under 15 min,21353
+2025-02,member,Weekday,AM peak,15-30 min,3015
+2025-02,member,Weekday,AM peak,Over 30 min,524
+2025-02,member,Weekday,Midday,Under 15 min,24537
+2025-02,member,Weekday,Midday,15-30 min,3143
+2025-02,member,Weekday,Midday,Over 30 min,1025
+2025-02,member,Weekday,PM peak,Under 15 min,28120
+2025-02,member,Weekday,PM peak,15-30 min,4735
+2025-02,member,Weekday,PM peak,Over 30 min,1108
+2025-02,member,Weekday,Off-peak,Under 15 min,8428
+2025-02,member,Weekday,Off-peak,15-30 min,1213
+2025-02,member,Weekday,Off-peak,Over 30 min,256
+2025-02,member,Weekend,AM peak,Under 15 min,2618
+2025-02,member,Weekend,AM peak,15-30 min,313
+2025-02,member,Weekend,AM peak,Over 30 min,90
+2025-02,member,Weekend,Midday,Under 15 min,9455
+2025-02,member,Weekend,Midday,15-30 min,1525
+2025-02,member,Weekend,Midday,Over 30 min,496
+2025-02,member,Weekend,PM peak,Under 15 min,5232
+2025-02,member,Weekend,PM peak,15-30 min,840
+2025-02,member,Weekend,PM peak,Over 30 min,283
+2025-02,member,Weekend,Off-peak,Under 15 min,3186
+2025-02,member,Weekend,Off-peak,15-30 min,471
+2025-02,member,Weekend,Off-peak,Over 30 min,118
+2025-03,casual,Weekday,AM peak,Under 15 min,5833
+2025-03,casual,Weekday,AM peak,15-30 min,737
+2025-03,casual,Weekday,AM peak,Over 30 min,263
+2025-03,casual,Weekday,Midday,Under 15 min,10655
+2025-03,casual,Weekday,Midday,15-30 min,3851
+2025-03,casual,Weekday,Midday,Over 30 min,2991
+2025-03,casual,Weekday,PM peak,Under 15 min,13460
+2025-03,casual,Weekday,PM peak,15-30 min,4488
+2025-03,casual,Weekday,PM peak,Over 30 min,2486
+2025-03,casual,Weekday,Off-peak,Under 15 min,6184
+2025-03,casual,Weekday,Off-peak,15-30 min,1474
+2025-03,casual,Weekday,Off-peak,Over 30 min,682
+2025-03,casual,Weekend,AM peak,Under 15 min,1892
+2025-03,casual,Weekend,AM peak,15-30 min,544
+2025-03,casual,Weekend,AM peak,Over 30 min,249
+2025-03,casual,Weekend,Midday,Under 15 min,8200
+2025-03,casual,Weekend,Midday,15-30 min,4073
+2025-03,casual,Weekend,Midday,Over 30 min,2876
+2025-03,casual,Weekend,PM peak,Under 15 min,4371
+2025-03,casual,Weekend,PM peak,15-30 min,1967
+2025-03,casual,Weekend,PM peak,Over 30 min,1049
+2025-03,casual,Weekend,Off-peak,Under 15 min,3319
+2025-03,casual,Weekend,Off-peak,15-30 min,800
+2025-03,casual,Weekend,Off-peak,Over 30 min,423
+2025-03,member,Weekday,AM peak,Under 15 min,31515
+2025-03,member,Weekday,AM peak,15-30 min,5348
+2025-03,member,Weekday,AM peak,Over 30 min,949
+2025-03,member,Weekday,Midday,Under 15 min,35332
+2025-03,member,Weekday,Midday,15-30 min,5866
+2025-03,member,Weekday,Midday,Over 30 min,1985
+2025-03,member,Weekday,PM peak,Under 15 min,45106
+2025-03,member,Weekday,PM peak,15-30 min,10531
+2025-03,member,Weekday,PM peak,Over 30 min,2795
+2025-03,member,Weekday,Off-peak,Under 15 min,14816
+2025-03,member,Weekday,Off-peak,15-30 min,2518
+2025-03,member,Weekday,Off-peak,Over 30 min,620
+2025-03,member,Weekend,AM peak,Under 15 min,5226
+2025-03,member,Weekend,AM peak,15-30 min,936
+2025-03,member,Weekend,AM peak,Over 30 min,259
+2025-03,member,Weekend,Midday,Under 15 min,18429
+2025-03,member,Weekend,Midday,15-30 min,4430
+2025-03,member,Weekend,Midday,Over 30 min,1696
+2025-03,member,Weekend,PM peak,Under 15 min,10001
+2025-03,member,Weekend,PM peak,15-30 min,2280
+2025-03,member,Weekend,PM peak,Over 30 min,798
+2025-03,member,Weekend,Off-peak,Under 15 min,5784
+2025-03,member,Weekend,Off-peak,15-30 min,987
+2025-03,member,Weekend,Off-peak,Over 30 min,264
+2025-04,casual,Weekday,AM peak,Under 15 min,8120
+2025-04,casual,Weekday,AM peak,15-30 min,1254
+2025-04,casual,Weekday,AM peak,Over 30 min,561
+2025-04,casual,Weekday,Midday,Under 15 min,14149
+2025-04,casual,Weekday,Midday,15-30 min,4753
+2025-04,casual,Weekday,Midday,Over 30 min,4111
+2025-04,casual,Weekday,PM peak,Under 15 min,16934
+2025-04,casual,Weekday,PM peak,15-30 min,5786
+2025-04,casual,Weekday,PM peak,Over 30 min,3017
+2025-04,casual,Weekday,Off-peak,Under 15 min,8402
+2025-04,casual,Weekday,Off-peak,15-30 min,1907
+2025-04,casual,Weekday,Off-peak,Over 30 min,897
+2025-04,casual,Weekend,AM peak,Under 15 min,1728
+2025-04,casual,Weekend,AM peak,15-30 min,495
+2025-04,casual,Weekend,AM peak,Over 30 min,362
+2025-04,casual,Weekend,Midday,Under 15 min,8890
+2025-04,casual,Weekend,Midday,15-30 min,4485
+2025-04,casual,Weekend,Midday,Over 30 min,3771
+2025-04,casual,Weekend,PM peak,Under 15 min,5772
+2025-04,casual,Weekend,PM peak,15-30 min,2571
+2025-04,casual,Weekend,PM peak,Over 30 min,1807
+2025-04,casual,Weekend,Off-peak,Under 15 min,3931
+2025-04,casual,Weekend,Off-peak,15-30 min,1026
+2025-04,casual,Weekend,Off-peak,Over 30 min,516
+2025-04,member,Weekday,AM peak,Under 15 min,39445
+2025-04,member,Weekday,AM peak,15-30 min,7462
+2025-04,member,Weekday,AM peak,Over 30 min,1413
+2025-04,member,Weekday,Midday,Under 15 min,45453
+2025-04,member,Weekday,Midday,15-30 min,8218
+2025-04,member,Weekday,Midday,Over 30 min,2547
+2025-04,member,Weekday,PM peak,Under 15 min,56863
+2025-04,member,Weekday,PM peak,15-30 min,14055
+2025-04,member,Weekday,PM peak,Over 30 min,3580
+2025-04,member,Weekday,Off-peak,Under 15 min,19571
+2025-04,member,Weekday,Off-peak,15-30 min,3659
+2025-04,member,Weekday,Off-peak,Over 30 min,903
+2025-04,member,Weekend,AM peak,Under 15 min,4704
+2025-04,member,Weekend,AM peak,15-30 min,923
+2025-04,member,Weekend,AM peak,Over 30 min,271
+2025-04,member,Weekend,Midday,Under 15 min,18560
+2025-04,member,Weekend,Midday,15-30 min,4852
+2025-04,member,Weekend,Midday,Over 30 min,1781
+2025-04,member,Weekend,PM peak,Under 15 min,11471
+2025-04,member,Weekend,PM peak,15-30 min,3000
+2025-04,member,Weekend,PM peak,Over 30 min,1035
+2025-04,member,Weekend,Off-peak,Under 15 min,6576
+2025-04,member,Weekend,Off-peak,15-30 min,1272
+2025-04,member,Weekend,Off-peak,Over 30 min,296
+2025-05,casual,Weekday,AM peak,Under 15 min,9934
+2025-05,casual,Weekday,AM peak,15-30 min,1867
+2025-05,casual,Weekday,AM peak,Over 30 min,1005
+2025-05,casual,Weekday,Midday,Under 15 min,21076
+2025-05,casual,Weekday,Midday,15-30 min,8973
+2025-05,casual,Weekday,Midday,Over 30 min,7768
+2025-05,casual,Weekday,PM peak,Under 15 min,25688
+2025-05,casual,Weekday,PM peak,15-30 min,10424
+2025-05,casual,Weekday,PM peak,Over 30 min,5441
+2025-05,casual,Weekday,Off-peak,Under 15 min,13312
+2025-05,casual,Weekday,Off-peak,15-30 min,3717
+2025-05,casual,Weekday,Off-peak,Over 30 min,1724
+2025-05,casual,Weekend,AM peak,Under 15 min,3183
+2025-05,casual,Weekend,AM peak,15-30 min,1277
+2025-05,casual,Weekend,AM peak,Over 30 min,1055
+2025-05,casual,Weekend,Midday,Under 15 min,13857
+2025-05,casual,Weekend,Midday,15-30 min,8509
+2025-05,casual,Weekend,Midday,Over 30 min,7790
+2025-05,casual,Weekend,PM peak,Under 15 min,9173
+2025-05,casual,Weekend,PM peak,15-30 min,5068
+2025-05,casual,Weekend,PM peak,Over 30 min,3807
+2025-05,casual,Weekend,Off-peak,Under 15 min,7348
+2025-05,casual,Weekend,Off-peak,15-30 min,2371
+2025-05,casual,Weekend,Off-peak,Over 30 min,1191
+2025-05,member,Weekday,AM peak,Under 15 min,41600
+2025-05,member,Weekday,AM peak,15-30 min,8700
+2025-05,member,Weekday,AM peak,Over 30 min,1598
+2025-05,member,Weekday,Midday,Under 15 min,53223
+2025-05,member,Weekday,Midday,15-30 min,11064
+2025-05,member,Weekday,Midday,Over 30 min,3637
+2025-05,member,Weekday,PM peak,Under 15 min,65654
+2025-05,member,Weekday,PM peak,15-30 min,18603
+2025-05,member,Weekday,PM peak,Over 30 min,4973
+2025-05,member,Weekday,Off-peak,Under 15 min,24212
+2025-05,member,Weekday,Off-peak,15-30 min,5352
+2025-05,member,Weekday,Off-peak,Over 30 min,1272
+2025-05,member,Weekend,AM peak,Under 15 min,6873
+2025-05,member,Weekend,AM peak,15-30 min,1714
+2025-05,member,Weekend,AM peak,Over 30 min,513
+2025-05,member,Weekend,Midday,Under 15 min,23740
+2025-05,member,Weekend,Midday,15-30 min,7103
+2025-05,member,Weekend,Midday,Over 30 min,2511
+2025-05,member,Weekend,PM peak,Under 15 min,14145
+2025-05,member,Weekend,PM peak,15-30 min,4221
+2025-05,member,Weekend,PM peak,Over 30 min,1530
+2025-05,member,Weekend,Off-peak,Under 15 min,9114
+2025-05,member,Weekend,Off-peak,15-30 min,2062
+2025-05,member,Weekend,Off-peak,Over 30 min,559
+2025-06,casual,Weekday,AM peak,Under 15 min,13440
+2025-06,casual,Weekday,AM peak,15-30 min,3299
+2025-06,casual,Weekday,AM peak,Over 30 min,1890
+2025-06,casual,Weekday,Midday,Under 15 min,26180
+2025-06,casual,Weekday,Midday,15-30 min,12429
+2025-06,casual,Weekday,Midday,Over 30 min,11021
+2025-06,casual,Weekday,PM peak,Under 15 min,36783
+2025-06,casual,Weekday,PM peak,15-30 min,17663
+2025-06,casual,Weekday,PM peak,Over 30 min,9252
+2025-06,casual,Weekday,Off-peak,Under 15 min,21850
+2025-06,casual,Weekday,Off-peak,15-30 min,8584
+2025-06,casual,Weekday,Off-peak,Over 30 min,4093
+2025-06,casual,Weekend,AM peak,Under 15 min,4835
+2025-06,casual,Weekend,AM peak,15-30 min,2067
+2025-06,casual,Weekend,AM peak,Over 30 min,1733
+2025-06,casual,Weekend,Midday,Under 15 min,23991
+2025-06,casual,Weekend,Midday,15-30 min,15841
+2025-06,casual,Weekend,Midday,Over 30 min,12457
+2025-06,casual,Weekend,PM peak,Under 15 min,14589
+2025-06,casual,Weekend,PM peak,15-30 min,9166
+2025-06,casual,Weekend,PM peak,Over 30 min,6118
+2025-06,casual,Weekend,Off-peak,Under 15 min,12987
+2025-06,casual,Weekend,Off-peak,15-30 min,5354
+2025-06,casual,Weekend,Off-peak,Over 30 min,3140
+2025-06,member,Weekday,AM peak,Under 15 min,47978
+2025-06,member,Weekday,AM peak,15-30 min,10956
+2025-06,member,Weekday,AM peak,Over 30 min,2264
+2025-06,member,Weekday,Midday,Under 15 min,53712
+2025-06,member,Weekday,Midday,15-30 min,12774
+2025-06,member,Weekday,Midday,Over 30 min,4169
+2025-06,member,Weekday,PM peak,Under 15 min,74520
+2025-06,member,Weekday,PM peak,15-30 min,24360
+2025-06,member,Weekday,PM peak,Over 30 min,6566
+2025-06,member,Weekday,Off-peak,Under 15 min,30742
+2025-06,member,Weekday,Off-peak,15-30 min,8827
+2025-06,member,Weekday,Off-peak,Over 30 min,2490
+2025-06,member,Weekend,AM peak,Under 15 min,8679
+2025-06,member,Weekend,AM peak,15-30 min,2446
+2025-06,member,Weekend,AM peak,Over 30 min,837
+2025-06,member,Weekend,Midday,Under 15 min,30140
+2025-06,member,Weekend,Midday,15-30 min,10726
+2025-06,member,Weekend,Midday,Over 30 min,3884
+2025-06,member,Weekend,PM peak,Under 15 min,17429
+2025-06,member,Weekend,PM peak,15-30 min,6228
+2025-06,member,Weekend,PM peak,Over 30 min,2190
+2025-06,member,Weekend,Off-peak,Under 15 min,12782
+2025-06,member,Weekend,Off-peak,15-30 min,3667
+2025-06,member,Weekend,Off-peak,Over 30 min,1171
+2025-07,casual,Weekday,AM peak,Under 15 min,17195
+2025-07,casual,Weekday,AM peak,15-30 min,3691
+2025-07,casual,Weekday,AM peak,Over 30 min,2252
+2025-07,casual,Weekday,Midday,Under 15 min,33014
+2025-07,casual,Weekday,Midday,15-30 min,15236
+2025-07,casual,Weekday,Midday,Over 30 min,13521
+2025-07,casual,Weekday,PM peak,Under 15 min,45746
+2025-07,casual,Weekday,PM peak,15-30 min,21091
+2025-07,casual,Weekday,PM peak,Over 30 min,10876
+2025-07,casual,Weekday,Off-peak,Under 15 min,27404
+2025-07,casual,Weekday,Off-peak,15-30 min,10881
+2025-07,casual,Weekday,Off-peak,Over 30 min,5246
+2025-07,casual,Weekend,AM peak,Under 15 min,4196
+2025-07,casual,Weekend,AM peak,15-30 min,1844
+2025-07,casual,Weekend,AM peak,Over 30 min,1618
+2025-07,casual,Weekend,Midday,Under 15 min,19713
+2025-07,casual,Weekend,Midday,15-30 min,12014
+2025-07,casual,Weekend,Midday,Over 30 min,10631
+2025-07,casual,Weekend,PM peak,Under 15 min,14086
+2025-07,casual,Weekend,PM peak,15-30 min,8432
+2025-07,casual,Weekend,PM peak,Over 30 min,5904
+2025-07,casual,Weekend,Off-peak,Under 15 min,13876
+2025-07,casual,Weekend,Off-peak,15-30 min,6194
+2025-07,casual,Weekend,Off-peak,Over 30 min,3780
+2025-07,member,Weekday,AM peak,Under 15 min,59508
+2025-07,member,Weekday,AM peak,15-30 min,13684
+2025-07,member,Weekday,AM peak,Over 30 min,2988
+2025-07,member,Weekday,Midday,Under 15 min,63332
+2025-07,member,Weekday,Midday,15-30 min,15332
+2025-07,member,Weekday,Midday,Over 30 min,5188
+2025-07,member,Weekday,PM peak,Under 15 min,89159
+2025-07,member,Weekday,PM peak,15-30 min,28961
+2025-07,member,Weekday,PM peak,Over 30 min,8113
+2025-07,member,Weekday,Off-peak,Under 15 min,36906
+2025-07,member,Weekday,Off-peak,15-30 min,11033
+2025-07,member,Weekday,Off-peak,Over 30 min,3504
+2025-07,member,Weekend,AM peak,Under 15 min,7793
+2025-07,member,Weekend,AM peak,15-30 min,2166
+2025-07,member,Weekend,AM peak,Over 30 min,767
+2025-07,member,Weekend,Midday,Under 15 min,25843
+2025-07,member,Weekend,Midday,15-30 min,8900
+2025-07,member,Weekend,Midday,Over 30 min,3305
+2025-07,member,Weekend,PM peak,Under 15 min,16817
+2025-07,member,Weekend,PM peak,15-30 min,6180
+2025-07,member,Weekend,PM peak,Over 30 min,2310
+2025-07,member,Weekend,Off-peak,Under 15 min,12836
+2025-07,member,Weekend,Off-peak,15-30 min,4296
+2025-07,member,Weekend,Off-peak,Over 30 min,1462
+2025-08,casual,Weekday,AM peak,Under 15 min,15022
+2025-08,casual,Weekday,AM peak,15-30 min,3472
+2025-08,casual,Weekday,AM peak,Over 30 min,1928
+2025-08,casual,Weekday,Midday,Under 15 min,30221
+2025-08,casual,Weekday,Midday,15-30 min,14306
+2025-08,casual,Weekday,Midday,Over 30 min,12669
+2025-08,casual,Weekday,PM peak,Under 15 min,38558
+2025-08,casual,Weekday,PM peak,15-30 min,17559
+2025-08,casual,Weekday,PM peak,Over 30 min,9027
+2025-08,casual,Weekday,Off-peak,Under 15 min,23234
+2025-08,casual,Weekday,Off-peak,15-30 min,8656
+2025-08,casual,Weekday,Off-peak,Over 30 min,4170
+2025-08,casual,Weekend,AM peak,Under 15 min,5925
+2025-08,casual,Weekend,AM peak,15-30 min,2633
+2025-08,casual,Weekend,AM peak,Over 30 min,2504
+2025-08,casual,Weekend,Midday,Under 15 min,30779
+2025-08,casual,Weekend,Midday,15-30 min,20896
+2025-08,casual,Weekend,Midday,Over 30 min,17207
+2025-08,casual,Weekend,PM peak,Under 15 min,18124
+2025-08,casual,Weekend,PM peak,15-30 min,11566
+2025-08,casual,Weekend,PM peak,Over 30 min,7986
+2025-08,casual,Weekend,Off-peak,Under 15 min,16470
+2025-08,casual,Weekend,Off-peak,15-30 min,6834
+2025-08,casual,Weekend,Off-peak,Over 30 min,3662
+2025-08,member,Weekday,AM peak,Under 15 min,56046
+2025-08,member,Weekday,AM peak,15-30 min,12827
+2025-08,member,Weekday,AM peak,Over 30 min,2581
+2025-08,member,Weekday,Midday,Under 15 min,62238
+2025-08,member,Weekday,Midday,15-30 min,15670
+2025-08,member,Weekday,Midday,Over 30 min,5146
+2025-08,member,Weekday,PM peak,Under 15 min,81952
+2025-08,member,Weekday,PM peak,15-30 min,27046
+2025-08,member,Weekday,PM peak,Over 30 min,7867
+2025-08,member,Weekday,Off-peak,Under 15 min,32665
+2025-08,member,Weekday,Off-peak,15-30 min,9701
+2025-08,member,Weekday,Off-peak,Over 30 min,2976
+2025-08,member,Weekend,AM peak,Under 15 min,11063
+2025-08,member,Weekend,AM peak,15-30 min,3147
+2025-08,member,Weekend,AM peak,Over 30 min,1213
+2025-08,member,Weekend,Midday,Under 15 min,36550
+2025-08,member,Weekend,Midday,15-30 min,13978
+2025-08,member,Weekend,Midday,Over 30 min,5329
+2025-08,member,Weekend,PM peak,Under 15 min,21970
+2025-08,member,Weekend,PM peak,15-30 min,8154
+2025-08,member,Weekend,PM peak,Over 30 min,3040
+2025-08,member,Weekend,Off-peak,Under 15 min,15616
+2025-08,member,Weekend,Off-peak,15-30 min,4763
+2025-08,member,Weekend,Off-peak,Over 30 min,1591
+2025-09,casual,Weekday,AM peak,Under 15 min,16408
+2025-09,casual,Weekday,AM peak,15-30 min,3267
+2025-09,casual,Weekday,AM peak,Over 30 min,1721
+2025-09,casual,Weekday,Midday,Under 15 min,30271
+2025-09,casual,Weekday,Midday,15-30 min,12742
+2025-09,casual,Weekday,Midday,Over 30 min,10854
+2025-09,casual,Weekday,PM peak,Under 15 min,38577
+2025-09,casual,Weekday,PM peak,15-30 min,15843
+2025-09,casual,Weekday,PM peak,Over 30 min,7063
+2025-09,casual,Weekday,Off-peak,Under 15 min,21830
+2025-09,casual,Weekday,Off-peak,15-30 min,6661
+2025-09,casual,Weekday,Off-peak,Over 30 min,2712
+2025-09,casual,Weekend,AM peak,Under 15 min,3982
+2025-09,casual,Weekend,AM peak,15-30 min,1593
+2025-09,casual,Weekend,AM peak,Over 30 min,1504
+2025-09,casual,Weekend,Midday,Under 15 min,19995
+2025-09,casual,Weekend,Midday,15-30 min,11169
+2025-09,casual,Weekend,Midday,Over 30 min,9210
+2025-09,casual,Weekend,PM peak,Under 15 min,12588
+2025-09,casual,Weekend,PM peak,15-30 min,6573
+2025-09,casual,Weekend,PM peak,Over 30 min,4259
+2025-09,casual,Weekend,Off-peak,Under 15 min,10712
+2025-09,casual,Weekend,Off-peak,15-30 min,3621
+2025-09,casual,Weekend,Off-peak,Over 30 min,1733
+2025-09,member,Weekday,AM peak,Under 15 min,61913
+2025-09,member,Weekday,AM peak,15-30 min,14085
+2025-09,member,Weekday,AM peak,Over 30 min,2959
+2025-09,member,Weekday,Midday,Under 15 min,68822
+2025-09,member,Weekday,Midday,15-30 min,16579
+2025-09,member,Weekday,Midday,Over 30 min,5519
+2025-09,member,Weekday,PM peak,Under 15 min,91371
+2025-09,member,Weekday,PM peak,15-30 min,29041
+2025-09,member,Weekday,PM peak,Over 30 min,8001
+2025-09,member,Weekday,Off-peak,Under 15 min,33853
+2025-09,member,Weekday,Off-peak,15-30 min,8965
+2025-09,member,Weekday,Off-peak,Over 30 min,2326
+2025-09,member,Weekend,AM peak,Under 15 min,7797
+2025-09,member,Weekend,AM peak,15-30 min,2070
+2025-09,member,Weekend,AM peak,Over 30 min,755
+2025-09,member,Weekend,Midday,Under 15 min,30491
+2025-09,member,Weekend,Midday,15-30 min,10173
+2025-09,member,Weekend,Midday,Over 30 min,3591
+2025-09,member,Weekend,PM peak,Under 15 min,18275
+2025-09,member,Weekend,PM peak,15-30 min,6308
+2025-09,member,Weekend,PM peak,Over 30 min,2275
+2025-09,member,Weekend,Off-peak,Under 15 min,11674
+2025-09,member,Weekend,Off-peak,15-30 min,3154
+2025-09,member,Weekend,Off-peak,Over 30 min,963
+2025-10,casual,Weekday,AM peak,Under 15 min,15375
+2025-10,casual,Weekday,AM peak,15-30 min,2385
+2025-10,casual,Weekday,AM peak,Over 30 min,1186
+2025-10,casual,Weekday,Midday,Under 15 min,28292
+2025-10,casual,Weekday,Midday,15-30 min,9879
+2025-10,casual,Weekday,Midday,Over 30 min,7774
+2025-10,casual,Weekday,PM peak,Under 15 min,32831
+2025-10,casual,Weekday,PM peak,15-30 min,10226
+2025-10,casual,Weekday,PM peak,Over 30 min,3747
+2025-10,casual,Weekday,Off-peak,Under 15 min,18225
+2025-10,casual,Weekday,Off-peak,15-30 min,4098
+2025-10,casual,Weekday,Off-peak,Over 30 min,1389
+2025-10,casual,Weekend,AM peak,Under 15 min,4927
+2025-10,casual,Weekend,AM peak,15-30 min,2087
+2025-10,casual,Weekend,AM peak,Over 30 min,1667
+2025-10,casual,Weekend,Midday,Under 15 min,19869
+2025-10,casual,Weekend,Midday,15-30 min,11239
+2025-10,casual,Weekend,Midday,Over 30 min,8550
+2025-10,casual,Weekend,PM peak,Under 15 min,10981
+2025-10,casual,Weekend,PM peak,15-30 min,4566
+2025-10,casual,Weekend,PM peak,Over 30 min,2663
+2025-10,casual,Weekend,Off-peak,Under 15 min,9061
+2025-10,casual,Weekend,Off-peak,15-30 min,2395
+2025-10,casual,Weekend,Off-peak,Over 30 min,944
+2025-10,member,Weekday,AM peak,Under 15 min,60198
+2025-10,member,Weekday,AM peak,15-30 min,12166
+2025-10,member,Weekday,AM peak,Over 30 min,2403
+2025-10,member,Weekday,Midday,Under 15 min,71073
+2025-10,member,Weekday,Midday,15-30 min,14437
+2025-10,member,Weekday,Midday,Over 30 min,4443
+2025-10,member,Weekday,PM peak,Under 15 min,89051
+2025-10,member,Weekday,PM peak,15-30 min,23626
+2025-10,member,Weekday,PM peak,Over 30 min,5746
+2025-10,member,Weekday,Off-peak,Under 15 min,31988
+2025-10,member,Weekday,Off-peak,15-30 min,6865
+2025-10,member,Weekday,Off-peak,Over 30 min,1705
+2025-10,member,Weekend,AM peak,Under 15 min,7891
+2025-10,member,Weekend,AM peak,15-30 min,1943
+2025-10,member,Weekend,AM peak,Over 30 min,636
+2025-10,member,Weekend,Midday,Under 15 min,29078
+2025-10,member,Weekend,Midday,15-30 min,9292
+2025-10,member,Weekend,Midday,Over 30 min,3485
+2025-10,member,Weekend,PM peak,Under 15 min,17828
+2025-10,member,Weekend,PM peak,15-30 min,5056
+2025-10,member,Weekend,PM peak,Over 30 min,1781
+2025-10,member,Weekend,Off-peak,Under 15 min,10336
+2025-10,member,Weekend,Off-peak,15-30 min,2343
+2025-10,member,Weekend,Off-peak,Over 30 min,698
+2025-11,casual,Weekday,AM peak,Under 15 min,7790
+2025-11,casual,Weekday,AM peak,15-30 min,938
+2025-11,casual,Weekday,AM peak,Over 30 min,269
+2025-11,casual,Weekday,Midday,Under 15 min,13969
+2025-11,casual,Weekday,Midday,15-30 min,3376
+2025-11,casual,Weekday,Midday,Over 30 min,2190
+2025-11,casual,Weekday,PM peak,Under 15 min,14425
+2025-11,casual,Weekday,PM peak,15-30 min,3089
+2025-11,casual,Weekday,PM peak,Over 30 min,909
+2025-11,casual,Weekday,Off-peak,Under 15 min,8145
+2025-11,casual,Weekday,Off-peak,15-30 min,1498
+2025-11,casual,Weekday,Off-peak,Over 30 min,450
+2025-11,casual,Weekend,AM peak,Under 15 min,2421
+2025-11,casual,Weekend,AM peak,15-30 min,568
+2025-11,casual,Weekend,AM peak,Over 30 min,334
+2025-11,casual,Weekend,Midday,Under 15 min,10946
+2025-11,casual,Weekend,Midday,15-30 min,4568
+2025-11,casual,Weekend,Midday,Over 30 min,3119
+2025-11,casual,Weekend,PM peak,Under 15 min,5439
+2025-11,casual,Weekend,PM peak,15-30 min,1960
+2025-11,casual,Weekend,PM peak,Over 30 min,801
+2025-11,casual,Weekend,Off-peak,Under 15 min,5804
+2025-11,casual,Weekend,Off-peak,15-30 min,1296
+2025-11,casual,Weekend,Off-peak,Over 30 min,462
+2025-11,member,Weekday,AM peak,Under 15 min,37230
+2025-11,member,Weekday,AM peak,15-30 min,6817
+2025-11,member,Weekday,AM peak,Over 30 min,1375
+2025-11,member,Weekday,Midday,Under 15 min,44521
+2025-11,member,Weekday,Midday,15-30 min,7893
+2025-11,member,Weekday,Midday,Over 30 min,2472
+2025-11,member,Weekday,PM peak,Under 15 min,52139
+2025-11,member,Weekday,PM peak,15-30 min,10930
+2025-11,member,Weekday,PM peak,Over 30 min,2680
+2025-11,member,Weekday,Off-peak,Under 15 min,18773
+2025-11,member,Weekday,Off-peak,15-30 min,3451
+2025-11,member,Weekday,Off-peak,Over 30 min,926
+2025-11,member,Weekend,AM peak,Under 15 min,5940
+2025-11,member,Weekend,AM peak,15-30 min,1194
+2025-11,member,Weekend,AM peak,Over 30 min,361
+2025-11,member,Weekend,Midday,Under 15 min,22598
+2025-11,member,Weekend,Midday,15-30 min,5607
+2025-11,member,Weekend,Midday,Over 30 min,1887
+2025-11,member,Weekend,PM peak,Under 15 min,11721
+2025-11,member,Weekend,PM peak,15-30 min,2638
+2025-11,member,Weekend,PM peak,Over 30 min,846
+2025-11,member,Weekend,Off-peak,Under 15 min,8046
+2025-11,member,Weekend,Off-peak,15-30 min,1531
+2025-11,member,Weekend,Off-peak,Over 30 min,400
+2025-12,casual,Weekday,AM peak,Under 15 min,2865
+2025-12,casual,Weekday,AM peak,15-30 min,306
+2025-12,casual,Weekday,AM peak,Over 30 min,67
+2025-12,casual,Weekday,Midday,Under 15 min,5563
+2025-12,casual,Weekday,Midday,15-30 min,1046
+2025-12,casual,Weekday,Midday,Over 30 min,549
+2025-12,casual,Weekday,PM peak,Under 15 min,5025
+2025-12,casual,Weekday,PM peak,15-30 min,867
+2025-12,casual,Weekday,PM peak,Over 30 min,284
+2025-12,casual,Weekday,Off-peak,Under 15 min,3001
+2025-12,casual,Weekday,Off-peak,15-30 min,441
+2025-12,casual,Weekday,Off-peak,Over 30 min,149
+2025-12,casual,Weekend,AM peak,Under 15 min,395
+2025-12,casual,Weekend,AM peak,15-30 min,47
+2025-12,casual,Weekend,AM peak,Over 30 min,34
+2025-12,casual,Weekend,Midday,Under 15 min,2016
+2025-12,casual,Weekend,Midday,15-30 min,552
+2025-12,casual,Weekend,Midday,Over 30 min,258
+2025-12,casual,Weekend,PM peak,Under 15 min,1258
+2025-12,casual,Weekend,PM peak,15-30 min,366
+2025-12,casual,Weekend,PM peak,Over 30 min,133
+2025-12,casual,Weekend,Off-peak,Under 15 min,1450
+2025-12,casual,Weekend,Off-peak,15-30 min,303
+2025-12,casual,Weekend,Off-peak,Over 30 min,102
+2025-12,member,Weekday,AM peak,Under 15 min,18183
+2025-12,member,Weekday,AM peak,15-30 min,2926
+2025-12,member,Weekday,AM peak,Over 30 min,541
+2025-12,member,Weekday,Midday,Under 15 min,23594
+2025-12,member,Weekday,Midday,15-30 min,3679
+2025-12,member,Weekday,Midday,Over 30 min,1280
+2025-12,member,Weekday,PM peak,Under 15 min,24207
+2025-12,member,Weekday,PM peak,15-30 min,4480
+2025-12,member,Weekday,PM peak,Over 30 min,1206
+2025-12,member,Weekday,Off-peak,Under 15 min,8538
+2025-12,member,Weekday,Off-peak,15-30 min,1437
+2025-12,member,Weekday,Off-peak,Over 30 min,454
+2025-12,member,Weekend,AM peak,Under 15 min,1756
+2025-12,member,Weekend,AM peak,15-30 min,270
+2025-12,member,Weekend,AM peak,Over 30 min,81
+2025-12,member,Weekend,Midday,Under 15 min,6776
+2025-12,member,Weekend,Midday,15-30 min,1270
+2025-12,member,Weekend,Midday,Over 30 min,364
+2025-12,member,Weekend,PM peak,Under 15 min,3939
+2025-12,member,Weekend,PM peak,15-30 min,770
+2025-12,member,Weekend,PM peak,Over 30 min,265
+2025-12,member,Weekend,Off-peak,Under 15 min,2687
+2025-12,member,Weekend,Off-peak,15-30 min,515
+2025-12,member,Weekend,Off-peak,Over 30 min,153

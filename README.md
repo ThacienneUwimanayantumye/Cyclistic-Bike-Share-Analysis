@@ -2,9 +2,13 @@
 
 **[Open the dashboard](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/)** — 27.7 million Chicago Divvy trips, 2021–2025.
 
-[![Member share of trips](docs/images/member-share.png)](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/)
+[![Weekday trips by hour of day, members versus casual riders](docs/images/hourly-profile.png)](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/)
 
-How **annual members** and **casual riders** use the system. Indicators are **trip-level** (there is no rider id, so this is not unique-person coverage).
+**The question:** how do annual members and casual riders use Cyclistic bikes differently?
+
+**The answer:** members ride a commute — weekday, twin peaks at 08:00 and 17:00, median 9.1 minutes. Casual riders ride for leisure — 38% at weekends, one afternoon hump, median 13.5 minutes, and volume that collapses every winter. But **2.0 million casual trips** are already short weekday peak-hour rides, and that segment is where a membership offer has something to work with.
+
+Indicators are **trip-level**. Divvy files carry no rider id, so none of this is unique-person coverage.
 
 | | |
 |---|---|
@@ -12,13 +16,13 @@ How **annual members** and **casual riders** use the system. Indicators are **tr
 | **Methods** | [`docs/METHODS.md`](docs/METHODS.md) |
 | **Data product** | `data/derived/` (aggregates only; raw zips are not in git) |
 
-[![Monthly volume](docs/images/volume.png)](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/)
+[![Share of trips by weekend, commute window and trip length](docs/images/usage-signature.png)](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/)
 
 ## What this demonstrates
 
 An R **pipeline → quality rules → indicator tables → dashboard** workflow, the same shape as programme-monitoring data products (not a cancer-screening analysis).
 
-- `{targets}` processes each month independently; only summaries are published  
+- `{targets}` processes each of the 60 months independently; only summaries are published  
 - Wilson intervals, median duration, weekday×hour timing, STL trend, data-quality drop rates  
 - DuckDB SQL in `inst/sql/` · tests in `tests/` · Docker for the Shiny app  
 

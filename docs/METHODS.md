@@ -79,7 +79,17 @@ A trip is dropped from the analytic extract if any of the following hold. Counts
 - **Name:** `bike_type`
 - **Grain:** month × programme × `rideable_type` (`classic_bike`, `electric_bike`, `docked_bike`, `electric_scooter`, `other`)
 
-### 6. Quality
+### 6. Rider profile
+
+- **Name:** `rider_profile`
+- **Grain:** month × programme × day type × time block × duration band
+- **Day type:** weekend = Saturday or Sunday, otherwise weekday
+- **Time block:** AM peak 06–09, midday 10–15, PM peak 16–19, otherwise off-peak, by hour of `started_at`
+- **Duration band:** under 15 minutes, 15–30 minutes, over 30 minutes
+- **Use:** the only indicator crossing timing with duration. It lets the dashboard size the *commute-pattern* segment — weekday, peak-hour, under 15 minutes — within each programme.
+- **Caveat:** a commute-pattern *trip* is not a commuter. Without a rider identifier, the segment counts journeys that look like commutes, not people who commute.
+
+### 7. Quality
 
 - **Name:** `quality_month`
 - **Grain:** month
