@@ -90,6 +90,10 @@ date_axis <- scale_x_date(
 )
 
 n_trips <- sum(member_share$n_trips)
+n_casual <- sum(member_share$n_casual)
+n_member <- sum(member_share$n_member)
+share_casual_all <- n_casual / n_trips
+share_member_all <- n_member / n_trips
 n_in <- sum(quality_month$n_in)
 drop_rate <- 1 - n_trips / n_in
 
@@ -131,18 +135,26 @@ casual_commuter_share <- casual_commuter_n /
 
 # The difference
 
-## Headline {height="110px"}
+## Headline {height="130px"}
 
 ```{r}
 #| content: valuebox
-#| title: "Weekend share · casual"
-list(icon = "sun", color = "#C05621", value = percent(weekend[["Casual"]], accuracy = 0.1))
+#| title: "Casual · 10.8 million trips"
+list(
+  icon = "person",
+  color = "#C05621",
+  value = percent(share_casual_all, accuracy = 0.1)
+)
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Weekend share · member"
-list(icon = "briefcase", color = "#215C8C", value = percent(weekend[["Member"]], accuracy = 0.1))
+#| title: "Member · 17.0 million trips"
+list(
+  icon = "person-badge",
+  color = "#215C8C",
+  value = percent(share_member_all, accuracy = 0.1)
+)
 ```
 
 ```{r}
@@ -166,7 +178,7 @@ list(
 ## Finding {.flow}
 
 ::: {.finding}
-**Members commute; casual riders leisure-ride.** Weekend share `r percent(weekend[["Casual"]], accuracy = 1)` vs `r percent(weekend[["Member"]], accuracy = 1)`; median `r number(med_duration[["Casual"]], accuracy = 0.1)` vs `r number(med_duration[["Member"]], accuracy = 0.1)` min. **`r comma(casual_commuter_n, scale = 1e-6, accuracy = 0.1, suffix = " million")` casual trips** are already short weekday peak-hour rides — the conversion target. Trip-level only: Divvy files have no rider id.
+**Members commute; casual riders leisure-ride.** Of `r comma(n_trips, scale = 1e-6, accuracy = 0.1, suffix = " million")` cleaned trips, casual riders take `r percent(share_casual_all, accuracy = 1)` and members `r percent(share_member_all, accuracy = 1)`. Weekend share `r percent(weekend[["Casual"]], accuracy = 1)` vs `r percent(weekend[["Member"]], accuracy = 1)`; median `r number(med_duration[["Casual"]], accuracy = 0.1)` vs `r number(med_duration[["Member"]], accuracy = 0.1)` min. **`r comma(casual_commuter_n, scale = 1e-6, accuracy = 0.1, suffix = " million")` casual trips** are already short weekday peak-hour rides — the conversion target. Trip-level only: Divvy files have no rider id.
 :::
 
 ## Signature {.flow}

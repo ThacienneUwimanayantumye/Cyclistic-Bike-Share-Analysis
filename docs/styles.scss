@@ -51,6 +51,13 @@ $card-border-radius: 0.5rem;
     line-height: 1.15;
     overflow: visible;
   }
+
+  .value-box-area p {
+    font-size: 0.78rem !important;
+    margin-bottom: 0;
+    opacity: 0.92;
+    white-space: nowrap;
+  }
 }
 
 .card-title {

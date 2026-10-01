@@ -74,6 +74,28 @@ share_by_programme <- function(data, condition) {
   vals
 }
 
+programme_mix <- function(member_share) {
+  empty <- list(
+    n = 0,
+    n_member = 0,
+    n_casual = 0,
+    share_member = NA_real_,
+    share_casual = NA_real_
+  )
+  if (is.null(member_share) || nrow(member_share) == 0) return(empty)
+  n_member <- sum(member_share$n_member, na.rm = TRUE)
+  n_casual <- sum(member_share$n_casual, na.rm = TRUE)
+  n <- n_member + n_casual
+  if (n <= 0) return(empty)
+  list(
+    n = n,
+    n_member = n_member,
+    n_casual = n_casual,
+    share_member = n_member / n,
+    share_casual = n_casual / n
+  )
+}
+
 weighted_median_duration <- function(duration_month) {
   vals <- c(Member = NA_real_, Casual = NA_real_)
   if (is.null(duration_month) || nrow(duration_month) == 0) return(vals)

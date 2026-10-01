@@ -14,6 +14,21 @@ test_that("slice_period keeps the requested years and season months", {
   expect_equal(warm$year_month, c("2021-07", "2022-07"))
 })
 
+test_that("programme_mix is the share of all trips, not weekend trips", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  share <- tibble::tibble(
+    year_month = c("2021-01", "2021-02"),
+    n_member = c(70, 30),
+    n_casual = c(20, 80)
+  )
+  mix <- programme_mix(share)
+  expect_equal(mix$n, 200)
+  expect_equal(mix$share_member, 0.5)
+  expect_equal(mix$share_casual, 0.5)
+})
+
 test_that("share_by_programme returns member and casual shares", {
   src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
   sys.source(src, envir = environment())

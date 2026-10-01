@@ -88,15 +88,15 @@ ui <- page_navbar(
       fill = FALSE,
       col_widths = c(3, 3, 3, 3),
       value_box(
-        title = "Weekend share · casual",
-        value = textOutput("kpi_weekend_casual", inline = TRUE),
-        showcase = bs_icon("sun"),
+        title = textOutput("kpi_title_casual", inline = TRUE),
+        value = textOutput("kpi_share_casual", inline = TRUE),
+        showcase = bs_icon("person"),
         theme = value_box_theme(bg = "#C05621", fg = "#fff")
       ),
       value_box(
-        title = "Weekend share · member",
-        value = textOutput("kpi_weekend_member", inline = TRUE),
-        showcase = bs_icon("briefcase"),
+        title = textOutput("kpi_title_member", inline = TRUE),
+        value = textOutput("kpi_share_member", inline = TRUE),
+        showcase = bs_icon("person-badge"),
         theme = value_box_theme(bg = "#215C8C", fg = "#fff")
       ),
       value_box(
@@ -249,6 +249,7 @@ server <- function(input, output, session) {
       !duration_bin %in% c("1-5", "5-10", "10-15", "15-20", "20-30")
     )
     med <- weighted_median_duration(dur_f())
+    mix <- programme_mix(share_f())
     commute <- commute_like_counts(profile_f())
     casual_n <- commute$n[commute$member_casual == "casual"]
     if (!length(casual_n)) casual_n <- 0
@@ -258,13 +259,16 @@ server <- function(input, output, session) {
       peak = peak,
       long_trip = long_trip,
       med = med,
+      mix = mix,
       casual_commuter_n = casual_n,
       casual_commuter_share = if (casual_total > 0) casual_n / casual_total else NA_real_
     )
   })
 
-  output$kpi_weekend_casual <- renderText(fmt_pct(kpis()$weekend[["Casual"]]))
-  output$kpi_weekend_member <- renderText(fmt_pct(kpis()$weekend[["Member"]]))
+  output$kpi_share_casual <- renderText(fmt_pct(kpis()$mix$share_casual))
+  output$kpi_share_member <- renderText(fmt_pct(kpis()$mix$share_member))
+  output$kpi_title_casual <- renderText(paste("Casual ·", fmt_trips(kpis()$mix$n_casual), "trips"))
+  output$kpi_title_member <- renderText(paste("Member ·", fmt_trips(kpis()$mix$n_member), "trips"))
   output$kpi_med_casual <- renderText(fmt_min(kpis()$med[["Casual"]]))
   output$kpi_med_member <- renderText(fmt_min(kpis()$med[["Member"]]))
 
@@ -273,7 +277,10 @@ server <- function(input, output, session) {
     tagList(
       tags$strong("Members commute; casual riders leisure-ride. "),
       sprintf(
-        "Weekend share %s vs %s; median %s vs %s. ",
+        "Of %s cleaned trips, casual riders take %s and members %s. Weekend share %s vs %s; median %s vs %s. ",
+        fmt_trips(k$mix$n),
+        fmt_pct(k$mix$share_casual),
+        fmt_pct(k$mix$share_member),
         fmt_pct(k$weekend[["Casual"]]),
         fmt_pct(k$weekend[["Member"]]),
         fmt_min(k$med[["Casual"]]),
