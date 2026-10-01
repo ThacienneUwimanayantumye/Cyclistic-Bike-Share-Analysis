@@ -37,6 +37,16 @@ DURATION_MIN_SEC <- 60L
 #' 24 hours matches a typical "not returned" quality rule.
 DURATION_MAX_SEC <- 24L * 3600L
 
+#' Commute windows used to classify a trip's time of day.
+#' Chosen to match the twin weekday peaks visible in the hourly profile.
+AM_PEAK_HOURS <- 6:9
+PM_PEAK_HOURS <- 16:19
+MIDDAY_HOURS <- 10:15
+
+TIME_BLOCK_LEVELS <- c("AM peak", "Midday", "PM peak", "Off-peak")
+DAY_TYPE_LEVELS <- c("Weekday", "Weekend")
+DURATION_BAND_LEVELS <- c("Under 15 min", "15-30 min", "Over 30 min")
+
 ZIP_PATTERN <- "^20[0-9]{4}-divvy-tripdata\\.zip$"
 
 trip_csv_spec <- function() {

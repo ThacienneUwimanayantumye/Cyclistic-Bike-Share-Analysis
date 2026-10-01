@@ -54,6 +54,43 @@ summarise_duration_bins <- function(kept, breaks = c(1, 5, 10, 15, 20, 30, 45, 6
     dplyr::count(.data$year_month, .data$member_casual, .data$duration_bin, name = "n_trips")
 }
 
+#' Cross-tabulation of day type, time of day and trip length.
+#'
+#' This is the only indicator that crosses timing with duration, so it is what
+#' lets the dashboard size the casual riders whose trips already look like
+#' commutes (weekday, peak hour, short).
+summarise_rider_profile <- function(kept) {
+  kept |>
+    dplyr::mutate(
+      day_type = factor(
+        ifelse(.data$weekday %in% c("Saturday", "Sunday"), "Weekend", "Weekday"),
+        levels = DAY_TYPE_LEVELS
+      ),
+      time_block = factor(
+        dplyr::case_when(
+          .data$hour %in% AM_PEAK_HOURS ~ "AM peak",
+          .data$hour %in% PM_PEAK_HOURS ~ "PM peak",
+          .data$hour %in% MIDDAY_HOURS ~ "Midday",
+          TRUE ~ "Off-peak"
+        ),
+        levels = TIME_BLOCK_LEVELS
+      ),
+      duration_band = factor(
+        dplyr::case_when(
+          .data$duration_min < 15 ~ "Under 15 min",
+          .data$duration_min < 30 ~ "15-30 min",
+          TRUE ~ "Over 30 min"
+        ),
+        levels = DURATION_BAND_LEVELS
+      )
+    ) |>
+    dplyr::count(
+      .data$year_month, .data$member_casual,
+      .data$day_type, .data$time_block, .data$duration_band,
+      name = "n_trips"
+    )
+}
+
 #' Process one monthly zip into indicator slices (raw trips are not retained).
 process_month_zip <- function(zip_path) {
   year_month <- period_from_zip(zip_path)
@@ -73,7 +110,8 @@ process_month_zip <- function(zip_path) {
     timing = summarise_timing(cleaned$kept),
     duration = summarise_duration(cleaned$kept),
     bike_type = summarise_bike_type(cleaned$kept),
-    duration_bins = summarise_duration_bins(cleaned$kept)
+    duration_bins = summarise_duration_bins(cleaned$kept),
+    rider_profile = summarise_rider_profile(cleaned$kept)
   )
 }
 

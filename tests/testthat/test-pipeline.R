@@ -50,6 +50,34 @@ test_that("clean_month drops quality failures and keeps valid trips", {
   expect_equal(cleaned$quality$n_missing_ride_id, 1)
 })
 
+test_that("rider_profile classifies day type, time block and duration band", {
+  kept <- tibble::tibble(
+    year_month = "2021-01",
+    member_casual = c("member", "member", "casual", "casual"),
+    weekday = c("Tuesday", "Saturday", "Tuesday", "Sunday"),
+    hour = c(8L, 13L, 17L, 22L),
+    duration_min = c(9, 40, 12, 20)
+  )
+  out <- summarise_rider_profile(kept)
+
+  expect_equal(sum(out$n_trips), nrow(kept))
+  expect_setequal(as.character(out$day_type), c("Weekday", "Weekend"))
+
+  commute <- dplyr::filter(
+    out,
+    day_type == "Weekday",
+    time_block %in% c("AM peak", "PM peak"),
+    duration_band == "Under 15 min"
+  )
+  expect_equal(sum(commute$n_trips), 2L)
+  expect_setequal(commute$member_casual, c("member", "casual"))
+
+  # Saturday 13:00 / 40 min and Sunday 22:00 / 20 min are the two weekend rows.
+  weekend <- dplyr::arrange(dplyr::filter(out, day_type == "Weekend"), member_casual)
+  expect_equal(as.character(weekend$time_block), c("Off-peak", "Midday"))
+  expect_equal(as.character(weekend$duration_band), c("15-30 min", "Over 30 min"))
+})
+
 test_that("period_from_zip parses Divvy filenames", {
   expect_equal(period_from_zip("data/raw/202105-divvy-tripdata.zip"), "2021-05")
 })
