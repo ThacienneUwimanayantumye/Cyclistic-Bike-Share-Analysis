@@ -1,10 +1,11 @@
 ---
 title: "Cyclistic Programme Monitor"
-subtitle: "How annual members and casual riders use the bikes differently · Chicago Divvy · 2021–2025"
+subtitle: "Chicago Divvy · 2021–2025"
 format:
   dashboard:
-    theme: flatly
+    theme: [flatly, styles.scss]
     orientation: rows
+    scrolling: true
     embed-resources: true
     nav-buttons:
       - icon: journal-text
@@ -13,6 +14,12 @@ format:
       - icon: github
         href: https://github.com/ThacienneUwimanayantumye/Cyclistic-Bike-Share-Analysis
         aria-label: Source
+knitr:
+  opts_chunk:
+    fig-width: 8.8
+    fig-height: 4.5
+    fig-dpi: 120
+    out-width: 100%
 execute:
   echo: false
   warning: false
@@ -50,21 +57,24 @@ rider_profile <- read_derived("rider_profile")
 pal <- c(Member = "#215C8C", Casual = "#C05621")
 
 theme_set(
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 13) +
     theme(
       legend.position = "top",
       legend.title = element_blank(),
       legend.margin = margin(0, 0, 0, 0),
+      legend.box.margin = margin(0, 0, -6, 0),
       panel.grid.minor = element_blank(),
-      plot.subtitle = element_text(colour = "grey30", margin = margin(b = 8)),
-      plot.caption = element_text(colour = "grey45", hjust = 0),
-      axis.title = element_text(colour = "grey30", size = rel(0.9))
+      plot.margin = margin(6, 18, 6, 6),
+      plot.subtitle = element_blank(),
+      plot.caption = element_text(colour = "grey45", hjust = 0, size = 9),
+      axis.title = element_text(colour = "grey30", size = rel(0.9)),
+      axis.title.y = element_text(margin = margin(r = 6))
     )
 )
 
-#' Capitalised programme labels read better in legends than the raw codes.
-as_programme <- function(x) factor(ifelse(x == "member", "Member", "Casual"),
-                                   levels = c("Member", "Casual"))
+as_programme <- function(x) {
+  factor(ifelse(x == "member", "Member", "Casual"), levels = c("Member", "Casual"))
+}
 
 to_date <- function(ym) as.Date(paste0(ym, "-01"))
 
@@ -74,21 +84,15 @@ for (nm in c("member_share", "programme_month", "duration_month", "quality_month
 programme_month$programme <- as_programme(programme_month$member_casual)
 duration_month$programme <- as_programme(duration_month$member_casual)
 
-#' Keep the x-axis inside the observed period; the default expansion
-#' pushed an empty 2026 tick onto every time series.
 date_axis <- scale_x_date(
   date_breaks = "1 year", date_labels = "%Y",
   expand = expansion(mult = c(0.01, 0.01))
 )
 
-#' Subtitles are clipped rather than wrapped inside a dashboard card.
-wrap_sub <- function(x, width = 62) paste(strwrap(x, width), collapse = "\n")
-
 n_trips <- sum(member_share$n_trips)
 n_in <- sum(quality_month$n_in)
 drop_rate <- 1 - n_trips / n_in
 
-#' Share of each group's trips meeting a condition, as a named vector.
 share_by_programme <- function(data, condition) {
   data |>
     mutate(programme = as_programme(member_casual)) |>
@@ -102,11 +106,14 @@ peak <- share_by_programme(
   rider_profile,
   day_type == "Weekday" & time_block %in% c("AM peak", "PM peak")
 )
-long_trip <- share_by_programme(duration_bins, !duration_bin %in% c("1-5", "5-10", "10-15", "15-20", "20-30"))
+long_trip <- share_by_programme(
+  duration_bins,
+  !duration_bin %in% c("1-5", "5-10", "10-15", "15-20", "20-30")
+)
 
 med_duration <- duration_month |>
   group_by(programme) |>
-  summarise(med = weighted.mean(duration_median_min, n_trips)) |>
+  summarise(med = weighted.mean(duration_median_min, n_trips), .groups = "drop") |>
   tibble::deframe()
 
 commuter_like <- rider_profile |>
@@ -118,43 +125,59 @@ commuter_like <- rider_profile |>
   group_by(member_casual) |>
   summarise(n = sum(n_trips), .groups = "drop")
 casual_commuter_n <- commuter_like$n[commuter_like$member_casual == "casual"]
+casual_commuter_share <- casual_commuter_n /
+  sum(rider_profile$n_trips[rider_profile$member_casual == "casual"])
 ```
 
 # The difference
 
-## Headline {height="20%"}
+## Headline {height="110px"}
 
 ```{r}
 #| content: valuebox
-#| title: "Casual trips taken at a weekend"
+#| title: "Weekend share · casual"
 list(icon = "sun", color = "#C05621", value = percent(weekend[["Casual"]], accuracy = 0.1))
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Member trips taken at a weekend"
+#| title: "Weekend share · member"
 list(icon = "briefcase", color = "#215C8C", value = percent(weekend[["Member"]], accuracy = 0.1))
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Median casual trip"
-list(icon = "hourglass-split", color = "#E8C39E",
-     value = paste0(number(med_duration[["Casual"]], accuracy = 0.1), " min"))
+#| title: "Median trip · casual"
+list(
+  icon = "hourglass-split", color = "#A85A32",
+  value = paste0(number(med_duration[["Casual"]], accuracy = 0.1), " min")
+)
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Median member trip"
-list(icon = "hourglass", color = "#AFC6DA",
-     value = paste0(number(med_duration[["Member"]], accuracy = 0.1), " min"))
+#| title: "Median trip · member"
+list(
+  icon = "hourglass", color = "#3D7A9E",
+  value = paste0(number(med_duration[["Member"]], accuracy = 0.1), " min")
+)
 ```
 
-## Signature {height="44%"}
+## Finding {.flow}
 
-### Weekday rides through the day {width="55%"}
+::: {.finding}
+**Members commute; casual riders leisure-ride.** Weekend share `r percent(weekend[["Casual"]], accuracy = 1)` vs `r percent(weekend[["Member"]], accuracy = 1)`; median `r number(med_duration[["Casual"]], accuracy = 0.1)` vs `r number(med_duration[["Member"]], accuracy = 0.1)` min. **`r comma(casual_commuter_n, scale = 1e-6, accuracy = 0.1, suffix = " million")` casual trips** are already short weekday peak-hour rides — the conversion target. Trip-level only: Divvy files have no rider id.
+:::
+
+## Signature {.flow}
+
+### {width="56%"}
 
 ```{r}
+#| title: "Members peak twice on weekdays; casual riders peak once in the afternoon"
+#| fill: false
+#| fig-width: 8.6
+#| fig-height: 4.6
 hourly <- timing |>
   filter(!weekday %in% c("Saturday", "Sunday")) |>
   mutate(programme = as_programme(member_casual)) |>
@@ -164,111 +187,137 @@ hourly <- timing |>
   ungroup()
 
 ggplot(hourly, aes(hour, share, colour = programme)) +
-  annotate("rect", xmin = 6, xmax = 9, ymin = -Inf, ymax = Inf, fill = "grey88", alpha = 0.5) +
-  annotate("rect", xmin = 16, xmax = 19, ymin = -Inf, ymax = Inf, fill = "grey88", alpha = 0.5) +
-  geom_line(linewidth = 1.1) +
+  annotate("rect", xmin = 6, xmax = 9, ymin = -Inf, ymax = Inf, fill = "grey88", alpha = 0.55) +
+  annotate("rect", xmin = 16, xmax = 19, ymin = -Inf, ymax = Inf, fill = "grey88", alpha = 0.55) +
+  geom_line(linewidth = 1.15) +
   scale_colour_manual(values = pal) +
-  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  scale_y_continuous(labels = percent_format(accuracy = 1), expand = expansion(mult = c(0, 0.04))) +
   scale_x_continuous(breaks = seq(0, 23, 3), labels = function(h) sprintf("%02d:00", h)) +
   labs(
-    subtitle = wrap_sub("Members peak twice, at the morning and the evening commute. Casual riders build to a single afternoon hump."),
-    x = "Hour the trip started", y = "Share of the group's weekday trips",
-    caption = "Shaded bands are the 06–09 and 16–19 commute windows."
+    x = "Hour the trip started", y = "Share of weekday trips",
+    caption = "Shaded bands: 06–09 and 16–19."
   )
 ```
 
-### Where the two groups diverge {width="45%"}
+### {width="44%"}
 
 ```{r}
+#| title: "Casual riding is weekend and long; member riding is weekday and short"
+#| fill: false
+#| fig-width: 7.2
+#| fig-height: 4.6
 signature <- tibble::tibble(
   metric = factor(
-    rep(c("Ridden at a weekend", "Ridden in a weekday\ncommute window", "Longer than 30 minutes"), each = 2),
-    levels = c("Longer than 30 minutes", "Ridden in a weekday\ncommute window", "Ridden at a weekend")
-  ),
+    c("Weekend", "Weekday commute window", "Longer than 30 minutes"),
+    levels = c("Longer than 30 minutes", "Weekday commute window", "Weekend")
+  ) |> rep(each = 2),
   programme = factor(rep(c("Member", "Casual"), 3), levels = c("Member", "Casual")),
-  value = c(weekend[["Member"]], weekend[["Casual"]],
-            peak[["Member"]], peak[["Casual"]],
-            long_trip[["Member"]], long_trip[["Casual"]])
+  value = c(
+    weekend[["Member"]], weekend[["Casual"]],
+    peak[["Member"]], peak[["Casual"]],
+    long_trip[["Member"]], long_trip[["Casual"]]
+  )
 )
 
 ggplot(signature, aes(value, metric, fill = programme)) +
-  geom_col(position = position_dodge(width = 0.7), width = 0.62) +
+  geom_col(position = position_dodge(width = 0.72), width = 0.64) +
   geom_text(
     aes(label = percent(value, accuracy = 1)),
-    position = position_dodge(width = 0.7), hjust = -0.2, size = 4, colour = "grey25"
+    position = position_dodge(width = 0.72),
+    hjust = -0.12, size = 3.5, colour = "grey20"
   ) +
   scale_fill_manual(values = pal) +
-  scale_x_continuous(labels = percent_format(accuracy = 1),
-                     expand = expansion(mult = c(0, 0.18))) +
-  labs(
-    subtitle = wrap_sub("Casual riding is weekend, leisurely and long. Member riding is weekday, scheduled and short."),
-    x = "Share of the group's trips", y = NULL
-  )
+  scale_x_continuous(
+    labels = percent_format(accuracy = 1),
+    expand = expansion(mult = c(0, 0.22))
+  ) +
+  labs(x = "Share of the group's trips", y = NULL)
 ```
 
-## Opportunity {height="36%"}
+## Opportunity {.flow}
 
-### Casual trips that already follow a commute pattern {width="55%"}
+### {width="56%"}
 
 ```{r}
+#| title: "2.0 million casual trips already look like a commute"
+#| fill: false
+#| fig-width: 8.6
+#| fig-height: 4.4
 commute_trend <- rider_profile |>
   mutate(programme = as_programme(member_casual)) |>
   group_by(programme, year_month) |>
   summarise(
-    share = sum(n_trips[day_type == "Weekday" &
-                          time_block %in% c("AM peak", "PM peak") &
-                          duration_band == "Under 15 min"]) / sum(n_trips),
+    share = sum(
+      n_trips[day_type == "Weekday" &
+                time_block %in% c("AM peak", "PM peak") &
+                duration_band == "Under 15 min"]
+    ) / sum(n_trips),
     .groups = "drop"
   ) |>
   mutate(date = to_date(year_month))
 
 ggplot(commute_trend, aes(date, share, colour = programme)) +
-  geom_line(linewidth = 1) +
+  geom_line(linewidth = 1.05) +
   scale_colour_manual(values = pal) +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, NA)) +
   date_axis +
   labs(
-    subtitle = wrap_sub(paste0(
-      comma(casual_commuter_n, scale = 1e-6, accuracy = 0.1, suffix = "M"),
-      " casual trips over five years are short, weekday, peak-hour rides — the conversion target."
-    )),
     x = NULL, y = "Share of the group's trips",
-    caption = "Commute pattern = weekday, started 06–09 or 16–19, under 15 minutes."
+    caption = paste0(
+      "Commute-like = weekday, 06–09 or 16–19, under 15 min. ",
+      percent(casual_commuter_share, accuracy = 0.1),
+      " of all casual trips."
+    )
   )
 ```
 
-### How long a trip lasts {width="45%"}
+### {width="44%"}
 
 ```{r}
+#| title: "Member trips bunch under 15 minutes; casual trips have a long tail"
+#| fill: false
+#| fig-width: 7.2
+#| fig-height: 4.4
 dur_dist <- duration_bins |>
-  mutate(programme = as_programme(member_casual)) |>
+  mutate(
+    programme = as_programme(member_casual),
+    duration_bin = recode(
+      as.character(duration_bin),
+      "1-5" = "1–10", "5-10" = "1–10",
+      "10-15" = "10–20", "15-20" = "10–20",
+      "20-30" = "20–30",
+      "30-45" = "30–45",
+      "45-60" = "45–60",
+      "60-90" = "60+", "90-120" = "60+", "120+" = "60+"
+    ),
+    duration_bin = factor(
+      duration_bin,
+      levels = c("1–10", "10–20", "20–30", "30–45", "45–60", "60+")
+    )
+  ) |>
   group_by(programme, duration_bin) |>
   summarise(n_trips = sum(n_trips), .groups = "drop_last") |>
   mutate(share = n_trips / sum(n_trips)) |>
-  ungroup() |>
-  mutate(duration_bin = factor(
-    duration_bin,
-    levels = c("1-5", "5-10", "10-15", "15-20", "20-30", "30-45", "45-60", "60-90", "90-120", "120+")
-  ))
+  ungroup()
 
 ggplot(dur_dist, aes(duration_bin, share, fill = programme)) +
-  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.72) +
   scale_fill_manual(values = pal) +
-  scale_y_continuous(labels = percent_format(accuracy = 1)) +
-  labs(
-    subtitle = wrap_sub("Member trips bunch under 15 minutes; casual trips carry a long tail."),
-    x = "Trip length (minutes)", y = "Share of the group's trips"
-  ) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  scale_y_continuous(labels = percent_format(accuracy = 1), expand = expansion(mult = c(0, 0.04))) +
+  labs(x = "Trip length (minutes)", y = "Share of trips")
 ```
 
 # Week and season
 
-## Heatmaps {height="52%"}
+## Heatmaps {.flow}
 
-### When each group rides, hour by hour
+### Members concentrate on weekday evenings; casual riders spread into weekends
 
 ```{r}
+#| title: "Members concentrate on weekday evenings; casual riders spread into weekends"
+#| fill: false
+#| fig-width: 12.2
+#| fig-height: 5.4
 heat <- timing |>
   mutate(programme = as_programme(member_casual)) |>
   group_by(programme, weekday, hour) |>
@@ -285,127 +334,171 @@ ggplot(heat, aes(hour, weekday, fill = share)) +
   scale_fill_viridis_c(
     option = "mako", direction = -1, labels = percent_format(accuracy = 0.1),
     name = "Share of the group's trips",
-    guide = guide_colourbar(barwidth = 12, barheight = 0.6, title.position = "top")
+    guide = guide_colourbar(barwidth = 14, barheight = 0.55, title.position = "top")
   ) +
-  scale_x_continuous(breaks = seq(0, 21, 3), labels = function(h) sprintf("%02d", h),
-                     expand = c(0, 0)) +
+  scale_x_continuous(
+    breaks = seq(0, 21, 3),
+    labels = function(h) sprintf("%02d", h),
+    expand = c(0, 0)
+  ) +
   scale_y_discrete(expand = c(0, 0)) +
-  labs(
-    subtitle = wrap_sub("Both panels share one scale, so the two patterns are directly comparable."),
-    x = "Hour the trip started", y = NULL
-  ) +
-  theme(legend.title = element_text(colour = "grey30", size = rel(0.85)))
+  labs(x = "Hour the trip started", y = NULL) +
+  theme(
+    legend.title = element_text(colour = "grey30", size = rel(0.85)),
+    legend.position = "top",
+    panel.spacing = unit(1.1, "lines")
+  )
 ```
 
-## Seasonality {height="48%"}
+## Season {.flow}
 
-### Trips per month
+### {width="50%"}
 
 ```{r}
+#| title: "Casual volume collapses every winter; member volume holds up"
+#| fill: false
+#| fig-width: 7.4
+#| fig-height: 4.1
 ggplot(programme_month, aes(date, n_trips, colour = programme)) +
-  geom_line(linewidth = 1) +
+  geom_line(linewidth = 1.05) +
   scale_colour_manual(values = pal) +
   scale_y_continuous(labels = label_number(scale = 1e-3, suffix = "k")) +
   date_axis +
-  labs(
-    subtitle = wrap_sub("Casual volume collapses every winter; member volume holds up."),
-    x = NULL, y = "Trips per month"
-  )
+  labs(x = NULL, y = "Trips per month")
 ```
 
-### Member share of trips
+### {width="50%"}
 
 ```{r}
+#| title: "Members dominate winter; casual riders close the gap each summer"
+#| fill: false
+#| fig-width: 7.4
+#| fig-height: 4.1
 ggplot(member_share, aes(date, member_share)) +
   geom_ribbon(aes(ymin = ci_low, ymax = ci_high), fill = "#215C8C", alpha = 0.25) +
-  geom_line(colour = "#215C8C", linewidth = 1) +
+  geom_line(colour = "#215C8C", linewidth = 1.05) +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 1)) +
   date_axis +
   labs(
-    subtitle = wrap_sub("Shaded band is the Wilson 95% interval. Members dominate winter; casual riders close the gap each summer."),
     x = NULL, y = "Member share of trips",
-    caption = "Share of trips, not of unique people — Divvy files carry no rider identifier."
+    caption = "Ribbon: Wilson 95% interval. Share of trips, not of people."
   )
 ```
 
-### Bike type chosen
+## Mix {.flow}
+
+### Bike type does not separate the two groups
 
 ```{r}
+#| title: "Bike type does not separate the two groups"
+#| fill: false
+#| fig-width: 10
+#| fig-height: 3.2
 bike_mix <- bike_type |>
-  mutate(programme = as_programme(member_casual),
-         bike = tools::toTitleCase(gsub("_", " ", rideable_type))) |>
+  mutate(
+    programme = as_programme(member_casual),
+    bike = recode(
+      rideable_type,
+      electric_bike = "Electric bike",
+      classic_bike = "Classic bike",
+      docked_bike = "Docked bike",
+      electric_scooter = "Electric scooter",
+      .default = tools::toTitleCase(gsub("_", " ", rideable_type))
+    )
+  ) |>
   group_by(programme, bike) |>
   summarise(n_trips = sum(n_trips), .groups = "drop_last") |>
   mutate(share = n_trips / sum(n_trips)) |>
   ungroup()
 
 ggplot(bike_mix, aes(share, reorder(bike, share), fill = programme)) +
-  geom_col(position = position_dodge(width = 0.75), width = 0.65) +
+  geom_col(position = position_dodge(width = 0.72), width = 0.62) +
+  geom_text(
+    aes(label = percent(share, accuracy = 1)),
+    position = position_dodge(width = 0.72),
+    hjust = -0.12, size = 3.4, colour = "grey20"
+  ) +
   scale_fill_manual(values = pal) +
-  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  scale_x_continuous(
+    labels = percent_format(accuracy = 1),
+    limits = c(0, 0.62),
+    expand = expansion(mult = c(0, 0.02))
+  ) +
   labs(
-    subtitle = wrap_sub("Classic and electric split almost evenly for both groups. Docked bikes are a casual-only legacy option."),
-    x = "Share of the group's trips", y = NULL
+    x = "Share of the group's trips", y = NULL,
+    caption = "Classic and electric split almost evenly. Docked bikes are a casual-only leftover."
   )
 ```
 
 # Data quality
 
-## Quality {height="55%"}
+## Quality {.flow}
 
-### Records kept after the cleaning protocol
+### `r percent(drop_rate, accuracy = 0.1)` of `r comma(n_in)` source records were excluded {width="55%"}
 
 ```{r}
+#| title: "2.3% of source records were excluded against a documented reason"
+#| fill: false
+#| fig-width: 8.4
+#| fig-height: 4.3
 ggplot(quality_month, aes(date, pct_kept)) +
-  geom_line(colour = "#215C8C", linewidth = 1) +
+  geom_line(colour = "#215C8C", linewidth = 1.05) +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0.9, 1)) +
   date_axis +
-  labs(
-    subtitle = wrap_sub(paste0(
-      percent(drop_rate, accuracy = 0.1), " of the ", comma(n_in),
-      " source records were excluded, every one of them counted against a documented reason."
-    )),
-    x = NULL, y = "Share of source records kept"
-  )
+  labs(x = NULL, y = "Share of source records kept")
 ```
 
-### Why records were excluded
+### Sub-minute rides (dock glitches) account for most exclusions {width="45%"}
 
 ```{r}
+#| title: "Sub-minute rides (dock glitches) account for most exclusions"
+#| fill: false
+#| fig-width: 7.2
+#| fig-height: 4.3
 reasons <- quality_month |>
   summarise(across(starts_with("n_") & !c(n_in, n_kept, n_dropped), sum)) |>
   pivot_longer(everything(), names_to = "reason", values_to = "n") |>
   filter(!grepl("station_kept$", reason), n > 0) |>
-  mutate(reason = recode(
-    reason,
-    n_missing_ride_id = "Missing ride id",
-    n_duplicate_ride_id = "Duplicate ride id",
-    n_missing_programme = "Missing member/casual flag",
-    n_missing_timestamps = "Unparseable timestamp",
-    n_duration_non_positive = "End before start",
-    n_duration_too_short = "Under 60 seconds",
-    n_duration_too_long = "Over 24 hours"
-  ))
+  mutate(
+    reason = recode(
+      reason,
+      n_missing_ride_id = "Missing ride id",
+      n_duplicate_ride_id = "Duplicate ride id",
+      n_missing_programme = "Missing member/casual flag",
+      n_missing_timestamps = "Unparseable timestamp",
+      n_duration_non_positive = "End before start",
+      n_duration_too_short = "Under 60 seconds",
+      n_duration_too_long = "Over 24 hours"
+    ),
+    inside = n > max(n) * 0.45
+  )
 
 ggplot(reasons, aes(n, reorder(reason, n))) +
   geom_col(fill = "#8C6D46", width = 0.65) +
-  geom_text(aes(label = comma(n)), hjust = -0.15, size = 4, colour = "grey25") +
-  scale_x_continuous(labels = label_number(scale = 1e-3, suffix = "k"),
-                     expand = expansion(mult = c(0, 0.2))) +
-  labs(
-    subtitle = wrap_sub("Sub-minute rides, meaning dock glitches and false starts, account for most exclusions."),
-    x = "Records excluded", y = NULL
-  )
+  geom_text(
+    aes(
+      label = comma(n),
+      hjust = ifelse(inside, 1.12, -0.12),
+      colour = ifelse(inside, "white", "grey25")
+    ),
+    size = 3.6
+  ) +
+  scale_colour_identity() +
+  scale_x_continuous(
+    labels = label_number(scale = 1e-3, suffix = "k"),
+    expand = expansion(mult = c(0, 0.16))
+  ) +
+  labs(x = "Records excluded", y = NULL)
 ```
 
-## Scope {height="45%"}
+## Scope {.flow}
 
-### What this dashboard can and cannot tell you
-
+::: {.scope-note}
 **Answered here.** How member and casual *trips* differ in timing, length, day of week, season and bike choice, across `r nrow(member_share)` months and `r comma(n_trips)` cleaned trips.
 
 **Not answerable from this data.** Anything about *people*. Divvy's public files carry no rider identifier, so a rider taking 200 trips and 200 riders taking one trip each are indistinguishable. Every figure here is a share of trips, never a share of riders, and no conversion rate or per-rider frequency can be derived.
 
-**Statistical note.** The member/casual difference in weekend riding is overwhelmingly significant on a chi-square test, but that test assumes independent observations and trips cluster within unobserved riders. The p-value is reported in the repository as descriptive only; the effect sizes above are the meaningful result.
+**Statistical note.** The member/casual difference in weekend riding is overwhelmingly significant on a chi-square test, but that test assumes independent observations and trips cluster within unobserved riders. The p-value is reported in the repository as descriptive only; the effect sizes on the first page are the meaningful result.
 
 Full indicator definitions, exclusion rules and pipeline architecture are in [METHODS.md](https://github.com/ThacienneUwimanayantumye/Cyclistic-Bike-Share-Analysis/blob/main/docs/METHODS.md).
+:::

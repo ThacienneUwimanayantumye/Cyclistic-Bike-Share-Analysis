@@ -1,0 +1,146 @@
+/*-- scss:defaults --*/
+$primary: #215C8C;
+$navbar-bg: #1B3A4B;
+$navbar-fg: #f4f7fa;
+$link-color: #215C8C;
+$card-border-radius: 0.5rem;
+
+/*-- scss:rules --*/
+.navbar-brand {
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.navbar .navbar-subtitle {
+  opacity: 0.82;
+  font-size: 0.86rem;
+}
+
+.bslib-value-box {
+  overflow: hidden;
+
+  .value-box-grid {
+    grid-template-columns: 3.1rem 1fr !important;
+  }
+
+  .value-box-showcase {
+    padding: 0.35rem 0.2rem !important;
+    max-width: 3.1rem;
+
+    .bi {
+      font-size: 1.65rem !important;
+    }
+  }
+
+  .value-box-area {
+    min-width: 0;
+    padding: 0.45rem 0.7rem 0.45rem 0.15rem;
+  }
+
+  .value-box-title {
+    font-size: 0.78rem !important;
+    line-height: 1.25;
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .value-box-value {
+    font-size: clamp(1.35rem, 2.2vw, 2.05rem) !important;
+    font-weight: 650;
+    white-space: nowrap;
+    line-height: 1.15;
+    overflow: visible;
+  }
+}
+
+.card-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.finding {
+  background: #eef3f7;
+  border-left: 4px solid #215C8C;
+  padding: 0.85rem 1.1rem;
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: #24323d;
+}
+
+.finding strong {
+  color: #1B3A4B;
+}
+
+.scope-note p {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* Static ggplot images must keep their aspect ratio. bslib fill layout
+   otherwise stretches them to the card and crops axes and labels. */
+.bslib-card:not(.bslib-value-box) {
+  overflow: visible;
+}
+
+.bslib-card:not(.bslib-value-box) .card-body {
+  overflow: visible;
+}
+
+.bslib-card img,
+.quarto-figure img,
+.cell-output-display img {
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain;
+}
+
+.html-fill-item.html-fill-container > .quarto-figure,
+.html-fill-item.html-fill-container > .cell-output-display,
+.html-fill-item.html-fill-container > p {
+  flex: 0 0 auto !important;
+}
+
+/* scrolling: true still leaves fill rows at 1fr of the viewport, which
+   crops static ggplot images. Size the page to the charts instead. */
+.dashboard-scrolling .quarto-dashboard-content,
+.dashboard-scrolling .tab-content,
+.dashboard-scrolling .dashboard-page,
+.dashboard-scrolling .dashboard-page > .bslib-grid {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.dashboard-scrolling .dashboard-page {
+  overflow: visible !important;
+}
+
+.dashboard-scrolling .bslib-card:not(.bslib-value-box).html-fill-container,
+.dashboard-scrolling .bslib-card:not(.bslib-value-box) .html-fill-container,
+.dashboard-scrolling .bslib-card:not(.bslib-value-box) .html-fill-item {
+  height: auto !important;
+  flex: 0 1 auto !important;
+}
+
+/* Override inline 1fr tracks that squash the lower rows. */
+.dashboard-scrolling .bslib-grid {
+  grid-auto-rows: max-content !important;
+}
+
+.dashboard-scrolling .dashboard-page > .bslib-grid {
+  grid-template-rows: none !important;
+  grid-auto-rows: max-content !important;
+}
+
+.card-header {
+  background: transparent;
+  border-bottom: 1px solid #e6eaee;
+  font-weight: 600;
+}
+
+.dashboard-scrolling .dashboard-page {
+  padding-bottom: 1.25rem;
+}
