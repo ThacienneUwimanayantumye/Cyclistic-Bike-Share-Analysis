@@ -1,0 +1,52 @@
+test_that("slice_period keeps the requested years and season months", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  df <- tibble::tibble(
+    year_month = c("2021-01", "2021-07", "2022-01", "2022-07"),
+    n_trips = 1:4
+  )
+
+  winter_2021 <- slice_period(df, "2021", "cold")
+  expect_equal(winter_2021$year_month, "2021-01")
+
+  warm <- slice_period(df, c("2021", "2022"), "warm")
+  expect_equal(warm$year_month, c("2021-07", "2022-07"))
+})
+
+test_that("share_by_programme returns member and casual shares", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  timing <- tibble::tibble(
+    member_casual = c("member", "member", "casual", "casual"),
+    weekday = c("Monday", "Saturday", "Monday", "Sunday"),
+    n_trips = c(80, 20, 50, 50)
+  )
+
+  weekend <- share_by_programme(timing, weekday %in% c("Saturday", "Sunday"))
+  expect_equal(unname(weekend[["Member"]]), 0.2)
+  expect_equal(unname(weekend[["Casual"]]), 0.5)
+})
+
+test_that("gap_group breaks a winter-filtered series at the summer hole", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  dates <- as.Date(c("2021-01-01", "2021-02-01", "2021-03-01", "2021-11-01", "2021-12-01"))
+  expect_equal(gap_group(dates), c(1, 1, 1, 2, 2))
+})
+
+test_that("collapse_duration_bins groups the long tail into 60+", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  bins <- tibble::tibble(
+    member_casual = "member",
+    duration_bin = c("1-5", "5-10", "60-90", "120+"),
+    n_trips = c(40, 40, 10, 10)
+  )
+  out <- collapse_duration_bins(bins)
+  expect_equal(out$share[out$duration_bin == "1–10"], 0.8)
+  expect_equal(out$share[out$duration_bin == "60+"], 0.2)
+})

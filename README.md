@@ -12,7 +12,7 @@ Indicators are **trip-level**. Divvy files carry no rider id, so none of this is
 
 | | |
 |---|---|
-| **Dashboard** | [GitHub Pages](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/) (static) · Shiny app in `dashboard/` |
+| **Dashboard** | [GitHub Pages](https://thacienneuwimanayantumye.github.io/Cyclistic-Bike-Share-Analysis/) (static) · Shiny app in `dashboard/` (same story, year and season filters) |
 | **Methods** | [`docs/METHODS.md`](docs/METHODS.md) |
 | **Data product** | `data/derived/` (aggregates only; raw zips are not in git) |
 
