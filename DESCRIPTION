@@ -1,17 +1,16 @@
 Package: cyclisticmonitor
 Title: Cyclistic Programme Monitor
 Version: 0.1.0
-Authors@R: person("Portfolio", "Project", role = c("aut", "cre"))
-Description: Reproducible R pipeline, SQL-backed indicator tables, and Shiny
-    dashboard for monitoring Cyclistic (Divvy) bike-share usage by programme
-    (annual members vs casual riders), 2021-2025.
+Authors@R: person("Cyclistic", "Analyst", role = c("aut", "cre"))
+Description: Reproducible R pipeline, indicator tables, and dashboard for a
+    Cyclistic marketing briefing on how annual members and casual riders use
+    the bikes, 2021-2025.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.3)
 Imports:
     binom,
     bslib,
-    bsicons,
     cli,
     DBI,
     dplyr,

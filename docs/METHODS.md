@@ -1,8 +1,8 @@
 # Indicator dictionary and methods
 
-This document is the specification for **Cyclistic Programme Monitor**. Indicators are defined the way a screening-statistics team would specify a published table: numerator, denominator, grain, and exclusions.
+This document specifies the indicators behind the Cyclistic marketing briefing. Each table has a numerator, a denominator, a grain, and documented exclusions.
 
-The domain is Chicago Divvy / Cyclistic bike-share (2021–2025). The *product design* (pipeline → quality report → indicator store → dashboard) is what is meant to transfer to public-health monitoring work. This is **not** a cancer-screening analysis.
+The data are Chicago Divvy / Cyclistic trips, 2021–2025. The dashboard is the report to the marketing manager: how members and casual riders use the system, and how large the commute-like casual segment is.
 
 ## Unit of analysis
 
@@ -11,7 +11,7 @@ The domain is Chicago Divvy / Cyclistic bike-share (2021–2025). The *product d
 | Event | One trip (`ride_id`) |
 | Programme | `member` (annual membership) or `casual` (single-ride / day pass) |
 | Period | Calendar month `YYYY-MM` of `started_at` |
-| Person | **Not observed.** Files contain no rider identifier. Do not interpret trip counts as unique participants or coverage. |
+| Person | **Not observed.** Files contain no rider identifier. Do not read trip counts as unique customers or a conversion rate. |
 
 ## Source
 
@@ -65,7 +65,7 @@ A trip is dropped from the analytic extract if any of the following hold. Counts
 
 - **Name:** `timing`
 - **Grain:** month × programme × weekday × hour of `started_at`
-- **Use:** commute vs leisure pattern monitoring
+- **Use:** commute vs leisure pattern
 
 ### 4. Duration
 
@@ -86,7 +86,7 @@ A trip is dropped from the analytic extract if any of the following hold. Counts
 - **Day type:** weekend = Saturday or Sunday, otherwise weekday
 - **Time block:** AM peak 06–09, midday 10–15, PM peak 16–19, otherwise off-peak, by hour of `started_at`
 - **Duration band:** under 15 minutes, 15–30 minutes, over 30 minutes
-- **Use:** the only indicator crossing timing with duration. It lets the dashboard size the *commute-pattern* segment — weekday, peak-hour, under 15 minutes — within each programme.
+- **Use:** the only indicator crossing timing with duration. It sizes the *commute-pattern* segment — weekday, peak-hour, under 15 minutes — within each programme.
 - **Caveat:** a commute-pattern *trip* is not a commuter. Without a rider identifier, the segment counts journeys that look like commutes, not people who commute.
 
 ### 7. Quality
@@ -99,13 +99,13 @@ A trip is dropped from the analytic extract if any of the following hold. Counts
 
 1. **Wilson score interval** on member trip share (not a normal approximation; better near 0/1).
 2. **STL** (periodic seasonal window, robust) on the monthly total trip series, to separate seasonality from trend.
-3. **Pearson chi-square** on a 2×2 table of programme × weekend, computed from *trip counts*. This is a descriptive contrast. Trips are not independent people; p-values must not be read as evidence about a super-population of riders.
+3. **Pearson chi-square** on a 2×2 table of programme × weekend, computed from *trip counts*. This is a descriptive contrast. Trips are not independent people; p-values must not be read as evidence about a population of riders.
 
-No person-level epidemiological measures (coverage, incidence, interval detection) are computed, because the keys do not exist.
+No unique-rider rates are computed, because the keys do not exist.
 
 ## Pipeline architecture
 
-Monthly zip files are processed independently (same code, local file). Only indicator tables are combined. Raw microdata are not loaded into the dashboard. That partition-then-aggregate pattern is the analogue of sharing summary tables rather than pooled records.
+Monthly zip files are processed independently (same code, local file). Only indicator tables are combined. Raw microdata are not loaded into the dashboard.
 
 Storage:
 

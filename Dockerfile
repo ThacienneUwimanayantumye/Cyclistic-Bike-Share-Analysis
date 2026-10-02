@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN install2.r --error --skipinstalled --ncpus -1 \
-    dplyr readr ggplot2 scales tidyr here bsicons lubridate markdown litedown
+    dplyr readr ggplot2 scales tidyr here lubridate markdown litedown
 
 WORKDIR /app
 COPY dashboard /app/dashboard
