@@ -69,6 +69,22 @@ test_that("commute_like_by_month pools counts, not monthly shares", {
   expect_equal(jul, 90)
 })
 
+test_that("kpi_strip_html is three cards with counts, not four value boxes", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  html <- kpi_strip_html(
+    list(n = 200, n_member = 120, n_casual = 80, share_member = 0.6, share_casual = 0.4),
+    c(Member = 0.2, Casual = 0.4),
+    c(Member = 9.1, Casual = 13.5),
+    casual_commuter_n = 10,
+    casual_commuter_share = 0.125
+  )
+  expect_equal(length(gregexpr("kpi-card", html, fixed = TRUE)[[1]]), 3)
+  expect_match(html, "Conversion pool")
+  expect_false(grepl("value-box", html, fixed = TRUE))
+})
+
 test_that("share_by_programme returns member and casual shares", {
   src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
   sys.source(src, envir = environment())

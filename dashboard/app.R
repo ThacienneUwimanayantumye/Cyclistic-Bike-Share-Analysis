@@ -1,6 +1,5 @@
 library(shiny)
 library(bslib)
-library(bsicons)
 library(dplyr)
 library(ggplot2)
 library(htmltools)
@@ -20,13 +19,6 @@ meta <- read_indicator("metadata")
 
 year_available <- sort(unique(substr(member_share$year_month, 1, 4)))
 
-finding_banner <- function(...) {
-  tags$div(
-    class = "finding",
-    ...
-  )
-}
-
 ui <- page_navbar(
   title = "Cyclistic Programme Monitor",
   fillable = FALSE,
@@ -38,29 +30,77 @@ ui <- page_navbar(
     "navbar-bg" = "#1B3A4B"
   ),
   header = tags$head(tags$style(HTML("
-    .finding {
-      background: #eef3f7;
-      border-left: 4px solid #215C8C;
-      padding: 0.85rem 1.1rem;
-      margin: 0;
-      font-size: 1.02rem;
-      line-height: 1.5;
+    .hero-finding {
+      padding: 0.1rem 0.05rem 0.15rem;
+      margin: 0 0 0.85rem;
       color: #24323d;
     }
-    .finding strong { color: #1B3A4B; }
+    .hero-finding .kicker {
+      margin: 0 0 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #5b6b75;
+    }
+    .hero-finding h2 {
+      margin: 0 0 0.55rem;
+      font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+      font-weight: 650;
+      line-height: 1.25;
+      color: #1B3A4B;
+    }
+    .hero-finding p {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.55;
+      max-width: 72rem;
+    }
+    .hero-finding .caveat {
+      margin-top: 0.55rem;
+      font-size: 0.86rem;
+      color: #5b6b75;
+    }
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin: 0.15rem 0 0.35rem;
+    }
+    .kpi-card {
+      border-radius: 0.5rem;
+      padding: 0.95rem 1.05rem 1.05rem;
+      min-height: 7.4rem;
+    }
+    .kpi-card.casual { background: #C05621; color: #fff; }
+    .kpi-card.member { background: #215C8C; color: #fff; }
+    .kpi-card.pool {
+      background: #f4f7fa;
+      color: #1B3A4B;
+      border: 1px solid #d5dee6;
+    }
+    .kpi-label {
+      font-size: 0.75rem;
+      font-weight: 650;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.88;
+    }
+    .kpi-value {
+      font-size: clamp(1.2rem, 1.9vw, 1.6rem);
+      font-weight: 650;
+      line-height: 1.2;
+      margin: 0.28rem 0 0.4rem;
+    }
+    .kpi-meta { font-size: 0.84rem; line-height: 1.4; opacity: 0.92; }
     .period-chip {
       font-size: 0.85rem;
       color: #5b6b75;
       padding: 0.35rem 0.25rem 0.7rem;
     }
-    .bslib-value-box .value-box-grid {
-      grid-template-columns: 2.8rem 1fr !important;
+    @media (max-width: 900px) {
+      .kpi-row { grid-template-columns: 1fr; }
     }
-    .bslib-value-box .value-box-value {
-      font-size: clamp(1.15rem, 1.6vw, 1.75rem) !important;
-      white-space: nowrap;
-    }
-    .bslib-value-box .value-box-showcase { max-width: 2.8rem; }
   "))),
   sidebar = sidebar(
     title = "Filters",
@@ -83,36 +123,8 @@ ui <- page_navbar(
   ),
   nav_panel(
     "The difference",
-    uiOutput("period_chip"),
-    layout_columns(
-      fill = FALSE,
-      col_widths = c(3, 3, 3, 3),
-      value_box(
-        title = textOutput("kpi_title_casual", inline = TRUE),
-        value = textOutput("kpi_share_casual", inline = TRUE),
-        showcase = bs_icon("person"),
-        theme = value_box_theme(bg = "#C05621", fg = "#fff")
-      ),
-      value_box(
-        title = textOutput("kpi_title_member", inline = TRUE),
-        value = textOutput("kpi_share_member", inline = TRUE),
-        showcase = bs_icon("person-badge"),
-        theme = value_box_theme(bg = "#215C8C", fg = "#fff")
-      ),
-      value_box(
-        title = "Median trip · casual",
-        value = textOutput("kpi_med_casual", inline = TRUE),
-        showcase = bs_icon("hourglass-split"),
-        theme = value_box_theme(bg = "#A85A32", fg = "#fff")
-      ),
-      value_box(
-        title = "Median trip · member",
-        value = textOutput("kpi_med_member", inline = TRUE),
-        showcase = bs_icon("hourglass"),
-        theme = value_box_theme(bg = "#3D7A9E", fg = "#fff")
-      )
-    ),
-    card(finding_banner(uiOutput("finding_text"))),
+    uiOutput("finding_text"),
+    uiOutput("kpi_strip"),
     layout_columns(
       col_widths = c(7, 5),
       card(
@@ -225,7 +237,6 @@ server <- function(input, output, session) {
     tags$div(class = "period-chip", "Showing ", tags$strong(period_label()), ".")
   })
 
-  output$period_chip <- renderUI(period_chip_ui())
   output$period_chip_season <- renderUI(period_chip_ui())
   output$period_chip_quality <- renderUI(period_chip_ui())
 
@@ -265,30 +276,35 @@ server <- function(input, output, session) {
     )
   })
 
-  output$kpi_share_casual <- renderText(fmt_pct(kpis()$mix$share_casual))
-  output$kpi_share_member <- renderText(fmt_pct(kpis()$mix$share_member))
-  output$kpi_title_casual <- renderText(paste("Casual ·", fmt_trips(kpis()$mix$n_casual), "trips"))
-  output$kpi_title_member <- renderText(paste("Member ·", fmt_trips(kpis()$mix$n_member), "trips"))
-  output$kpi_med_casual <- renderText(fmt_min(kpis()$med[["Casual"]]))
-  output$kpi_med_member <- renderText(fmt_min(kpis()$med[["Member"]]))
-
   output$finding_text <- renderUI({
     k <- kpis()
-    tagList(
-      tags$strong("Members commute; casual riders leisure-ride. "),
-      sprintf(
-        "Of %s cleaned trips, casual riders take %s and members %s. Weekend share %s vs %s; median %s vs %s. ",
-        fmt_trips(k$mix$n),
-        fmt_pct(k$mix$share_casual),
-        fmt_pct(k$mix$share_member),
-        fmt_pct(k$weekend[["Casual"]]),
-        fmt_pct(k$weekend[["Member"]]),
-        fmt_min(k$med[["Casual"]]),
-        fmt_min(k$med[["Member"]])
+    tags$div(
+      class = "hero-finding",
+      tags$p(class = "kicker", period_label()),
+      tags$h2("Members commute; casual riders leisure-ride."),
+      tags$p(
+        sprintf(
+          "Of %s cleaned trips, casual riders take %s and members %s. Weekend share %s vs %s; median %s vs %s. ",
+          fmt_trips(k$mix$n),
+          fmt_pct0(k$mix$share_casual),
+          fmt_pct0(k$mix$share_member),
+          fmt_pct0(k$weekend[["Casual"]]),
+          fmt_pct0(k$weekend[["Member"]]),
+          fmt_min(k$med[["Casual"]]),
+          fmt_min(k$med[["Member"]])
+        ),
+        tags$strong(fmt_trips(k$casual_commuter_n), " casual trips"),
+        " are already short weekday peak-hour rides — the conversion target."
       ),
-      tags$strong(fmt_trips(k$casual_commuter_n), " casual trips"),
-      " are already short weekday peak-hour rides — the conversion target. Trip-level only: Divvy files have no rider id."
+      tags$p(class = "caveat", "Trip-level only: Divvy files have no rider id.")
     )
+  })
+
+  output$kpi_strip <- renderUI({
+    k <- kpis()
+    HTML(kpi_strip_html(
+      k$mix, k$weekend, k$med, k$casual_commuter_n, k$casual_commuter_share
+    ))
   })
 
   output$plot_hourly <- renderPlot({

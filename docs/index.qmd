@@ -132,55 +132,45 @@ commuter_like <- rider_profile |>
 casual_commuter_n <- commuter_like$n[commuter_like$member_casual == "casual"]
 casual_commuter_share <- casual_commuter_n /
   sum(rider_profile$n_trips[rider_profile$member_casual == "casual"])
+
+helpers_file <- file.path("..", "dashboard", "helpers.R")
+if (!file.exists(helpers_file)) helpers_file <- file.path("dashboard", "helpers.R")
+sys.source(helpers_file, envir = environment())
 ```
 
 # The difference
 
-## Headline {height="130px"}
+## {.flow}
 
-```{r}
-#| content: valuebox
-#| title: "Casual · 10.8 million trips"
-list(
-  icon = "person",
-  color = "#C05621",
-  value = percent(share_casual_all, accuracy = 0.1)
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Member · 17.0 million trips"
-list(
-  icon = "person-badge",
-  color = "#215C8C",
-  value = percent(share_member_all, accuracy = 0.1)
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Median trip · casual"
-list(
-  icon = "hourglass-split", color = "#A85A32",
-  value = paste0(number(med_duration[["Casual"]], accuracy = 0.1), " min")
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Median trip · member"
-list(
-  icon = "hourglass", color = "#3D7A9E",
-  value = paste0(number(med_duration[["Member"]], accuracy = 0.1), " min")
-)
-```
-
-## Finding {.flow}
-
-::: {.finding}
-**Members commute; casual riders leisure-ride.** Of `r comma(n_trips, scale = 1e-6, accuracy = 0.1, suffix = " million")` cleaned trips, casual riders take `r percent(share_casual_all, accuracy = 1)` and members `r percent(share_member_all, accuracy = 1)`. Weekend share `r percent(weekend[["Casual"]], accuracy = 1)` vs `r percent(weekend[["Member"]], accuracy = 1)`; median `r number(med_duration[["Casual"]], accuracy = 0.1)` vs `r number(med_duration[["Member"]], accuracy = 0.1)` min. **`r comma(casual_commuter_n, scale = 1e-6, accuracy = 0.1, suffix = " million")` casual trips** are already short weekday peak-hour rides — the conversion target. Trip-level only: Divvy files have no rider id.
+::: {.hero-finding}
+<p class="kicker">Chicago Divvy · 2021–2025</p>
+<h2>Members commute; casual riders leisure-ride.</h2>
+<p>
+Of `r comma(n_trips, scale = 1e-6, accuracy = 0.1, suffix = " million")` cleaned trips, casual riders take `r percent(share_casual_all, accuracy = 1)` and members `r percent(share_member_all, accuracy = 1)`. Weekend share `r percent(weekend[["Casual"]], accuracy = 1)` vs `r percent(weekend[["Member"]], accuracy = 1)`; median `r number(med_duration[["Casual"]], accuracy = 0.1)` vs `r number(med_duration[["Member"]], accuracy = 0.1)` min. <strong>`r comma(casual_commuter_n, scale = 1e-6, accuracy = 0.1, suffix = " million")` casual trips</strong> are already short weekday peak-hour rides — the conversion target.
+</p>
+<p class="caveat">Trip-level only: Divvy files have no rider id.</p>
 :::
+
+## {.flow}
+
+```{r}
+#| results: asis
+#| echo: false
+#| fill: false
+cat(kpi_strip_html(
+  list(
+    n = n_trips,
+    n_member = n_member,
+    n_casual = n_casual,
+    share_member = share_member_all,
+    share_casual = share_casual_all
+  ),
+  weekend,
+  med_duration,
+  casual_commuter_n,
+  casual_commuter_share
+))
+```
 
 ## Signature {.flow}
 

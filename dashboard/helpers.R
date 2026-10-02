@@ -200,6 +200,54 @@ fmt_trips <- function(n) {
   else scales::comma(n, accuracy = 1)
 }
 
+fmt_pct0 <- function(x) {
+  if (length(x) == 0 || is.na(x)) "—" else scales::percent(x, accuracy = 1)
+}
+
+kpi_card_html <- function(kind, label, value, meta) {
+  paste0(
+    '<div class="kpi-card ', kind, '">',
+    '<div class="kpi-label">', label, "</div>",
+    '<div class="kpi-value">', value, "</div>",
+    '<div class="kpi-meta">', meta, "</div>",
+    "</div>"
+  )
+}
+
+#' Three evidence cards: casual, member, conversion pool.
+kpi_strip_html <- function(mix, weekend, med, casual_commuter_n, casual_commuter_share) {
+  paste0(
+    '<div class="kpi-row">',
+    kpi_card_html(
+      "casual", "Casual",
+      paste(fmt_trips(mix$n_casual), "trips"),
+      paste0(
+        fmt_pct(mix$share_casual), " of all trips · ",
+        fmt_pct0(weekend[["Casual"]]), " weekend · ",
+        fmt_min(med[["Casual"]]), " median"
+      )
+    ),
+    kpi_card_html(
+      "member", "Member",
+      paste(fmt_trips(mix$n_member), "trips"),
+      paste0(
+        fmt_pct(mix$share_member), " of all trips · ",
+        fmt_pct0(weekend[["Member"]]), " weekend · ",
+        fmt_min(med[["Member"]]), " median"
+      )
+    ),
+    kpi_card_html(
+      "pool", "Conversion pool",
+      paste(fmt_trips(casual_commuter_n), "casual trips"),
+      paste0(
+        fmt_pct(casual_commuter_share), " of casual riding · ",
+        "weekday peak, under 15 min"
+      )
+    ),
+    "</div>"
+  )
+}
+
 date_axis_for <- function(dates) {
   if (length(dates) == 0 || all(is.na(dates))) {
     return(ggplot2::scale_x_date())
