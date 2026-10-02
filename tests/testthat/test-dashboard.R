@@ -50,6 +50,25 @@ test_that("calendar_month_profile is a seasonal shape, not a 60-month series", {
   expect_equal(jan$share[jan$programme == "Casual"], 20 / 30)
 })
 
+test_that("commute_like_by_month pools counts, not monthly shares", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  df <- tibble::tibble(
+    year_month = c("2021-01", "2021-07", "2022-01", "2021-01"),
+    member_casual = c("casual", "casual", "casual", "casual"),
+    day_type = c("Weekday", "Weekday", "Weekday", "Weekend"),
+    time_block = c("AM peak", "PM peak", "AM peak", "AM peak"),
+    duration_band = c("Under 15 min", "Under 15 min", "Under 15 min", "Under 15 min"),
+    n_trips = c(10, 90, 5, 400)
+  )
+  out <- commute_like_by_month(df)
+  jan <- out$n_trips[out$month == "Jan" & out$programme == "Casual"]
+  jul <- out$n_trips[out$month == "Jul" & out$programme == "Casual"]
+  expect_equal(jan, 15)
+  expect_equal(jul, 90)
+})
+
 test_that("share_by_programme returns member and casual shares", {
   src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
   sys.source(src, envir = environment())

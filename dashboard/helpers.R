@@ -295,32 +295,49 @@ plot_signature <- function(weekend, peak, long_trip) {
     theme_monitor()
 }
 
-plot_commute_trend <- function(rider_profile) {
-  commute_trend <- rider_profile |>
-    dplyr::mutate(programme = as_programme(.data$member_casual)) |>
-    dplyr::group_by(.data$programme, .data$year_month) |>
-    dplyr::summarise(
-      share = sum(
-        .data$n_trips[.data$day_type == "Weekday" &
-                        .data$time_block %in% c("AM peak", "PM peak") &
-                        .data$duration_band == "Under 15 min"]
-      ) / sum(.data$n_trips),
-      .groups = "drop"
+#' Commute-like trip counts by calendar month (pooled years).
+#' Counts, not shares: winter share spikes are a denominator artefact.
+commute_like_by_month <- function(rider_profile) {
+  empty <- tibble::tibble(
+    programme = factor(levels = c("Member", "Casual")),
+    month = factor(levels = MONTH_LABELS),
+    n_trips = integer()
+  )
+  if (is.null(rider_profile) || nrow(rider_profile) == 0) return(empty)
+  rider_profile |>
+    dplyr::filter(
+      .data$day_type == "Weekday",
+      .data$time_block %in% c("AM peak", "PM peak"),
+      .data$duration_band == "Under 15 min"
     ) |>
-    dplyr::mutate(date = to_date(.data$year_month)) |>
-    dplyr::arrange(.data$programme, .data$date) |>
-    dplyr::group_by(.data$programme) |>
-    dplyr::mutate(grp = gap_group(.data$date)) |>
-    dplyr::ungroup()
+    dplyr::mutate(
+      programme = as_programme(.data$member_casual),
+      month = month_label(.data$year_month)
+    ) |>
+    dplyr::group_by(.data$programme, .data$month) |>
+    dplyr::summarise(n_trips = sum(.data$n_trips), .groups = "drop")
+}
 
-  ggplot2::ggplot(commute_trend, ggplot2::aes(.data$date, .data$share, colour = .data$programme, group = interaction(.data$programme, .data$grp))) +
-    ggplot2::geom_line(linewidth = 1.05) +
-    ggplot2::scale_colour_manual(values = programme_colors) +
-    ggplot2::scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0, NA)) +
-    date_axis_for(commute_trend$date) +
+plot_commute_pool <- function(rider_profile) {
+  d <- commute_like_by_month(rider_profile)
+  ggplot2::ggplot(d, ggplot2::aes(.data$month, .data$n_trips, fill = .data$programme)) +
+    ggplot2::annotate(
+      "rect", xmin = 4.5, xmax = 9.5, ymin = -Inf, ymax = Inf,
+      fill = "grey88", alpha = 0.55
+    ) +
+    ggplot2::geom_col(position = ggplot2::position_dodge(width = 0.78), width = 0.72) +
+    ggplot2::scale_fill_manual(values = programme_colors) +
+    ggplot2::scale_x_discrete(drop = FALSE) +
+    ggplot2::scale_y_continuous(
+      labels = scales::label_number(scale = 1e-3, suffix = "k", accuracy = 1),
+      expand = ggplot2::expansion(mult = c(0, 0.05))
+    ) +
     ggplot2::labs(
-      x = NULL, y = "Share of the group's trips",
-      caption = "Commute-like = weekday, 06–09 or 16–19, under 15 min."
+      x = NULL, y = "Commute-like trips",
+      caption = paste0(
+        "Commute-like = weekday, 06–09 or 16–19, under 15 min. ",
+        "Months pooled across years. Not unique people."
+      )
     ) +
     theme_monitor()
 }

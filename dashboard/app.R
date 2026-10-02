@@ -127,7 +127,7 @@ ui <- page_navbar(
     layout_columns(
       col_widths = c(7, 5),
       card(
-        card_header("Casual trips that already look like a commute"),
+        card_header("Commute-like casual trips show up in summer, not winter"),
         plotOutput("plot_commute", height = "340px")
       ),
       card(
@@ -304,7 +304,7 @@ server <- function(input, output, session) {
   output$plot_commute <- renderPlot({
     d <- profile_f()
     validate(need(nrow(d) > 0, "No trips in this window."))
-    plot_commute_trend(d)
+    plot_commute_pool(d)
   })
   output$plot_duration <- renderPlot({
     d <- bins_f()
