@@ -372,40 +372,93 @@ plot_heatmap <- function(timing) {
     )
 }
 
-plot_volume <- function(programme_month) {
-  d <- programme_month |>
+MONTH_LABELS <- c(
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+)
+
+month_label <- function(ym) {
+  factor(month_num(ym), levels = 1:12, labels = MONTH_LABELS)
+}
+
+#' Pool calendar months across years. Share of each programme's own trips.
+calendar_month_profile <- function(programme_month) {
+  if (is.null(programme_month) || nrow(programme_month) == 0) {
+    return(tibble::tibble(
+      programme = factor(levels = c("Member", "Casual")),
+      month = factor(levels = MONTH_LABELS),
+      n_trips = integer(),
+      share = numeric()
+    ))
+  }
+  programme_month |>
     dplyr::mutate(
       programme = as_programme(.data$member_casual),
-      date = to_date(.data$year_month)
+      month = month_label(.data$year_month)
     ) |>
-    dplyr::arrange(.data$programme, .data$date) |>
-    dplyr::group_by(.data$programme) |>
-    dplyr::mutate(grp = gap_group(.data$date)) |>
+    dplyr::group_by(.data$programme, .data$month) |>
+    dplyr::summarise(n_trips = sum(.data$n_trips), .groups = "drop_last") |>
+    dplyr::mutate(share = .data$n_trips / sum(.data$n_trips)) |>
     dplyr::ungroup()
-  ggplot2::ggplot(d, ggplot2::aes(.data$date, .data$n_trips, colour = .data$programme, group = interaction(.data$programme, .data$grp))) +
+}
+
+#' Who took the trips in each calendar month (share of that month, pooled years).
+calendar_month_mix <- function(programme_month) {
+  if (is.null(programme_month) || nrow(programme_month) == 0) {
+    return(tibble::tibble(
+      programme = factor(levels = c("Member", "Casual")),
+      month = factor(levels = MONTH_LABELS),
+      n_trips = integer(),
+      share = numeric()
+    ))
+  }
+  programme_month |>
+    dplyr::mutate(
+      programme = as_programme(.data$member_casual),
+      month = month_label(.data$year_month)
+    ) |>
+    dplyr::group_by(.data$month, .data$programme) |>
+    dplyr::summarise(n_trips = sum(.data$n_trips), .groups = "drop_last") |>
+    dplyr::mutate(share = .data$n_trips / sum(.data$n_trips)) |>
+    dplyr::ungroup()
+}
+
+plot_season_profile <- function(programme_month) {
+  d <- calendar_month_profile(programme_month)
+  ggplot2::ggplot(d, ggplot2::aes(.data$month, .data$share, colour = .data$programme, group = .data$programme)) +
+    ggplot2::annotate(
+      "rect", xmin = 4.5, xmax = 9.5, ymin = -Inf, ymax = Inf,
+      fill = "grey88", alpha = 0.55
+    ) +
     ggplot2::geom_line(linewidth = 1.05) +
+    ggplot2::geom_point(size = 2.2) +
     ggplot2::scale_colour_manual(values = programme_colors) +
-    ggplot2::scale_y_continuous(labels = scales::label_number(scale = 1e-3, suffix = "k")) +
-    date_axis_for(d$date) +
-    ggplot2::labs(x = NULL, y = "Trips per month") +
+    ggplot2::scale_x_discrete(drop = FALSE) +
+    ggplot2::scale_y_continuous(
+      labels = scales::percent_format(accuracy = 1),
+      limits = c(0, NA)
+    ) +
+    ggplot2::labs(
+      x = NULL, y = "Share of the group's trips",
+      caption = "Shaded band is May–Sep. Months are pooled across years; each line adds to 100%."
+    ) +
     theme_monitor()
 }
 
-plot_member_share <- function(member_share) {
-  d <- dplyr::mutate(member_share, date = to_date(.data$year_month)) |>
-    dplyr::arrange(.data$date) |>
-    dplyr::mutate(grp = gap_group(.data$date))
-  ggplot2::ggplot(d, ggplot2::aes(.data$date, .data$member_share, group = .data$grp)) +
-    ggplot2::geom_ribbon(
-      ggplot2::aes(ymin = .data$ci_low, ymax = .data$ci_high),
-      fill = "#215C8C", alpha = 0.25
+plot_month_mix <- function(programme_month) {
+  d <- calendar_month_mix(programme_month)
+  ggplot2::ggplot(d, ggplot2::aes(.data$month, .data$share, fill = .data$programme)) +
+    ggplot2::geom_col(width = 0.84) +
+    ggplot2::scale_fill_manual(values = programme_colors) +
+    ggplot2::scale_x_discrete(drop = FALSE) +
+    ggplot2::scale_y_continuous(
+      labels = scales::percent_format(accuracy = 1),
+      expand = ggplot2::expansion(mult = c(0, 0.02)),
+      limits = c(0, 1)
     ) +
-    ggplot2::geom_line(colour = "#215C8C", linewidth = 1.05) +
-    ggplot2::scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0, 1)) +
-    date_axis_for(d$date) +
     ggplot2::labs(
-      x = NULL, y = "Member share of trips",
-      caption = "Ribbon: Wilson 95% interval. Share of trips, not of people."
+      x = NULL, y = "Share of that month's trips",
+      caption = "Composition of trips in each calendar month, pooled across years. Not unique people."
     ) +
     theme_monitor()
 }

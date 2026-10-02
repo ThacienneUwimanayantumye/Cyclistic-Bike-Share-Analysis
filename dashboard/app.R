@@ -146,12 +146,12 @@ ui <- page_navbar(
     layout_columns(
       col_widths = c(6, 6),
       card(
-        card_header("Casual volume collapses every winter; member volume holds up"),
-        plotOutput("plot_volume", height = "320px")
+        card_header("Casual riders pile into summer; members ride all year"),
+        plotOutput("plot_season", height = "320px")
       ),
       card(
-        card_header("Members dominate winter; casual riders close the gap each summer"),
-        plotOutput("plot_share", height = "320px")
+        card_header("Winter trips are mostly members; summer trips split more evenly"),
+        plotOutput("plot_month_mix", height = "320px")
       )
     ),
     card(
@@ -316,15 +316,15 @@ server <- function(input, output, session) {
     validate(need(nrow(d) > 0, "No trips in this window."))
     plot_heatmap(d)
   })
-  output$plot_volume <- renderPlot({
+  output$plot_season <- renderPlot({
     d <- prog_f()
     validate(need(nrow(d) > 0, "No trips in this window."))
-    plot_volume(d)
+    plot_season_profile(d)
   })
-  output$plot_share <- renderPlot({
-    d <- share_f()
+  output$plot_month_mix <- renderPlot({
+    d <- prog_f()
     validate(need(nrow(d) > 0, "No trips in this window."))
-    plot_member_share(d)
+    plot_month_mix(d)
   })
   output$plot_bikes <- renderPlot({
     d <- bike_f()

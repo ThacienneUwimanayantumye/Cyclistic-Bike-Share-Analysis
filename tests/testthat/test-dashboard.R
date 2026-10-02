@@ -29,6 +29,27 @@ test_that("programme_mix is the share of all trips, not weekend trips", {
   expect_equal(mix$share_casual, 0.5)
 })
 
+test_that("calendar_month_profile is a seasonal shape, not a 60-month series", {
+  src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
+  sys.source(src, envir = environment())
+
+  df <- tibble::tibble(
+    year_month = c("2021-01", "2021-07", "2022-01", "2022-07"),
+    member_casual = c("member", "member", "casual", "casual"),
+    n_trips = c(10, 90, 20, 80)
+  )
+  profile <- calendar_month_profile(df)
+  member <- profile[profile$programme == "Member", ]
+  expect_equal(as.character(member$month[member$month %in% c("Jan", "Jul")]), c("Jan", "Jul"))
+  expect_equal(member$share[member$month == "Jan"], 0.1)
+  expect_equal(member$share[member$month == "Jul"], 0.9)
+
+  mix <- calendar_month_mix(df)
+  jan <- mix[mix$month == "Jan", ]
+  expect_equal(jan$share[jan$programme == "Member"], 10 / 30)
+  expect_equal(jan$share[jan$programme == "Casual"], 20 / 30)
+})
+
 test_that("share_by_programme returns member and casual shares", {
   src <- file.path(testthat::test_path(), "..", "..", "dashboard", "helpers.R")
   sys.source(src, envir = environment())

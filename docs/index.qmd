@@ -77,6 +77,7 @@ as_programme <- function(x) {
 }
 
 to_date <- function(ym) as.Date(paste0(ym, "-01"))
+month_num <- function(ym) as.integer(substr(ym, 6, 7))
 
 for (nm in c("member_share", "programme_month", "duration_month", "quality_month")) {
   assign(nm, mutate(get(nm), date = to_date(year_month)))
@@ -367,33 +368,62 @@ ggplot(heat, aes(hour, weekday, fill = share)) +
 ### {width="50%"}
 
 ```{r}
-#| title: "Casual volume collapses every winter; member volume holds up"
+#| title: "Casual riders pile into summer; members ride all year"
 #| fill: false
 #| fig-width: 7.4
 #| fig-height: 4.1
-ggplot(programme_month, aes(date, n_trips, colour = programme)) +
+season_profile <- programme_month |>
+  mutate(month = factor(
+    month_num(year_month),
+    levels = 1:12,
+    labels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+  )) |>
+  group_by(programme, month) |>
+  summarise(n_trips = sum(n_trips), .groups = "drop_last") |>
+  mutate(share = n_trips / sum(n_trips)) |>
+  ungroup()
+
+ggplot(season_profile, aes(month, share, colour = programme, group = programme)) +
+  annotate("rect", xmin = 4.5, xmax = 9.5, ymin = -Inf, ymax = Inf, fill = "grey88", alpha = 0.55) +
   geom_line(linewidth = 1.05) +
+  geom_point(size = 2.2) +
   scale_colour_manual(values = pal) +
-  scale_y_continuous(labels = label_number(scale = 1e-3, suffix = "k")) +
-  date_axis +
-  labs(x = NULL, y = "Trips per month")
+  scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, NA)) +
+  labs(
+    x = NULL, y = "Share of the group's trips",
+    caption = "Shaded band is May–Sep. Months are pooled across 2021–2025; each line adds to 100%."
+  )
 ```
 
 ### {width="50%"}
 
 ```{r}
-#| title: "Members dominate winter; casual riders close the gap each summer"
+#| title: "Winter trips are mostly members; summer trips split more evenly"
 #| fill: false
 #| fig-width: 7.4
 #| fig-height: 4.1
-ggplot(member_share, aes(date, member_share)) +
-  geom_ribbon(aes(ymin = ci_low, ymax = ci_high), fill = "#215C8C", alpha = 0.25) +
-  geom_line(colour = "#215C8C", linewidth = 1.05) +
-  scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 1)) +
-  date_axis +
+month_mix <- programme_month |>
+  mutate(month = factor(
+    month_num(year_month),
+    levels = 1:12,
+    labels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+  )) |>
+  group_by(month, programme) |>
+  summarise(n_trips = sum(n_trips), .groups = "drop_last") |>
+  mutate(share = n_trips / sum(n_trips)) |>
+  ungroup()
+
+ggplot(month_mix, aes(month, share, fill = programme)) +
+  geom_col(width = 0.84) +
+  scale_fill_manual(values = pal) +
+  scale_y_continuous(
+    labels = percent_format(accuracy = 1),
+    expand = expansion(mult = c(0, 0.02)),
+    limits = c(0, 1)
+  ) +
   labs(
-    x = NULL, y = "Member share of trips",
-    caption = "Ribbon: Wilson 95% interval. Share of trips, not of people."
+    x = NULL, y = "Share of that month's trips",
+    caption = "Who took the trips in each calendar month. Share of trips, not of people."
   )
 ```
 
